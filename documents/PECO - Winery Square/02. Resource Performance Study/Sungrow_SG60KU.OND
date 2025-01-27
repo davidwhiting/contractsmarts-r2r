@@ -1,0 +1,82 @@
+PVObject_=pvGInverter
+  Comment=Sungrow	SG60KU	Manufacturer 2014
+  Version=6.42
+  ParObj1=2014
+  Flags=$800005D2
+
+  PVObject_Commercial=pvCommercial
+    Comment=www.sungrowpower.com  (China)
+    Flags=$0041
+    Manufacturer=Sungrow
+    Model=SG60KU
+    DataSource=Manufacturer 2014
+    YearBeg=2014
+    Width=0.634
+    Height=0.959
+    Depth=0.267
+    Weight=55.00
+    NPieces=0
+    Currency=EUR
+    Remarks, Count=3
+      Str_1=Technology: Without transfo, IGBT,3 level
+      Str_2=Protection: IP65 (outdoor)
+      Str_3=Control: LCD
+    End of Remarks=Control: LCD
+  End of PVObject pvCommercial
+  Transfo=Without
+
+  Converter=TConverter
+    PNomConv=60.000
+    PMaxOUT=63.360
+    VOutConv=380.0
+    VMppMin=550
+    VMPPMax=950
+    VAbsMax=1000
+    PSeuil=300.0
+    EfficMax=99.00
+    EfficEuro=98.50
+    FResNorm=3.00
+    ModeOper=MPPT
+    CompPMax=Lim
+    CompVMax=Lim
+    MonoTri=Tri
+    PNomDC=65.000
+    PMaxDC=65.000
+    IDCMax=0.0
+    IMaxDC=120.0
+    INomAC=91.2
+    IMaxAC=96.0
+    TPNom=50.0
+    TPMax=25.0
+    TPLim1=60.0
+    TPLimAbs=70.0
+    PInEffMax =36000.000
+    PThreshEff=507.1
+    ModeAff=2
+    UnitAff=2
+
+    ProfilPIO=TCubicProfile
+      NPtsMax=11
+      NPtsEff=8
+      LastCompile=$0011
+      Mode=1
+      Point_1=300.0,0.0
+      Point_2=1800.0,1309.2
+      Point_3=3000.0,2523.7
+      Point_4=6000.0,5556.8
+      Point_5=12000.0,11609.4
+      Point_6=18000.0,17644.1
+      Point_7=36000.0,35640.0
+      Point_8=60000.0,59382.6
+      Point_9=0.0,0.0
+      Point_10=0.0,0.0
+      Point_11=0.0,0.0
+    End of TCubicProfile
+  End of TConverter
+  NbInputs=8
+  NbMPPT=4
+  NbMSInterne=2
+  MasterSlave=No_M_S
+  DiscAdjust=Yes
+  MS_Thresh=0.8
+End of PVObject pvGInverter
