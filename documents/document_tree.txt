@@ -1,0 +1,162 @@
+documents
+├── PECO - Winery Square
+│   ├── 00. Corporate Documents
+│   │   ├── 02151701.PDF
+│   │   ├── A&R BSU 2017 Operating Agreement.pdf
+│   │   ├── Blue Sky Utility 2017 EIN No..pdf
+│   │   ├── Blue Sky Utility 2017 SOS No..pdf
+│   │   └── CA Articles.pdf
+│   ├── 01. Site Secure and Property
+│   │   ├── RE  Winery Rent Prorated.msg
+│   │   ├── Winery Square License Ag_001.pdf
+│   │   └── Winery.PDF
+│   ├── 02. Resource Performance Study
+│   │   └── Sungrow_SG60KU.OND
+│   ├── 03. Construction
+│   │   ├── Daily Reports
+│   │   ├── EPC Payments
+│   │   │   ├── BSU checks 170330.pdf
+│   │   │   └── INV 467 - Progress pmt 10_.pdf
+│   │   ├── Equipment
+│   │   │   ├── Renusol_VS_Design_Guide_V2.9.pdf
+│   │   │   ├── SG36KU Datasheet v1.0.pdf
+│   │   │   ├── SG60KU-M v1.0.pdf
+│   │   │   ├── Sungrow Warranty Terms EN.PDF
+│   │   │   └── Winery Square Equipment List.xlsx
+│   │   ├── Insurance Winery Square.pdf
+│   │   └── Roof
+│   ├── 04. Permitting
+│   │   ├── Building Permit - Winery Square.pdf
+│   │   ├── SDP Breakdown 170106.pdf
+│   │   └── Winery Installation Drawings REV2 170310.pdf
+│   ├── 05. Interconnection & Transmission
+│   │   ├── REF#309325 (Meter 1) SLD.pdf
+│   │   ├── REF#309338 (Meter 2) SLD.pdf
+│   │   └── REF#309348 (Meter 3) SLD.pdf
+│   ├── 06. SSPA
+│   │   ├── Compiled Winery SSPAs Counter Executed - signed.pdf
+│   │   ├── PECO - Winery Square Usage Data (May 1, 2017).xlsx
+│   │   ├── PE_Fairfield_Cenarios Pizza Signed SSPA.pdf
+│   │   ├── PE_Fairfield_Dentistry For Family_Signed SSPA.pdf
+│   │   ├── PE_Fairfield_Discount Cigarettes Signed SSPA.pdf
+│   │   ├── PE_Fairfield_Fairfield Cleaners_Signed SSPA.pdf
+│   │   ├── PE_Fairfield_Frank & Yuen_s_Signed SSPA.pdf
+│   │   ├── PE_Fairfield_GSK (Anytime) Fitness_Signed SSPA.pdf
+│   │   ├── PE_Fairfield_Pace Solano Signed SSPA.pdf
+│   │   ├── PE_Fairfield_Sunshine Studios_Signed SSPA.pdf
+│   │   ├── PE_Fairfield_ThinkTankLearning_Signed SSPA.pdf
+│   │   └── PE_Fairfield_UEI Inc (UEI Wireless)_Signed SSPA.pdf
+│   ├── 07. Model
+│   │   └── BSU 2017 - IER signed - 2-10-17.pdf
+│   ├── 08. Project Information & Maps
+│   │   ├── Winery Square.kmz
+│   │   └── winery pics drone
+│   │       ├── DJI_0011.JPG
+│   │       ├── DJI_0012.MP4.bz2
+│   │       ├── DJI_0013.JPG
+│   │       ├── DJI_0092.JPG
+│   │       ├── DJI_0093.JPG
+│   │       ├── DJI_0095.JPG
+│   │       ├── DJI_0096.JPG
+│   │       └── DJI_0130.JPG
+│   ├── 09. Financing
+│   │   └── Loan Pckage - Executed.pdf
+│   ├── 10. DSA
+│   └── 11. Operational Reports
+│       ├── Q1 2020 Winery Square 3.31.2020.pdf
+│       ├── Q1 Winery 31.03.2019.docx
+│       ├── Q2 2020 Winery Square 6.30.2020.pdf
+│       ├── Q2 Winery 06.30.2018.pdf
+│       ├── Q2 Winery 30.06.2019.docx
+│       ├── Q3 2020 Winery 9.30.2020.pdf
+│       ├── Q3 Winery 09.30.2018.docx
+│       ├── Q3 Winery 10.31.2019.pdf
+│       ├── Q4 Winery 12.31.2018.pdf
+│       └── Q4 Winery 12.31.2019.pdf
+├── PSCO - Hanford Mall
+│   ├── 00. Corporate Documents
+│   │   ├── A&R BSU 2017 II Operating Agreement.pdf
+│   │   ├── BSU 2017 II Operating Agreement.pdf
+│   │   ├── CA Articles of Incorporation.pdf
+│   │   └── EIN Letter BSU 2017 II.pdf
+│   ├── 01. Site Secure and Property
+│   │   ├── HM - Title Policy (First Am).pdf
+│   │   ├── HM - Title Policy.pdf
+│   │   └── Passco Lease (executed).pdf
+│   ├── 02. Resource Performance Study
+│   ├── 03. Construction
+│   │   ├── .DS_Store
+│   │   ├── 03.01. Roof Specs
+│   │   │   ├── CMP Brochure.pdf
+│   │   │   ├── CMP What to Expect.docx
+│   │   │   ├── GAF TPO Info.pdf
+│   │   │   └── Well Roof Brochure.pdf
+│   │   ├── 03.02. Equipment
+│   │   │   ├── SG30-36KU Datasheet 2016.pdf
+│   │   │   ├── SG36KU Datasheet v1.0.pdf
+│   │   │   ├── SG60KU-M v1.0.pdf
+│   │   │   ├── SUNGROW Warranty.pdf
+│   │   │   └── Sungrow Warranty Terms EN.pdf
+│   │   ├── EPC Signature 171003a.pdf
+│   │   ├── Hanford Mall EPC Agreement - BSU BPi - V2.pdf
+│   │   └── Insurance-PASSCO Job.pdf
+│   ├── 04. Permitting
+│   │   ├── Hanford E Room 1 V349P-000366 160707.pdf
+│   │   ├── Hanford E Room 2 V349P-000183 160707.pdf
+│   │   ├── Hanford Mall Array 1 Approved Plan Sets.pdf
+│   │   ├── Hanford Mall Array 1 Building Permit #FY16-1830.pdf
+│   │   ├── Hanford Mall Array 2 Approved Plan Sets.pdf
+│   │   └── Hanford Mall Array 2 Building Permit #FY16-1831.pdf
+│   ├── 05. Interconnection & Transmission
+│   ├── 06. SSPA
+│   │   ├── 201701241610.pdf
+│   │   ├── A&R SSPA (Jan 23, 2017).pdf
+│   │   └── Second AR SSPA (Final BSU Executed).pdf
+│   ├── 07. Model
+│   │   ├── Hanford Mall Price Analysis (2017).xlsm
+│   │   └── IER -  Hanford_6-8-17_FINAL-signed.pdf
+│   ├── 08. Project Information & Maps
+│   │   ├── 2015CAFRFinal.pdf
+│   │   ├── Feb 2017 Summary.docx
+│   │   ├── HM Tenant Brochure_2016.pdf
+│   │   ├── Local Tax Appraised Value.pdf
+│   │   └── Passco Rent Roll.pdf
+│   ├── 09. Financing
+│   │   └── Summary.pdf
+│   ├── 10. DSA
+│   └── 11. Operational Reports
+│       ├── Q1 2020 Hanford Report 3.31.2020.pdf
+│       ├── Q1 Hanford 31.03.2019.docx
+│       ├── Q2 2020 Hanford Report 6.30.2020.pdf
+│       ├── Q2 Hanford 30.06.2019.docx
+│       ├── Q2 Hanford Mall 06.30.2018.docx
+│       ├── Q3 2020 Hanford 9.30.2020.pdf
+│       ├── Q3 Hanford 10.31.2019.docx
+│       ├── Q3 Hanford Mall 09.30.2018.docx
+│       ├── Q4 Hanford 12.31.2018.pdf
+│       └── Q4 Hanford 12.31.2019.pdf
+└── Partnership Agreements
+    ├── 0_Closing Binder TOC.docx
+    ├── 10_BSU FIRPTA (11_6_17).pdf
+    ├── 2_BSU LLCA (fully executed 11_6_17).pdf
+    ├── 3_Closing Certificate BSU Portfolio I 2017 LLC.pdf
+    ├── 4_Closing Certificate BSU2017II (11_6_17).pdf
+    ├── 5_Closing Certificate BSU2017.pdf
+    ├── 6_Closing Certificate BSU (11_6_17).pdf
+    ├── 7_BSU Closing Payment Request.pdf
+    ├── 8_A&R Blue Sky Utility 2017 Operating Agreement (Winery).pdf
+    ├── 8d(i)_Winery Rent Prorated.pdf
+    ├── 8d_Winery Square License Ag_001.pdf
+    ├── 8e_Loan Pckage - Executed.pdf
+    ├── 9_A&R BSU 2017 II Operating Agreement (Handford).pdf
+    ├── 9a(i)_BSU BPi Affermation for Hanford EPC 170928.pdf
+    ├── 9a_Hanford Mall EPC Agreement - BSU BPi - V2 copy.pdf
+    ├── 9d_Passco Lease (executed) copy.pdf
+    ├── 9e_Hanford_LOAN_AGREEMENT_07142017_-_Execution.pdf
+    └── Corporate Docs
+        ├── CA Articles of Incorporation (BSU2017).pdf
+        ├── CA Articles of Incorporation (BSU2017II).pdf
+        ├── Certificate of Formation.pdf
+        ├── DE Certificate of Formation (BSUPI2017).pdf
+        ├── SS-4 (BSUPI2017).pdf
+        └── SS-4 with EIN.pdf
