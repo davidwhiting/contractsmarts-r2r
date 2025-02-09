@@ -1,0 +1,1030 @@
+ls a/src
+rmdir a/src
+rm a/src/.DS_Store
+ls
+rmdir a/src
+rm a/.DS_Store
+rmdir a
+ls
+ls v0.1.1
+git mv v0.1.1/manifest..xml v0.1.1/manifest.xml
+git status
+ls
+git mv v0.1.1 v1.0.1
+ls
+ls v0.1.0
+git rm -rf v0.1.0/
+ls
+ls
+ls -a v1.0.1
+cat ../.gitignore
+cat ../../contractsmarts-frontend-main/.gitignore
+cat ../.gitignore > ../../contractsmarts-frontend-main/.gitignore
+ls
+mkdir tmp
+mv v1.0.1/* tmp/
+rsync -avP ../../deploy/upload/v1.0.1/ v1.0.1/
+ls
+git status
+git rm v1.0.1/assets/images/assets/images/support/Support.svg
+git rm v1.0.1/assets/images/assets/images/model-validate/modelValidate.svg
+git rm v1.0.1/assets/images/assets/images/model-align/modelAlign.svg
+git rm v1.0.1/assets/images/assets/images/document-chat/documentChat.svg
+git status
+ls
+rm -rf tmp
+git status
+ls
+cd ..
+ls
+less Makefile
+ls -a
+rm .DS_Store
+ls excel-addin
+ls excel-addin/src
+ls excel-addin/assets
+ls
+mkdir bin
+git mv delete_from_oci.sh deploy_to_oci.sh bin
+ls
+git commit -m "renamed to v1.0.1"
+git push
+ls
+cd ../contractsmarts-frontend-main
+ls
+git status
+git add .gitignore
+git add bin
+mkdir bin
+git mv delete_from_oci.sh deploy_to_oci.sh bin
+ls
+git status
+ls upload
+cd excel-addin
+ls
+npm init
+npm install
+ls
+npm run build
+cd dist
+ls
+ls ../../upload
+ls ../../upload/v1.0.1
+diff manifest.xml ../../upload/v1.0.1/manifest.xml
+ls
+cd ..
+ls
+git status
+ls
+cd ..
+ls
+ls Excel\ TaskPane
+rm Excel\ TaskPane/.DS_Store
+rmdir Excel\ TaskPane
+rm Excel\ Add-In/.DS_Store
+rmdir Excel\ Add-In
+ls
+ls Word\ Add-In
+less VERSION.md
+vi VERSION.md
+ls
+git status
+git add VERSION.md
+ls
+ls bin
+vi bin/deploy_to_oci.sh
+vi bin/delete_from_oci.sh
+ls
+ls -a
+which python
+./bin/delete_from_oci.sh
+ls
+cp ../deploy/bin/oci-upload.py bin
+cp ../deploy/bin/upload-readme.md .
+ls
+ls bin
+/usr/bin/env
+which python
+ls
+git status
+mv bin/oci-upload.py .
+mv upload-readme.md README-oci-upload.md
+git add README-oci-upload.md
+git add oci-upload.py
+ls
+less README-oci-upload.md
+git mv oci-upload.py oci_upload.py
+git mv README-oci-upload.md README-oci_upload.md
+less README-oci_upload.md
+ls
+ls
+ls
+ls upload
+ls
+cd excel-addin
+ls
+less babel.config.json
+ls
+cd ..
+ls
+git rm Word\ TaskPane/README.md
+ls
+git rm Word\ Add-In/README.md
+ls
+ls VERSION.md
+ls
+git status
+ls
+which python
+ls
+cat bin/deploy_to_oci.sh
+cp bin/deploy_to_oci.sh .
+mv deploy_to_oci.sh deploy_to_oci_fixed.sh
+ls excel-addin/dist
+ls
+./deploy_to_oci_fixed.sh
+ls
+cd excel-addin
+ls
+npm run
+npm run dev-server
+npm start dev
+git status
+git add ../deploy_to_oci_fixed.sh
+npm run start
+rm -rf ~/Library/Containers/com.microsoft.Excel/Data/Documents/wef/*
+npm run start
+rm -rf ~/Library/Containers/com.microsoft.Excel/Data/Documents/wef/*
+ls
+npm run start
+git status
+echo "rm -rf ~/Library/Containers/com.microsoft.Excel/Data/Documents/wef/*; npm run start" > restart.sh
+git add restart.sh
+ls
+git commit -m "verified local dev works well"
+git push
+ls
+git status
+ls
+ls node_modules
+ls
+ls dist
+cd ..
+ls
+ls upload
+ls
+ls
+vi VERSION.md
+ls upload
+cd upload
+ls -l
+ls v1.0.1
+mkdir v1.0.2
+rsync -avP ../excel-addin/dist/ v1.0.2
+ls
+diff v1.0.2/manifest.xml v1.0.1/manifest.xml
+ls
+git commit -m "updated version to v1.0.2"
+git add v1.0.2/
+git add ../VERSION.md
+git commit -m "updated version and included dist"
+git push
+ls
+git pull
+ls
+ls
+cd ..
+ls
+ls
+ls
+git pull
+git checkout react
+ls
+rsync -avP ../contractsmarts-frontend/excel-addin-fluent .
+ls
+cd excel-addin-fluent
+git status
+git add *
+ls -a
+less .gitignore
+ls
+cd ..
+git status
+git add excel-addin-fluent/.gitignore
+git status
+git commit -m "added excel-addin-fluent react components"
+git push
+ls
+cp ../contractsmarts-frontend-main/tree.txt .
+diff ../contractsmarts-frontend-main/tree.txt tree.txt
+ls
+ls VERSION.md
+cat README.md
+less Makefile
+vi Makefile
+make tree
+ls excel-addin-fluent
+cd excel-addin-fluent
+npm install
+cd ..
+make tree
+less tree.txt
+ls
+git status
+git add Makefile
+git add tree.txt
+ls
+ls
+git status
+git status
+git commit -m "added new tree.txt directory listing"
+git push
+git checkout main
+ls
+cd excel-addin-fluent
+ls
+ls
+git pull
+git checkout react
+ls
+pwd
+git checkout main
+cd ..
+ls
+ls
+cd ..
+ls
+cd contractsmarts-frontend
+ls
+git status
+ls
+git commit -m "renamed back to excel-addin-fluent"
+git push
+ls
+git status
+cd excel-addin-fluent/src/services/excel
+cp registration.ts registration_some_updates.ts
+git restore registration.ts
+git status
+ls
+cat registration.ts
+ls
+cp registration.ts registration_old.ts
+vi registration.ts
+git add registration.ts
+git status
+git status
+git add ../../taskpane/FileStatusComponents.tsx
+git add ../../taskpane/Taskpane.tsx
+ls
+less registration.ts
+git status
+ls
+cd ..
+ls
+cd ..
+ls
+ps
+git status
+source ../.venv/bin/activate
+git add vite.config.ts
+git status
+npm run start
+npm run stop
+ls ../bin
+ls ../../deploy
+ls ../../deploy/bin
+ls
+rm -rf ~/Library/Containers/com.microsoft.Excel/Data/Library/Caches/
+npm run start
+npm run start
+ls
+cat manifest.xml
+git status
+which python
+ls
+ls src_old
+git status
+rm -rf src_old
+ls
+cd ..
+ls
+ls Excel\ Add-In
+rm Excel\ Add-In/.DS_Store
+rmdir Excel\ Add-In
+ls
+rm Excel\ TaskPane/.DS_Store
+rmdir Excel\ TaskPane
+ls
+ls bin
+cat Makefile
+make tree
+ls
+less tree.txt
+cd excel-addin-fluent
+ls
+git status
+cd src/taskpane
+git add DocumentChat.tsx
+git add Taskpane.tsx
+ls
+cd ..
+ls
+cd ..
+ls
+npm install
+ls
+git status
+git commit -m "Added documentchat to fluent"
+git push
+ls
+cd src/taskpane
+ls
+touch MainMenu.tsx
+touch NavigationBar.tsx
+touch ModelManager.tsx
+touch ModelValidate.tsx
+touch Support.tsx
+vi MainMenu.tsx
+ls
+git status
+git add MainMenu.tsx
+git status
+vi Support.tsx
+git add Support.tsx
+git status
+vi ModelManager.tsx
+cat ModelManager.tsx
+cat ModelManager.tsx > ModelValidate.tsx
+git add ModelValidate.tsx
+vi ModelManager.tsx
+git add ModelManager.tsx
+vi ModelValidate.tsx
+git status
+vi Support.tsx
+git add Support.tsx
+less ModelManager.tsx
+less ModelValidate.tsx
+less Support.tsx
+ls
+git add ModelValidate.tsx
+vi NavigationBar.tsx
+ls
+git status
+git add NavigationBar.tsx
+vi DocumentChat.tsx
+git add DocumentChat.tsx
+vi Taskpane.tsx
+ls
+git status
+git add Taskpane.tsx
+git status
+vi DocumentChat.tsx
+git status
+git add DocumentChat.tsx
+git commit -m "added updated navigation bar"
+ls
+vi MainMenu.tsx
+git status
+git add MainMenu.tsx
+git status
+git add taskpane.html
+git add ../../manifest.xml
+ls
+git status
+npm run stop
+npm run start
+ls
+vi DocumentChat.tsx
+git add DocumentChat.tsx
+git status
+vi DocumentChat.tsx
+git add DocumentChat.tsx
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+make tree
+git add tree.txt
+ls
+cd excel-addin-fluent
+ls
+cat manifest.xml
+ls
+cd src/taskpane
+ls
+vi DocumentChat.tsx
+git add DocumentChat.tsx
+git status
+ls
+npm run start
+npm run stop
+npm run start
+git status
+ls
+cp ModelManager.tsx ModelAlign.tsx
+grep -i modelmanager *
+cd ..
+grep -i modelmanager *
+ls
+cd ..
+grep -i modelmanager *
+git status
+ls -a
+mv ../contractsmarts-frontend-old/.venv .
+source .venv/bin/activate
+which python
+ls
+oci os object bulk-delete \\
+    --bucket-name "addin-hosting" \\
+    --prefix "addin/v1.0/" \\
+    --force
+ls
+echo 'oci os object bulk-delete \\
+    --bucket-name "addin-hosting" \\
+    --prefix "addin/v1.0/" \\
+    --force' > delete_from_oci.sh
+cat delete_from_oci.sh
+vi delete_from_oci.sh
+chmod +x delete_from_oci.sh
+ls
+ls excel-addin/dist
+\ls
+ls
+./deploy_to_oci.sh
+ls
+git status
+git add delete_from_oci.sh
+git commit -m "added delete from oci script to clean bucket"
+git push
+ls
+git status
+git push
+git checkout main
+git branch -m main old_main
+git push origin old_main
+git checkout rel-0.1.1
+git branch -m main
+git push origin main
+git push origin main:old_main
+git checkout old_main
+ls
+git checkout main
+ls
+cat VERSION.md
+git push -f origin main
+ls
+./deploy_to_oci.sh
+ls
+ls
+cd excel-addin
+ls
+less manifest.xml
+ls
+mkdir tmp
+cd tmp
+ls
+wget https://api.contractsmarts.ai/static/v1.0/manifest.xml
+less manifest.xml
+less manifest.xml
+ls
+cd
+ls
+cd code
+ls
+ls CursorLens
+cd CursorLens
+ls
+cd ..
+ln -s CursorLens CursorLens.git
+rm -rf CursorLens
+ls -l
+ls blood-lines
+cd blood-lines
+git status
+vi .gitignore
+git status
+git add .gitignore
+git status
+vi .gitignore
+vi .gitignore
+git add .gitignore
+git status
+git rm dist/06b652c786b558bd26914ef8eb61551e.png
+git status
+git rm dist/bundle.js
+git rm dist/c2f1ab87b112ad6fc9e74f04b57d7822.png
+git rm dist/index.html
+git status
+git restore --staged dist/06b652c786b558bd26914ef8eb61551e.png
+git restore --staged  dist/bundle.js
+git restore dist/index.html
+git status
+git restore --staged dist/index.html
+git status
+git restore --staged dist/c2f1ab87b112ad6fc9e74f04b57d7822.png
+git status
+git commit -m "updated gitignore file"
+git push
+cd ..
+ls
+rm -rf blood-lines
+rm dagster.zip
+ls
+rm -rf datatable
+rm -rf h2ogpt
+ls mlx
+ls oracle-ai-for-sustainable-dev
+ls
+cd
+ls
+ls src
+cd ContractSmarts
+ls
+cd code
+ls
+cd contractsmarts-frontend
+ls
+git checkout fluent_ui
+ls
+ls upload
+ls Excel\ Add-In
+ls
+ls excel-addin-fluent
+ls
+ls upload
+ls deploy_to_oci.sh
+cat deploy_to_oci.sh
+ls
+ls
+git checkout main
+git pull
+ls
+ls
+ls -l
+ls
+git pull
+git checkout react
+ls
+cd excel-addin-fluent
+ls
+npm install
+ls
+which python
+cd ..
+ls
+ls -a
+conda activate
+python -m venv .venv
+source .venv/bin/activate
+which python
+pip install --upgrade pip
+pip install -r requirements.txt
+git status
+ls
+cd excel-addin-fluent
+ls
+less README.md
+npm run dev
+ls
+npm run dev-server
+cd ..
+ls
+mv excel-addin-fluent old-excel-addin-fluent
+mkdir excel-addin-fluent
+cd excel-addin-fluent
+ls
+mv ../old-excel-addin-fluent/node_modules .
+mv ../old-excel-addin-fluent/package.json
+mv ../old-excel-addin-fluent/package.json .
+mv ../old-excel-addin-fluent/package-lock.json .
+ls
+npm create vite@latest excel-addin-fluent -- --template react-ts
+ls
+rm -rf node_modules
+mv package* ../old-excel-addin-fluent
+cd ..
+mv excel-addin-fluent excel-addin-fluent2
+ls
+ls excel-addin-fluent2
+mv excel-addin-fluent2/excel-addin-fluent .
+rmdir excel-addin-fluent2
+ls -a excel-addin-fluent2
+rm excel-addin-fluent2/.DS_Store
+ls
+rmdir excel-addin-fluent2
+ls
+cd excel-addin
+cd ../excel-addin-fluent
+ls
+npm install
+npm install @fluentui/react-components\
+npm install @fluentui/react-icons
+npm install --save-dev @types/office-js
+ls
+cd ../old-excel-addin-fluent
+ls
+ls public
+mv index.html manifest.xml eslint.config.js README.md ../excel-addin-fluent
+git status
+mv ../old-excel-addin-fluent/public .
+ls public
+ls public/assets
+git status
+ls ../excel-addin-fluent/public
+mv public/assets ../excel-addin-fluent/public/ 
+git status
+ls src
+ls ../excel-addin-fluent/src
+cd ../excel-addin-fluent
+mv src src_old
+mv ../old-excel-addin-fluent/src .
+git status
+ls
+ln -s ../old-excel-addin-fluent old
+mv old/vite.config.ts .
+git status
+ls old
+ls old/public
+rm old/public/vite.svg
+rmdir old/public
+ls old/
+diff tsconfig.json old/tsconfig.json
+rm old/tsconfig.json
+ls old/tsconfig.node.json
+diff old/tsconfig.node.json tsconfig.node.json
+rm old/tsconfig.node.json
+ls
+ls old
+diff tsconfig.app.json old/tsconfig.app.json
+mv old/tsconfig.app.json .
+git status
+ls
+diff package.json old/package.json
+ls
+ls public
+ls
+ls old/
+mkdir package_old
+ls old
+ls
+diff package.json old/package.json
+ls
+mv old/package.json .
+ls old/
+rm old/
+rm old
+ls
+ls package_old
+rmdir package_old
+ls
+git status
+ls
+npm install
+ls
+git status
+git add package.json package-lock.json
+cd ../old-excel-addin-fluent
+ls
+rm package-lock.json
+cd ..
+rmdir old-excel-addin-fluent
+ls -a old-excel-addin-fluent
+diff old-excel-addin-fluent/.gitignore excel-addin-fluent/.gitignore
+rm -rf old-excel-addin-fluent
+ls
+ls bin
+ls
+git status
+ls
+git status
+ls excel-addin-fluent/src_old
+ls
+git status
+ls
+cd excel-addin-fluent
+ls
+npm run dev
+ls
+cd ..
+ls
+cd ..
+cd contractsmarts-frontend
+ls
+ls
+ls
+ls
+cd excel-addin-fluent
+ls
+cat vite.config.ts
+ls
+npm install -D @types/node
+git status
+git add tsconfig.node.json
+git add vite.config.ts
+ls
+git add package.json
+git add package-lock.json
+ls
+git status
+git status
+npm run dev
+cat ~/.office-addin-dev-certs/localhost.key
+npm run stop
+npm run dev
+ls -l ~/.office-addin-dev-certs
+ls
+npm run dev
+npm run dev
+npm run dev
+npm run dev
+npm run dev
+cd ContractSmarts
+ls
+cd code
+ls
+cd contractsmarts-frontend
+ls
+ls upload
+cd ../contractsmarts-frontend-old
+git status
+ls
+mv upload/deploy_to_oci_html.sh .
+vi deploy_to_oci_html.sh
+vi deploy_to_oci_html.sh
+ls
+ls
+ls
+cd upload
+ls
+ls v0.1.1
+ls v0.1.1
+ls a
+ls
+ls unstable
+ls
+ls
+ls unstable
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd src
+ls
+cat DocumentChat_with_nav.tsx > taskpane/DocumentChat.tsx
+less DocumentChat_with_nav.tsx
+cat DocumentChat_with_nav.tsx
+cd ..
+ls
+find node_modules/@fluentui/react-components -type f -exec grep -l "textarea" {} \;
+ls
+ls node_modules/@fluentui/react-components/dist/
+less node_modules/@fluentui/react-components/dist/index.d.ts
+cp node_modules/@fluentui/react-components/dist/index.d.ts .
+cp node_modules/@fluentui/react-components/dist/unstable.d.ts .
+ls
+cd ..
+ls
+cd excel-addin-fluent
+ls
+cd src
+ls
+touch DocumentChat_popup.tsx
+pwd
+git status
+ls
+git add taskpane/DocumentChat.tsx
+git add ../manifest.xml
+git add taskpane/PopupChat.tsx
+ls
+cd ..
+ls
+git status
+ls
+cd
+cd Library/Group\ Containers/UBF8T346G9.Office
+ls -l
+less MicrosoftRegistrationDB.reg
+grep regional *
+ls Profile\ Settings
+ls
+ls User\ Content.localized
+pwd
+ls Licenses
+cd Licenses
+ls
+cd 5
+ls
+ls -l
+rm 111486447931301240428266312772245698782
+cd ..
+ls
+cd ..
+ls
+ls TemporaryItems
+ls ComRPC32
+ls Library
+cd Library
+ls
+cd Preferences
+ls
+less UBF8T346G9.Office.plist
+rm UBF8T346G9.Office.plist
+cd ..
+cd ..
+cd
+ls
+ls
+l
+ls
+cd ContractSmarts/contractsmarts
+ls
+cd ..
+ls
+cd code/deploy
+ls
+cd upload
+ls -l
+cd a
+ls
+ls -lh
+ls
+cd
+ls
+cd ContractSmarts/code/contractsmarts-frontend
+ls
+ls
+source .venv/bin/activate
+cd ..
+ls
+cd deploy
+ls
+cd upload
+ls
+cd a
+ls
+ls -lh
+oci os object put --bucket-name addin-hosting \\
+--file manifest.xml \\
+--name "addin/a/manifest.xml" \\
+--content-type "application/xml"
+cd ..
+cd v1.0.1
+ls
+ls -lh
+oci os object put --bucket-name addin-hosting \\
+--file manifest.xml \\
+--name "addin/v1.0/manifest.xml" \\
+--content-type "application/xml"
+cat manifest.xml
+curl -X OPTIONS -H "Origin: https://www.office.com" \\
+  -H "Access-Control-Request-Method: GET" \\
+  -i https://api.contractsmarts.ai/static/v1.0/taskpane.html\
+\
+\
+\
+
+curl -X OPTIONS -H "Origin: https://www.office.com" \\
+  -H "Access-Control-Request-Method: GET" \\
+  -i https://api.contractsmarts.ai/static/a/taskpane.html
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd contractsmarts-frontend
+ls
+cd ..
+ls
+cd contractsmarts
+ls
+ls
+touch commands.md
+ls
+touch update_cors.json
+ls
+oci api-gateway deployment update --generate-param-json-input
+curl -X OPTIONS -H "Origin: https://www.office.com" \\
+  -H "Access-Control-Request-Method: GET" \\
+  -i https://api.contractsmarts.ai/static/v1.0/taskpane.html
+curl -X OPTIONS -H "Origin: https://excel.office.com" \\
+  -H "Access-Control-Request-Method: GET" \\
+  -i https://api.contractsmarts.ai/static/v1.0/taskpane.html
+curl -X OPTIONS -H "Origin: https://excel.officeapps.live.com" \\
+  -H "Access-Control-Request-Method: GET" \\
+  -i https://api.contractsmarts.ai/static/v1.0/taskpane.html
+curl -H "Origin: https://www.office.com" \\
+  -i https://api.contractsmarts.ai/static/v1.0/taskpane.html
+curl -H "Origin: https://www.office.com" \\
+  -i https://api.contractsmarts.ai/static/v1.0/commands.js\
+
+ls
+git status
+git add README.md links_with_gen_ai.md update_cors.json
+git status
+git add commands.md
+git commit -m "updated readme"
+git push
+ls
+cd ..
+which python
+cd contractsmarts-frontend
+ls
+git status
+cd excel-addin-fluent
+ls
+npm stop
+ls
+npm dev start
+ls
+npm run stop
+ls
+ls
+cd src
+ls
+git status
+cd taskpane
+ls
+cp DocumentChat.tsx ..
+git status
+git restore --staged DocumentChat.tsx
+git status
+ls
+ls
+git status
+git restore DocumentChat.tsx
+git status
+cp DocumentChat.tsx DocumentChat_old.tsx
+mv DocumentChat_old.tsx ..
+cat ../DocumentChat.tsx > DocumentChat.tsx
+ls
+cd ..
+ls
+vi DocumentChat_works.tsx
+git status
+cd taskpane
+cat ../DocumentChat_works.tsx > DocumentChat.tsx
+git status
+git add DocumentChat.tsx
+ls
+rm ../DocumentChat_old.tsx
+ls
+git status
+git commit -m "Documentchat works"
+git push
+ls
+ls
+cat ../DocumentChat.tsx > DocumentChat.tsx
+ls
+cd ..
+ls
+touch DocumentChat_with_nav.tsx
+vi DocumentChat_with_nav.tsx
+ls
+cd taskpane
+cat ../DocumentChat_with_nav.tsx > DocumentChat.tsx
+ls
+cd ..
+ls
+vi DocumentChat_grow.tsx
+cd taskpane
+cat ../DocumentChat_grow.tsx > DocumentChat.tsx
+ls
+cd ..
+ls
+rm DocumentChat_grow.tsx
+vi DocumentChat_text_area.tsx
+cd taskpane
+cat ../DocumentChat_text_area.tsx > DocumentChat.tsx
+git status
+cd ..
+less DocumentChat_text_area.tsx
+ls
+vi DocumentChat_text_area.tsx
+cat DocumentChat_text_area.tsx > taskpane/DocumentChat.tsx
+ls
+ls -l
+cd ..
+ls
+cd node_modules
+ls
+cd @fluentui/react-components
+ls
+ls unstable
+ls dist
+ls lib
+ls lib-commonjs
+ls
+grep textarea *
+ls
+less README.md
+ls unstable
+less package.json
+ls
+ps

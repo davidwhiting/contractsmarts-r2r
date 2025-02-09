@@ -1,0 +1,1122 @@
+cd code
+ls
+cd proxy-server
+ls
+cd _ignore
+ls
+less curl-tests.sh
+less excel-example.json
+less package-lock.json
+rm package-lock.json
+less proxy.js
+less script-transcript.ts
+rm script-transcript.ts
+git status
+rm ../package.json.proposed
+git status
+cd ..
+ls
+pwd
+cat Makefile
+ls
+make mock
+cd __tests__
+ls
+ls
+cd ..
+ls
+mv Makefile Makefile.old
+touch Makefile
+rm ~/Downloads/postman-readme*
+cat ~/Downloads/postman-readme.md > docs/postman/README-postman.md
+git add docs/postman/README-postman.md
+git status
+cat Makefile.old
+git add Makefile
+rm Makefile.old
+ls
+git status
+make proxy
+ls
+cat Makefile
+make proxy
+lsof -i :4000
+curl http://localhost:4000/echo/test
+make proxy
+cd ..
+ls
+make proxy
+lsof :3000
+lsof -i :3000
+kill -9 9560
+ps
+kill -9 9557
+ps
+make proxy
+make proxy
+make proxy
+ls
+R2R_TARGET=https://api.cloud.sciphi.ai make proxy
+ls
+git status
+git add docs/README-auth0.md
+git add docs/postman/r2r-proxy-tests.postman_collection.json
+git commit -m "added first cloud commit changes"
+git push
+ls
+ls
+pushd ~/Downloads
+ls -l postman-readme
+ls -l postman-readme*
+cp postman-readme\ \(1\).md postman-readme.md
+ls -l postman-readme*
+rm postman-readme\ \(1\).md
+rm proxy-*
+cd
+ls
+cd ContractSmarts
+ls
+cd code
+ls
+cd R2R
+ls
+ls services
+less README.md
+ls
+ls js
+ls js/sdk
+ls js/sdk/src
+ls js/sdk/src/v3
+ls js/sdk/src/v3/clients
+ls js/sdk/src/v3/clients/users.ts
+less js/sdk/src/v3/clients/users.ts
+cd ..
+ls
+cd proxy-server
+ls
+git status
+tree -a -I "_ignore/" -I "node_modules/" .
+tree -a -I "_ignore/" -I "node_modules/" -I ".git/" -I ".DS_Store" .
+tree -a -I "_ignore/" -I "node_modules/" -I ".git/" -I ".DS_Store" -I "dn/" ..
+tree -a -I "_ignore/" -I "node_modules/" -I ".git/" -I ".DS_Store" -I "dn" .
+tree -a -I "_ignore/" -I "node_modules/" -I ".git/" -I ".DS_Store" -I "dn" . > directory_tree_listing.txt
+vi Makefile
+git add Makefile
+ls -l
+make tree
+less directory_tree_listing.txt
+vi directory_tree_listing.txt
+git add directory_tree_listing.txt
+git status
+ls
+git status
+ls dn
+rm dn
+ls
+git status
+ls
+mkdir bin
+touch prep_for_claude.sh
+mv prep_for_claude.sh bin
+rm bin/prep_for_claude.sh
+rmdir bin
+vi Makefile
+ls
+git add Makefile
+git status
+cat Makefile
+vi Makefile
+git add Makefile
+git status
+cat Makefile
+make claude
+ls
+less directory_tree_listing.txt
+ls
+git status
+vi .gitignore
+git add .gitignore
+git status
+git add directory_tree_listing.txt
+ls
+git status
+ls
+ln -s ~/Downloads dn
+cat dn/mock-server.ts > __tests__/mock-server.ts
+git add __tests__/mock-server.ts
+git status
+git add README.md
+cd docs
+git add README-proxy.md
+git add README-tsconfig.md
+ls -l
+head README-api.md
+head README-docker.md
+head README-environment.md
+head README-package.md
+head README-phase1.md
+git status
+ls
+head README-proxy.md
+ls
+head README-server.md
+head README-testing.md
+less README-tsconfig.md
+ls
+cd postman
+ls
+cd ..
+ls
+git status
+git add README-api.md
+git status
+git commit -m "updated version numbers"
+git push
+ls
+cd ..
+ls
+ps
+kill -9 9406
+kill -9 9407
+kill -9 9408
+kill -9 9409
+ps
+kill -9 9536
+kill -9 9537
+ls
+ls
+less Makefile
+make test
+cat Makefile
+make claude
+make test
+make test
+make test
+make test
+make test
+make test
+make test
+make test
+make test
+ls
+ls dn
+cat dn/proxy-middleware.ts > src/middleware/proxy.ts
+cat dn/server-fix.ts > src/server.ts
+rm dn/server-fix.ts
+rm dn/proxy-middleware.ts
+ls
+ls
+make test
+cat dn/proxy-middleware.ts > src/middleware/proxy.ts
+git add src/middleware/proxy.ts
+make test
+git status
+make test
+make test
+ls
+git status
+rm dn
+git add docs/README-*
+git status
+git commit -m "updated readme files"
+git push
+docker ps
+cd ..
+ls
+cd R2R
+ls
+grep -rn -e "by-filter" *
+ls
+less llms.txt
+cp llms.txt ../proxy-server/docs
+ls ..
+ls ../contractsmarts-frontend
+cd ../contractsmarts-frontend
+ls
+cd excel-addin_2
+ls
+less manifest.xml
+ls
+git status
+git commit -m "updated postman tests"
+git push
+make postman
+make postman
+ls
+git status
+make postman
+pwd
+ls
+cd ..
+ls
+make postman
+make postman
+make postman
+make postman
+less Makefile
+vi Makefile
+ls
+git status
+history
+ps
+git status
+git add docs/README-api.md package*
+ls
+node
+ls
+cat Makefile
+make start
+make stop
+make clean
+cat Makefile
+make clear
+make start
+make stop
+ls
+make clear
+cd ..
+ls
+cd excel-addin-earliest
+ls
+cat Makefile
+make start
+ls
+ls
+make clear
+cd ..
+ls
+cd excel-addin_2
+ls
+make start
+make clear
+make stop
+make start
+make stop
+make clear
+ls
+ls
+cd ..
+ls
+cd excel-addin-old
+ls
+cat restart.sh
+./restart.sh
+chmod +x restart.sh
+./restart.sh
+ls
+cd ..
+ls
+ls bin
+ls
+cd ..
+npm stop
+ls
+cd -
+ls
+cd excel-addin-commit_0_works
+ls
+less Makefile
+ls
+cat Makefile
+make ls
+ls
+make stop
+make clear
+make run
+ls
+cat Makefile
+make start
+ls
+cd /Volumes/Samsung
+ls
+cd Library/Application\ Support
+ls -l
+cd Bark
+ls -l
+du -sh *
+ls
+ls
+ls -l
+source .venv/bin/activate
+pip install r2r
+ pip install --upgrade pip
+pip freeze > requirements.txt
+which npm
+npm i r2r-js
+ls
+ls
+r2r set-api-key pk_BxjSvccpGa6ksoeN
+pip install litellm
+ls
+ls -l
+ls
+mkdir documents
+ls
+ls ../contractsmarts-ai
+ls ../contractsmarts-ai/docs
+ls ../contractsmarts-ai/code
+ls ../contractsmarts-ai/code/test_uploads
+rsync -avP ../contractsmarts-ai/code/test_uploads/ documents/
+ls
+ls documents
+ls documents/test_docs
+cd documents
+mv Partnership\ Agreements Partnership\ Agreements2
+ls
+mv test_docs/P* .
+rmdir test_docs
+ls
+ls Partnership\ Agreements/
+ls Partnership\ Agreements2
+rm -rf Partnership\ Agreements2
+ls
+cd ..
+ls
+r2r document create --file-path=documents/Certificate.pdf
+pip install jwt
+ls
+rm -rf node_modules
+mkdir javascript
+mv package-lock.json package.json javascript
+ls
+which python
+pip freeze > requirements.txt
+ls
+r2r document create --file-path=documents/Certificate.pdf
+r2r document create --file-path="documents/Certificate.pdf"
+r2r documents create --file-path=documents/Certificate.pdf
+ls
+which python
+python
+pip install jupyter-lab
+pip install jupyter
+ls
+cd python
+ls
+cd src
+ls
+cd vault
+ls
+vi api_key
+vi public_key
+cat api_key
+cat public_key
+printenv
+ls
+cat api_key
+ls
+ls
+cd ..
+ls
+cat testrun.py
+export R2R_API_KEY='pk_a8AYAiPNenekD8ZT.sk_LiWcouomkdqToRJnB4ttmLs9yzERuj93'
+pwd
+cd ..
+cd ..
+ls
+cd javascript
+ls
+node
+node
+ls
+which r2r
+which python
+ls -a
+cd ..
+ls
+source python/.venv/bin/activate
+which python
+which r2r
+r2r configure key
+cat ~/.r2r/config.ini
+node
+ls
+cd javascript
+node
+ls
+whoami
+ls
+r2r configure key
+ls
+node
+node
+node
+ls
+touch runSearch.js
+cat runSearch.js
+ls
+ls
+node
+ls
+npm install dotenv
+ls
+vi .env
+ls
+ls -a
+vi ../.gitignore
+git add ../.gitignore
+ls
+cat .env
+vi .env
+ls
+mv runSearch.js csFunctions.js
+ls
+git status
+git add package*
+git add csFunctions.js
+ls
+ls
+cat runSearch.js > csFunctions.js
+node
+ls
+mv csFunctions.js csFunctions.ts
+cat csFunctions.js > csFunctions.ts
+git rm csFunctions.js
+git rm -f csFunctions.js
+vi csFunctions.ts
+ls
+npm install --save-dev ts-node
+ts-node
+which node
+which tsnode
+which ts_node
+npm install -g ts-node
+which ts-node
+ls
+pwd
+pwd
+ls
+pwd
+cd ..
+ls
+cd ..
+ls
+pwd
+which python
+ls
+cd ..
+ls
+mkdir github
+cd github
+ls
+git clone git@github.com:ContractSmarts/proxy-server.git
+git clone git@github.com:ContractSmarts/excel-addin.git
+ls
+ls
+cd
+cd tmp
+ls
+ls
+pwd
+ls tmp
+rmdir tmp
+cd
+cd ContractSmarts
+ls
+cd co
+ls code
+ls github
+mv github/* code
+rmdir github
+ls
+cd contractsmarts
+cd ..
+ls
+cd code
+ls
+ls deploy
+ls deploy/bin
+cd deploy
+ls
+cd ..
+ls
+ls static
+ls
+git clone git@github.com:ContractSmarts/r2r-rag.git
+ls
+cd proxy-server
+git status
+ls
+ls
+vi dockerfile
+ls
+mv dockerfile Dockerfile
+ls
+git add Dockerfile
+git status
+ls
+less LICENSE
+git rm LICENSE
+ls
+less README.md
+vi docker-compose.yml
+ls
+mkdir src
+ls
+mkdir dist
+cd src
+ls
+touch server.ts
+ls
+mkdir config
+rm server.ts
+cd config
+ls
+vi environment.ts
+cat environment.ts
+pwd
+ls
+cd ..
+ls
+touch scratch.ts
+vi scratch.ts
+mv scratch.ts delete_me_scratch.ts
+ls
+cd ..
+ls
+cd ..
+ls
+cd R2R
+ls
+ls services
+cd py
+ls
+cd r2r
+ls
+cd scripts
+ls
+less setup-token.sh
+cd ..
+ls
+less compose.yaml
+ls
+cd ..
+ls
+cd core
+ls
+cd parsers
+ls
+ls -l
+ls media
+cd media
+ls
+less pdf_parser.py
+cd ..
+ls
+ls structured
+cd structured
+ls -l
+less xlsx_parser.py
+ls -l
+cd ..
+ls -l
+ls text
+ls -l
+ls -lh media structured text
+ls -1 media structured text
+ls
+less __init__.py
+cd ..
+ls
+ls -l
+ls examples
+cd examples
+ls supported_file_types
+ls -l supported_file_types
+ls
+less hello_r2r.py
+ls -l
+ls
+pwd
+pwd
+cd ..
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd proxy-server
+ls
+git status
+git add .dockerignore
+git add docker-compose.yml
+git add README-phase1.md
+git status
+git commit -m "initial commit"
+git push
+ls
+pwd
+ls -l
+ls dist
+ls secrets
+cd secrets
+ls
+ls -a
+ls
+cd ..
+ls -l
+ls dist
+ls
+mkdir docs
+git mv README-* docs
+ls
+ls src
+ls tsconfig.json
+less tsconfig.json
+ls
+ls -l
+tree
+ls
+mv node_modules ..
+tree
+mv ../node_modules .
+mv node_modules ..
+tree -a
+tree -a > tree.txt
+cd ~/Downloads
+ls
+rm proxy-debug.ts server-debug.ts package-simple.json
+ls
+rm server-debug.ts
+cd
+cd ContractSmarts/code/proxy-server
+ls
+docker compose logs -f
+docker compose logs -f
+ls
+cd ~/Downloads
+ls
+rm server-*
+rm proxy-debug.ts
+ls
+rm proxy-test*
+rm server-fix.ts
+ls
+rm docker-*
+rm proxy-test.ts
+rm proxy-test.ts
+rm proxy-test.ts
+cd ..
+ls
+cd
+cd ContractSmarts
+ls
+cd co
+cd code
+ls
+git clone git@github.com:SciPhi-AI/R2R-Application.git\
+cd R2R-Application
+ls
+pnpm install
+pnpm build
+pnpm start
+cd ..
+ls
+cd proxy-server
+ls
+docker compose down
+cd ../R2R-Application
+ls
+pnpm dev
+pnpm start
+ls
+cd ..
+ls
+cd proxy-server
+ls
+git status
+git add __tests__/proxy.test.ts
+git commit -m "testing "
+git push
+ls
+ls
+mkdir v1
+ls -a
+git mv Dockerfile README.md __tests__ directory_tree_listing.txt docker-compose.yml docs jest.config.js v1
+ls
+git mv tsconfig.json src v1
+ls
+git mv package* v1
+mv node_modules v1
+ls
+mv secrets v1
+ls
+git status
+ls
+ls -a
+git mv .dockerignore v1
+ls
+mkdir simple
+cd simple
+ls
+npm install express cors http-proxy-middleware
+ls
+ls
+vi proxy.js
+ls
+ls
+vi excel-example.json
+pushd ~/Downloads
+ls
+cat proxy-test\ \(1\).ts > proxy-test.ts
+rm proxy-test\ \(1\).ts
+rm proxy-test.ts
+rm proxy-tests.ts
+rm proxy-*
+rm proxy-tests.ts
+ls
+rm metadata-test-panel.tsx
+rm func-yaml.txt api-*
+rm proxy-*
+rm proxy-*
+rm proxy-*
+rm proxy-*
+rm proxy-*
+rm proxy-*
+rm proxy-*
+rm proxy-*
+rm proxy-*
+rm proxy-tests.ts
+ls
+rm complete-proxy-test.ts
+rm complete-proxy-test.ts
+ls
+rm complete-proxy-test.ts
+rm proxy-code.ts server-update.ts
+rm proxy-test-update*
+rm proxy-test-update*
+ls
+rm proxy-test-update.ts
+rm proxy-readme-updates.md
+ls
+rm server-readme-updates.md
+cd
+cd ContractSmarts
+ls
+cd code/proxy-server
+ls
+cd v1
+ls
+vi Makefile
+ls
+pwd
+cd ..
+ls
+pwd
+node
+which curl
+curl -X POST https://api.cloud.sciphi.ai/v3/retrieval/search \\
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXZpZEBjb250cmFjdHNtYXJ0cy5haSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE3Mzg1MzE1NjMuNDEyNDU0LCJpYXQiOjE3MzgzNTg3NjMuNDEyNDY0LCJuYmYiOjE3MzgzNTg3NjMuNDEyNDY0LCJqdGkiOiJOenYyd3BsNEhXUmFBSkQ4YVRfR0t3PT0iLCJub25jZSI6Imo4S29vazZTdGVvQlFFYndvbV9fQmc9PSJ9.2Pe2cE26qqnp1b4G5-UXglJnd0ymStCCpWSMTvIjk5s" \\
+     -H "Content-Type: application/json" \\
+     -d '{\
+  "query": "Name the developer of this project"\
+}'
+curl http://localhost:3000/health
+curl -X POST http://localhost:3000/api/retrieval/search \\
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXZpZEBjb250cmFjdHNtYXJ0cy5haSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE3Mzg1MzE1NjMuNDEyNDU0LCJpYXQiOjE3MzgzNTg3NjMuNDEyNDY0LCJuYmYiOjE3MzgzNTg3NjMuNDEyNDY0LCJqdGkiOiJOenYyd3BsNEhXUmFBSkQ4YVRfR0t3PT0iLCJub25jZSI6Imo4S29vazZTdGVvQlFFYndvbV9fQmc9PSJ9.2Pe2cE26qqnp1b4G5-UXglJnd0ymStCCpWSMTvIjk5s" \\
+     -H "Content-Type: application/json" \\
+     -d '{\
+  "query": "Name the developer of this project"\
+}'
+curl -X POST https://api.cloud.sciphi.ai/v3/retrieval/search \\
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXZpZEBjb250cmFjdHNtYXJ0cy5haSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE3Mzg1MzE1NjMuNDEyNDU0LCJpYXQiOjE3MzgzNTg3NjMuNDEyNDY0LCJuYmYiOjE3MzgzNTg3NjMuNDEyNDY0LCJqdGkiOiJOenYyd3BsNEhXUmFBSkQ4YVRfR0t3PT0iLCJub25jZSI6Imo4S29vazZTdGVvQlFFYndvbV9fQmc9PSJ9.2Pe2cE26qqnp1b4G5-UXglJnd0ymStCCpWSMTvIjk5s" \\
+     -H "Content-Type: application/json" \\
+     -d '{\
+  "query": "Name the developer of this project"\
+}'\
+
+curl -X POST http://localhost:3000/api/retrieval/search \\
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXZpZEBjb250cmFjdHNtYXJ0cy5haSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE3Mzg1MzE1NjMuNDEyNDU0LCJpYXQiOjE3MzgzNTg3NjMuNDEyNDY0LCJuYmYiOjE3MzgzNTg3NjMuNDEyNDY0LCJqdGkiOiJOenYyd3BsNEhXUmFBSkQ4YVRfR0t3PT0iLCJub25jZSI6Imo4S29vazZTdGVvQlFFYndvbV9fQmc9PSJ9.2Pe2cE26qqnp1b4G5-UXglJnd0ymStCCpWSMTvIjk5s" \\
+     -H "Content-Type: application/json" \\
+     -d '{\
+  "query": "Name the developer of this project"\
+}'
+ls
+ls src
+ls src/config
+vi src/middleware/proxy.ts
+git add src/middleware/proxy.ts
+git status
+git add .dockerignore
+ls
+vi src/middleware/proxy.ts
+git add src/middleware/proxy.ts
+git status
+ls
+curl -X POST http://localhost:3000/api/retrieval/search \\
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXZpZEBjb250cmFjdHNtYXJ0cy5haSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE3Mzg1MzE1NjMuNDEyNDU0LCJpYXQiOjE3MzgzNTg3NjMuNDEyNDY0LCJuYmYiOjE3MzgzNTg3NjMuNDEyNDY0LCJqdGkiOiJOenYyd3BsNEhXUmFBSkQ4YVRfR0t3PT0iLCJub25jZSI6Imo4S29vazZTdGVvQlFFYndvbV9fQmc9PSJ9.2Pe2cE26qqnp1b4G5-UXglJnd0ymStCCpWSMTvIjk5s" \\
+     -H "Content-Type: application/json" \\
+     -d '{\
+        "query": "Name the developer of this project"\
+        }' \\
+     -o response.json
+less response.json
+curl -X POST https://api.cloud.sciphi.ai/v3/retrieval/search \\
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXZpZEBjb250cmFjdHNtYXJ0cy5haSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE3Mzg1MzE1NjMuNDEyNDU0LCJpYXQiOjE3MzgzNTg3NjMuNDEyNDY0LCJuYmYiOjE3MzgzNTg3NjMuNDEyNDY0LCJqdGkiOiJOenYyd3BsNEhXUmFBSkQ4YVRfR0t3PT0iLCJub25jZSI6Imo4S29vazZTdGVvQlFFYndvbV9fQmc9PSJ9.2Pe2cE26qqnp1b4G5-UXglJnd0ymStCCpWSMTvIjk5s" \\
+     -H "Content-Type: application/json" \\
+     -d '{\
+  "query": "what is the nameplate value for this project",\
+  "search_mode": "basic",\
+  "search_settings": {\
+    "limit": 10\
+  } \\
+  -o response.json\
+}'
+curl -X POST https://api.cloud.sciphi.ai/v3/retrieval/search \\
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXZpZEBjb250cmFjdHNtYXJ0cy5haSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE3Mzg1MzE1NjMuNDEyNDU0LCJpYXQiOjE3MzgzNTg3NjMuNDEyNDY0LCJuYmYiOjE3MzgzNTg3NjMuNDEyNDY0LCJqdGkiOiJOenYyd3BsNEhXUmFBSkQ4YVRfR0t3PT0iLCJub25jZSI6Imo4S29vazZTdGVvQlFFYndvbV9fQmc9PSJ9.2Pe2cE26qqnp1b4G5-UXglJnd0ymStCCpWSMTvIjk5s" \\
+     -H "Content-Type: application/json" \\
+     -d '{\
+  "query": "what is the nameplate value for this project",\
+  "search_mode": "basic",\
+  "search_settings": {\
+    "limit": 10\
+  }, \\
+  -o response.json\
+}'
+curl -X POST https://api.cloud.sciphi.ai/v3/retrieval/search \\
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXZpZEBjb250cmFjdHNtYXJ0cy5haSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE3Mzg1MzE1NjMuNDEyNDU0LCJpYXQiOjE3MzgzNTg3NjMuNDEyNDY0LCJuYmYiOjE3MzgzNTg3NjMuNDEyNDY0LCJqdGkiOiJOenYyd3BsNEhXUmFBSkQ4YVRfR0t3PT0iLCJub25jZSI6Imo4S29vazZTdGVvQlFFYndvbV9fQmc9PSJ9.2Pe2cE26qqnp1b4G5-UXglJnd0ymStCCpWSMTvIjk5s" \\
+     -H "Content-Type: application/json" \\
+     -d '{\
+        "query": "what is the nameplate value for this project",\
+        "search_mode": "basic",\
+        "search_settings": {\
+          "limit": 10\
+        } \
+     }' \\
+     -o response.json
+less response.json
+curl -X POST https://api.cloud.sciphi.ai/v3/retrieval/search \\
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXZpZEBjb250cmFjdHNtYXJ0cy5haSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE3Mzg1MzE1NjMuNDEyNDU0LCJpYXQiOjE3MzgzNTg3NjMuNDEyNDY0LCJuYmYiOjE3MzgzNTg3NjMuNDEyNDY0LCJqdGkiOiJOenYyd3BsNEhXUmFBSkQ4YVRfR0t3PT0iLCJub25jZSI6Imo4S29vazZTdGVvQlFFYndvbV9fQmc9PSJ9.2Pe2cE26qqnp1b4G5-UXglJnd0ymStCCpWSMTvIjk5s" \\
+     -H "Content-Type: application/json" \\
+     -d '{\
+        "query": "what is the nameplate value for this project",\
+        "search_mode": "basic",\
+        "search_settings": {\
+          "limit": 10\
+        } \
+     }' \\
+     -o response2.json
+# explicit basic search through proxy\
+curl -X POST https://localhost:3000/api/retrieval/search \\
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXZpZEBjb250cmFjdHNtYXJ0cy5haSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE3Mzg1MzE1NjMuNDEyNDU0LCJpYXQiOjE3MzgzNTg3NjMuNDEyNDY0LCJuYmYiOjE3MzgzNTg3NjMuNDEyNDY0LCJqdGkiOiJOenYyd3BsNEhXUmFBSkQ4YVRfR0t3PT0iLCJub25jZSI6Imo4S29vazZTdGVvQlFFYndvbV9fQmc9PSJ9.2Pe2cE26qqnp1b4G5-UXglJnd0ymStCCpWSMTvIjk5s" \\
+     -H "Content-Type: application/json" \\
+     -d '{\
+        "query": "what is the nameplate value for this project",\
+        "search_mode": "basic",\
+        "search_settings": {\
+          "limit": 10\
+        } \
+     }' \\
+     -o response.json
+curl -X POST http://localhost:3000/api/retrieval/search \\
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXZpZEBjb250cmFjdHNtYXJ0cy5haSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE3Mzg1MzE1NjMuNDEyNDU0LCJpYXQiOjE3MzgzNTg3NjMuNDEyNDY0LCJuYmYiOjE3MzgzNTg3NjMuNDEyNDY0LCJqdGkiOiJOenYyd3BsNEhXUmFBSkQ4YVRfR0t3PT0iLCJub25jZSI6Imo4S29vazZTdGVvQlFFYndvbV9fQmc9PSJ9.2Pe2cE26qqnp1b4G5-UXglJnd0ymStCCpWSMTvIjk5s" \\
+     -H "Content-Type: application/json" \\
+     -d '{\
+        "query": "Name the developer of this project",\
+        "search_mode": "basic"\
+        }' \\
+     -o response.json
+less response.json
+# advanced search through proxy\
+curl -X POST http://localhost:3000/api/retrieval/search \\
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXZpZEBjb250cmFjdHNtYXJ0cy5haSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE3Mzg1MzE1NjMuNDEyNDU0LCJpYXQiOjE3MzgzNTg3NjMuNDEyNDY0LCJuYmYiOjE3MzgzNTg3NjMuNDEyNDY0LCJqdGkiOiJOenYyd3BsNEhXUmFBSkQ4YVRfR0t3PT0iLCJub25jZSI6Imo4S29vazZTdGVvQlFFYndvbV9fQmc9PSJ9.2Pe2cE26qqnp1b4G5-UXglJnd0ymStCCpWSMTvIjk5s" \\
+     -H "Content-Type: application/json" \\
+     -d '{\
+        "query": "Name the developer of this project",\
+        "search_mode": "advanced"\
+        }' \\
+     -o response3.json
+less response3.json
+# advanced search through proxy\
+curl -X POST http://localhost:3000/api/retrieval/search \\
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXZpZEBjb250cmFjdHNtYXJ0cy5haSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE3Mzg1MzE1NjMuNDEyNDU0LCJpYXQiOjE3MzgzNTg3NjMuNDEyNDY0LCJuYmYiOjE3MzgzNTg3NjMuNDEyNDY0LCJqdGkiOiJOenYyd3BsNEhXUmFBSkQ4YVRfR0t3PT0iLCJub25jZSI6Imo4S29vazZTdGVvQlFFYndvbV9fQmc9PSJ9.2Pe2cE26qqnp1b4G5-UXglJnd0ymStCCpWSMTvIjk5s" \\
+     -H "Content-Type: application/json" \\
+     -d '{\
+        "query": "what is the nameplate value for this project",\
+        "search_mode": "advanced"\
+        }' \\
+     -o response3.json
+less response.json
+pwd
+ls
+curl -X POST https://localhost:3000/api/retrieval/rag \\
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXZpZEBjb250cmFjdHNtYXJ0cy5haSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE3Mzg1MzE1NjMuNDEyNDU0LCJpYXQiOjE3MzgzNTg3NjMuNDEyNDY0LCJuYmYiOjE3MzgzNTg3NjMuNDEyNDY0LCJqdGkiOiJOenYyd3BsNEhXUmFBSkQ4YVRfR0t3PT0iLCJub25jZSI6Imo4S29vazZTdGVvQlFFYndvbV9fQmc9PSJ9.2Pe2cE26qqnp1b4G5-UXglJnd0ymStCCpWSMTvIjk5s" \\
+     -H "Content-Type: application/json" \\
+     -d '{\
+  "query": "what is the nameplate value for this project",\
+  "search_mode": "basic"\
+    }' \\
+    -o response.json
+curl -X POST https://api.cloud.sciphi.ai/v3/retrieval/rag \\
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXZpZEBjb250cmFjdHNtYXJ0cy5haSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE3Mzg1MzE1NjMuNDEyNDU0LCJpYXQiOjE3MzgzNTg3NjMuNDEyNDY0LCJuYmYiOjE3MzgzNTg3NjMuNDEyNDY0LCJqdGkiOiJOenYyd3BsNEhXUmFBSkQ4YVRfR0t3PT0iLCJub25jZSI6Imo4S29vazZTdGVvQlFFYndvbV9fQmc9PSJ9.2Pe2cE26qqnp1b4G5-UXglJnd0ymStCCpWSMTvIjk5s" \\
+     -H "Content-Type: application/json" \\
+     -d '{\
+  "query": "what is the nameplate value for this project",\
+  "search_mode": "basic"\
+}'
+curl -X POST http://localhost:3000/api/retrieval/rag \\
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYXZpZEBjb250cmFjdHNtYXJ0cy5haSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE3Mzg1MzE1NjMuNDEyNDU0LCJpYXQiOjE3MzgzNTg3NjMuNDEyNDY0LCJuYmYiOjE3MzgzNTg3NjMuNDEyNDY0LCJqdGkiOiJOenYyd3BsNEhXUmFBSkQ4YVRfR0t3PT0iLCJub25jZSI6Imo4S29vazZTdGVvQlFFYndvbV9fQmc9PSJ9.2Pe2cE26qqnp1b4G5-UXglJnd0ymStCCpWSMTvIjk5s" \\
+     -H "Content-Type: application/json" \\
+     -d '{\
+  "query": "what is the nameplate value for this project",\
+  "search_mode": "basic"\
+    }' \\
+    -o response.json
+ls
+git status
+git add docs/README-proxy.md
+ls _ignore
+mv response* _ignore
+git status
+mv curl-tests.sh _ignore
+mv docs/llms.txt _ignore
+ls
+mv script-transcript.ts _ignore
+git status
+rm .Makefile.swp
+ls
+ls
+ls
+git status
+git commit -m "final working updates of phase2"
+git push
+ls
+ls
+git checkout main
+git pull
+ls
+ls
+ls
+cat Makefile
+make claude
+ls -l
+less directory_tree_listing.txt
+ls docs
+ls -l docs
+ls -1 docs
+ls -1R docs
+git add CHANGELOG.md
+ls
+ls
+ls
+ls
+make claude
+vi Makefile
+make tree
+ls
+git status
+git add Makefile
+git add directory_tree_listing.txt
+ls
+git status
+ls secrets
+ls _ignore
+ls
+ls docs/plan
+less docs/plan/README-phase4-strategy.md
+ls
+touch RELEASE_NOTES.md
+ls
+git status
+git add README.md
+git add RELEASE_NOTES.md
+ls
+git commit -m "finalized release 0.4.2"
+git push
+git pull
+git checkout cloud
+ls
+cd ..
+ls
+ls
+git clone git@github.com:ContractSmarts/infrastructure.git
+cd infrastructure
+ls
+mkdir auth
+mkdir certificates
+mkdir cloud
+mkdir networking
+mkdir docs
+ls
+ls
+cp ../contractsmarts-backend/README-auth0* docs
+ls
+mv docs/README-auth0* auth
+ls
+cd ..
+ls
+cd contractsmarts-ai
+ls
+cd ..
+cd contractsmarts-backend
+ls
+grep -R certificate *
+grep -R letsencrypt *
+cp README.md ../infrastructure/certificates
+cd ../infrastructure/certificates
+ls
+mv README.md letsencrypt.md
+vi letsencrypt.md
+less letsencrypt.md
+ls
+git status
+ls
+cd ..
+ls
+cd ..
+ls
+ls
+docker ps
+ls
+cd
+cd Library
+ls
+du -sh *
+du -sh *
+cd Application\ Support
+du -sh *
+ls
+ls Bark
+mv Bark /Volumes/Samsung/Library/Application\ Support
+ls -l
+mkdir Bark
+ls
+cd Bark
+ls -l
+ln -s /Volumes/Samsung/Library/Application\ Support/Bark/Backups .
+ls Backups/
+ls
+mv /Volumes/Samsung/Library/Application\ Support/Bark/sentry .
+mv /Volumes/Samsung/Library/Application\ Support/Bark/Session\ Storage .
+mv /Volumes/Samsung/Library/Application\ Support/Bark/blob_storage .
+mv /Volumes/Samsung/Library/Application\ Support/Bark/Code\ Cache .
+mv /Volumes/Samsung/Library/Application\ Support/Bark/Crashpad .
+mv /Volumes/Samsung/Library/Application\ Support/Bark/Local\ Storage .
+ls -l
+ln -s /Volumes/Samsung/Library/Application\ Support/Bark/ bark
+ls bark
+ls bark//
+rm bark
+ln -s /Volumes/Samsung/Library/Application\ Support/Bark bark
+ls bark
+ls bark/
+mv bark/GPUCache .
+mv bark/[c-z]* .
+mv bark/[C-Z]* .
+ls bark/
+ls -l
+pwd
+cd
+ls
+ping www.google.com
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+ls ~/Downloads
+ls ~/Downloads/ContractSmarts
+ls
+nslookup proxy.contractsmarts.ai

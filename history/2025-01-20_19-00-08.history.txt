@@ -1,0 +1,1003 @@
+git status
+ls
+ls src
+ls docs
+ls tests
+ls
+ls docs
+mkdir data-service
+git mv docs data-service
+git status
+ls
+less README.md
+ls src
+git mv src/ data-service
+cd data-service
+ls
+cd src
+ls
+mkdir old
+git mv *py old
+git status
+ls
+cd ..
+ls
+ls docs
+ls
+cd ..
+ls
+git mv tests/ data-service/src/
+ls
+ls
+mkdir config-loader
+cd config-loader
+ls
+ls ../data-service
+ls ../data-service/docs
+ls
+mkdir docs
+mkdir src
+cd src
+ls
+cd ..
+ls
+cd docs
+ls
+mkdir assets
+cd assets
+vi code-0.py
+git add code-0.py
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd data-service
+ls
+cd docs
+ls
+cd ..
+ls
+cd ..
+ls
+cd config-loader
+ls
+ls docs
+cd docs
+ls
+ls
+touch README-config-loader.md
+ls
+less README-config-loader.md
+rm README-config-loader.md
+touch README-TOML-config-report-transcript.md
+ls
+ls
+cd assets
+ls
+touch code-1.py
+ls
+touch markdown-3.md
+mv markdown-3.md markdown-3a.md
+touch markdown-3b.md
+ls
+touch code-4a.py
+touch code-4b.py
+touch markdown-4.md
+git status
+git add code-1.py
+git status
+git add code-4*
+git add markdown-*
+git status
+ls ..
+git add ../README-TOML-config-report-transcript.md
+pwd
+git commit -m "added config-loader and reorganized repo"
+git push
+ls
+ls -l
+git status
+git add code-4a.py 
+git add code-4b.py
+git add markdown-4.md
+git add ../README-TOML-config-report-transcript.md
+ls
+git status
+ls ..
+ls
+git status
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+ls data-service
+cd data-service
+ls
+ls src
+cd src
+ls
+ln -s ../docs/README-transcript-assets assets
+cp assets/code-6.py .
+ls
+mv code-6.py data-service.py
+ls
+less data-service.py
+which python
+conda activate base
+which python
+python -m venv .venv
+source .venv/bin/activate
+which python
+which pip
+python
+ls
+touch packages.py
+python
+pip install cachetools
+pip install dask
+pip install fastparquet
+pip install feather
+pip freeze > requirements.txt
+ls
+pip install numpy
+pip install feather
+pip install gzip
+python
+pip install dask-expr
+python
+pip install feather
+pip install distutils
+import h5py
+pip install h5py
+pip install promotheus_client
+pip install promotheus
+pip install zstandard
+pip install prometheus-client
+pip insatll feather-format
+pip install feather-format
+python
+pip freeze > requirements.txt
+ls
+git status
+git add requirements.txt
+ls
+less packages.py
+ls
+git status
+cd ..
+ls
+cd ..
+ls
+vi .gitignore
+git add .gitignore
+git status
+cd data-service
+ls
+cd src
+ls
+less packages.py
+rm packages.py
+ls
+ls -l
+less data-service.py
+ls
+git status
+ls assets
+ls assets/
+ls
+pwd
+ls tests
+ls
+git status
+git add data-service.py
+git status
+git commit -m "added requirements.txt"
+git push
+ls
+pwd
+cd ..
+ls
+ls
+ls
+mkdir doc
+cd doc
+ls
+wget https://docs.oracle.com/en-us/iaas/Content/APIGateway/Concepts/apigatewayconcepts.htm
+wget https://docs.oracle.com/en-us/iaas/Content/APIGateway/Concepts/
+curl -X GET http://api.open-notify.org/iss-now.json
+pwd
+source .venv/bin/activate
+ls
+ls -l
+cd excel-addin
+ls
+ls -l
+npm run build
+npm run --stats-children build
+npm run build
+git status
+git add ../requirements.txt
+git add src/taskpane/validate/startval.html
+git status
+git add src/taskpane/support/support.html
+vi ../.gitignore
+git add ../.gitignore
+git status
+pwd
+git status
+cd src/taskpane/
+git status
+git add align/align.html
+git add chat/chat.html
+git add support/support.html
+git status
+ls -l
+ls align
+ls chat
+ls support
+ls validate
+ls
+cd ..
+ls
+cd ..
+ls
+npm run build
+ls
+ls -l
+cd src
+ls
+cd taskpane
+ls -l
+git mv align/align.html .
+ls
+rmdir align
+git mv chat/chat.* .
+rmdir chat
+ls styles
+git mv styles/style.css .
+ls
+rmdir styles
+ls
+ls support
+git mv support/support.html .
+ls
+rmdir support
+git mv validate/startval.html .
+rmdir validate
+rm taskpane_1.html
+git status
+ls -l
+ls ../
+cd ..
+ls
+cd ..
+ls
+cd src
+ls
+cd taskpane
+ls
+ls
+git status
+git add align.html chat.html startval.html support.html taskpane.html taskpane.css
+git status
+cd ..
+git rm styles/APP-WIDE_CSS_GO_HERE
+ls
+ls -l
+pwd
+ls -l
+ls
+cd ..
+ls
+cd ..
+ls
+cat Makefile
+make tree
+ls
+less tree.txt
+cat tree.txt
+git status
+git add tree.txt
+git status
+ls
+cd excel-addin
+ls
+npm run build
+npm install --save-dev style-loader css-loader
+ls
+ls src
+ls
+cd src
+ls
+mkdir styless
+rmdir styless
+rmdir styles
+mkdir styles
+ls
+ls commands
+ls taskpane
+git mv taskpane/taskpane.css styles
+git mv taskpane/chat.css styles
+ls
+ls taskpane
+git mv taskpane/style.css styles
+ls
+ls taskpane
+ls
+ls styles
+ls commands
+ls -l
+ls -l
+cd styles
+ls
+ls -l
+less chat.css
+less style.css
+less taskpane.css
+ls
+git status
+cd ..
+cd ..
+ls
+cd node_modules
+git status
+git add css-loader/
+git add style-loader/
+cd ..
+ls
+cd ..
+ls
+vi .gitignore
+git status
+git add .gitignore
+git status
+git add excel-addin/package*
+git status
+ls
+ls
+ls excel-addin
+mv excel-addin/node_modules ..
+ls
+git status
+git rm -f excel-addin/node_modules
+git status
+git rm -rf excel-addin/node_modules/
+git status
+git commit -m "ignore node_modules"
+ls
+mv ../node_modules excel-addin
+git status
+ls -l
+cd excel-addin
+ls
+ls -l
+cd assets
+ls
+cd ..
+ls dist
+grep css manifest.xml
+grep css webpack.config.js
+ls
+cd src
+ls -l
+cd commands
+ls
+grep css *
+cd ../taskpane
+ls
+grep css *
+ls 
+vi align.html
+ls
+vi chat.html
+vi startval.html
+vi support.html
+vi taskpane.html
+grep css taskpane.js
+git status
+git add *html
+git status
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+vi Makefile
+vi Makefile
+make tree
+vi Makefile
+make tree
+less tree.txt
+git status
+git restore Makefile
+make tree
+ls
+less tree.txt
+ls
+cd excel-addin
+npm run build
+ls
+cd src
+ls
+ls commands
+ls
+cd commands
+grep assets
+grep assets *
+cd ../taskpane
+grep assets *
+ls
+ls
+grep taskpane-align *
+grep tsskpane *
+cd ..
+ls
+cd ..
+ls
+grep taskpane webpack.config.js
+vi webpack.config.js
+vi webpack.config.js
+ls
+npm run build
+ls
+ls dist
+cd dist
+ls -l
+ls styles
+ls assets
+ls
+git status
+cd ..
+ls
+cd ..
+ls
+make tree
+git status
+git add excel-addin/webpack.config.js
+git add tree.txt
+ls
+git add excel-addin/dist/
+ls
+cd ..
+cd contractsmarts
+ls
+cd ..
+ls
+cd contractsmarts-frontend
+ls
+ls dist
+ls dist/v0.1.1
+rsync -avP excel-addin/dist/ dist/v0.1.1/
+ls
+ls Makefile
+vi Makefile
+ls
+git status
+git add Makefile
+git add dist/v0.1.1/
+git status
+ls
+ls dist
+ls excel-addin
+ls
+git status
+ls
+cd ..
+ls
+rm -rf contractsmarts-frontend-old
+cd contractsmarts-frontend
+ls
+ls dist
+git mv dist upload
+ls upload
+ls
+vi .gitignore
+ls
+git status
+git add .gitignore
+git status
+ls
+cd excel-addin
+ls
+mkdir dist2
+rsync -avP dist/ dist2/
+ls
+git rm -rf dist/*
+ls
+mv dist2 dist
+ls
+git status
+ls
+git status
+git commit -m "moved dist/ to upload/ to contain versioned distributions"
+git push
+ls
+ls -l
+ls dist
+ls node_modules
+ls
+less package.json
+ls
+git checkout -b rel-0.1.2
+ls
+pwd
+which python
+ls
+git
+git status
+ls
+cat ~/Downloads/updated-package-json.json > package.json
+less package.json
+ls
+npm install
+npm install
+ls
+rm -rf node_modules
+npm install
+npm uninstall eslint\
+npm install --save-dev eslint@latest
+node --version
+which node
+nvm ls-remote
+nvm install --lts
+nvm use --lts
+npm uninstall eslint\
+npm install --save-dev eslint@latest
+npm audit fix
+ls
+git status
+npm install --legacy-peer-deps
+npx storybook init
+npm uninstall @storybook/addon-essentials @storybook/addon-interactions @storybook/addon-styling-webpack @storybook/react @storybook/react-webpack5 @storybook/test-runner storybook
+npm install --save-dev storybook@8.4.7 @storybook/react@8.4.7 @storybook/react-webpack5@8.4.7 @storybook/addon-essentials@8.4.7 @storybook/addon-interactions@8.4.7 @storybook/test-runner@1.0.0
+npm install --save-dev storybook@8.4.7 @storybook/react@8.4.7 @storybook/react-webpack5@8.4.7 @storybook/addon-essentials@8.4.7 @storybook/addon-interactions@8.4.7 @storybook/test-runner@0.16.0
+npm run storybook
+npx storybook init
+npx tailwindcss init
+ls
+ls ~/Downloads/*tsx
+ls -l ~/Downloads/*tsx
+rm ~/Downloads/react-data-table.tsx
+mv ~/Downloads/*tsx .
+ls
+ls
+cd src/stories
+ls
+mv ~/Downloads/taskpane-story.js TaskPane.stories.jsx
+git add TaskPane.stories.jsx
+cd ..
+ls
+ls -l
+ls stories
+mkdir components
+ls
+mkdir pages
+mkdir utils
+mkdir hooks
+ls -a .storybook
+cd ..
+ls .storybook
+cd src
+ls
+cd components
+mkdir Navigation
+mkdir ModelValidate
+mkdir ModelAlign
+mkdir Chat
+mkdir Support
+git status
+cd ..
+ls
+git status
+git commit -m "added TaskPane.stories.jsx file"
+git checkout rel-0.1.1
+ls
+cd ..
+ls
+ls dist
+rm -rf dist/*
+rsync -avP ../upload/v0.1.1/ dist/ 
+ls
+cd ..
+ls
+less Makefile
+make dev
+ls
+cd ..
+ls
+cd contractsmarts-frontend/upload
+ls
+ls ..
+less ../deploy_to_oci.sh
+vi ../deploy_to_oci.sh
+ls
+cd ..
+ls
+vi deploy_to_oci.sh
+./deploy_to_oci.sh
+ls
+mkdir tmp
+cd tmp
+ls
+wget https://api.contractsmarts.ai/static/v1.0/manifest.xml
+wget https://api.contractsmarts.ai/s/v1.0/manifest.xml
+ls
+cd ..
+ls
+less deploy_to_oci.sh
+cd tmp
+wget https://api.contractsmarts.ai/static/v1.0/assets/images/assets/images/model-align/modelAlign.svg
+cd ..
+ls
+less deploy_to_oci.sh
+ls upload/v0.1.1
+cd tmp
+wget https://api.contractsmarts.ai/static/v1.0/manifest..xml
+rm manifest..xml
+ls ../upload/v0.1.1/styles
+ls ../upload/v0.1.1/assets
+ls ../upload/v0.1.1/assets/images
+ls ../upload/v0.1.1/assets/images/contractsmarts
+ls ../upload/v0.1.1/assets/images/default
+ls ../upload/v0.1.1/assets/images/model-align
+ls
+cd ../upload/v0.1.1
+ls
+cd assets/images
+ls
+ls assets
+ls assets/images
+git rm -rf assets/
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+./deploy_to_oci.sh
+ls
+cd upload
+ls
+ls v0.1.0
+cd v0.1.1
+ls
+git mv manifest..xml manifest.xml
+ls styles
+ls
+cd ..
+ls
+cd ..
+ls
+./deploy_to_oci.sh
+cd ..
+ls
+mv contractsmarts-frontend contractsmarts-frontend-old
+git clone git@github.com:davidwhiting/contractsmarts-frontend.git
+cd contractsmarts
+cd ..
+cd contractsmarts-frontend
+ls
+git checkout rel-0.1.1
+ls
+ls -l
+cd excel-addin
+ls
+ls -l
+ls src
+cd ..
+tree excel-addin
+ls
+less requirements.txt
+cd excel-addin
+ls
+npm init
+ls
+npm install
+ls
+ls
+ls
+npm run build
+ls
+ls dist
+mv node_modules ..
+ls
+mv dist ..
+ls
+cd ..
+tree excel-addin
+tree excel-addin
+tree excel-addin
+ls
+pwd
+ls upload
+cd excel-addin
+ls
+cat webpack.config.js
+ls
+vi webpack.config.js
+ls
+git add webpack.config.js
+git status
+mv ../dist .
+cd dist
+ls
+rm *
+ls
+cd assets
+ls
+cd images
+ls
+ls
+rm -rf *
+ls
+cd ..
+rmdir images
+ls
+cd ..
+rmdir assets
+ls
+ls styles
+rm -rf styles
+ls
+ls
+ls -a
+cd ..
+ls
+ls src
+ls src/styles
+ls src/commands
+ls src/taskpane
+ls
+mv ../node_modules .
+ls
+npm run build
+ls
+cd dist
+ls
+ls -l
+less manifest.xml
+ls
+cd assets/images
+ls
+ls
+ls assets/images
+ls contractsmarts
+mv contractsmarts/* .
+rmdir contractsmarts
+ls
+ls default
+mv default/* .
+rmdir default
+ls
+ls
+ls model-align
+mv model-align/* .
+rmdir model-align
+ls
+ls support
+mv support/* .
+rmdir support
+ls
+ls model-validate
+mv model-validate/* .
+rmdir model-validate
+ls
+ls model-manager
+mv model-manager/* .
+rmdir model-manager
+ls
+git status
+ls document-chat
+mv document-chat/* .
+rmdir document-chat
+ls
+ls assets
+ls assets/images
+ls assets/images/support
+diff assets/images/support/Support.svg Support.svg
+rm assets/images/support/Support.svg
+rmdir assets/images/support
+ls assets/images
+ls assets/images/document-chat
+diff assets/images/document-chat/documentChat.svg documentChat.svg
+rm assets/images/document-chat/documentChat.svg
+ls
+ls assets/images/document-chat
+rmdir assets/images/document-chat
+ls assets/images/model-align
+diff assets/images/model-align/modelAlign.svg modelAlign.svg
+rm assets/images/model-align/modelAlign.svg
+ls
+ls assets/images/model-align
+rmdir assets/images/model-align
+ls
+ls assets/images/model-validate/modelValidate.svg modelValidate.svg
+diff assets/images/model-validate/modelValidate.svg modelValidate.svg
+rm assets/images/model-validate/modelValidate.svg
+rmdir assets/images/model-validate
+rmdir assets/images
+rmdir assets
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+mv dist dist2
+less webpack.config.js
+ls
+cd ..
+ls
+less deploy_to_oci.sh
+cd excel-addin
+ls
+cd src
+ls
+cd taskpane
+ls
+pwd
+cd ..
+ls
+cd ..
+ls
+cd assets/images
+ls
+ls -l
+cd model-validate
+ls -l
+pwd
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+git status
+git add manifest.xml
+git add webpack.config.js
+git status
+ls dist
+rm -rf dist/*
+ls
+npm run build
+ls
+git status
+npm install -g http-server
+cd dist
+http-server
+ls
+cd ..
+npm run dev-server
+ls
+ls dist
+less manifest.xml
+git status
+git commit -m "updated release 0.1.1"
+git push
+ls
+cd ..
+ls
+less deploy_to_oci.sh
+ls
+cat deploy_to_oci.sh
+ls
+vi deploy_to_oci.sh
+ls excel-addin/dist
+git status
+git add deploy_to_oci.sh
+ls
+which python
+git status
+cd
+rm asset-manager-readme-with-diagrams.md
+rm updated-readme.md
+ls *md
+rm test-suite-readme-extended.md
+rm test-suite-readme.md
+ls
+rm asset-manager-dataflow.mermaid
+rm asset-manager-diagram.mermaid
+/usr/bin/python3 /Users/david/.cursor/extensions/ms-python.python-2024.12.3-darwin-arm64/python_files/printEnvVariablesToFile.py /Users/david/.cursor/extensions/ms-python.python-2024.12.3-darwin-arm64/python_files/deactivate/zsh/envVars.txt
+cd ../deploy/upload/v1.0.1
+ls
+ls ../a
+ls
+ls assets/images
+ls ../a/images
+curl -H "Origin: https://www.office.com" \\
+  -i https://api.contractsmarts.ai/static/a/images/contractsmarts-64.png
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd contractsmarts-frontend-main
+ls
+cat deploy_to_oci_fixed.sh
+cd bin
+ls
+less deploy_to_oci.sh
+pwd
+ls
+cd ..
+ls
+cd ..
+ls
+cd contractsmarts-frontend
+ls
+ls bin
+ls
+ls
+ls upload
+ls
+mkdir Demo
+cd Demo
+ls
+cd
+ls
+ls .ssh
+cd .ssh
+cd Demo
+ls
+conda activate
+python --version
+python -m venv .venv
+source .venv/bin/activate
+ls
+cd De
+mv Demo demo_dagster
+cd demo_dagster
+ls
+source .venv/bin/activate
+ls
+pip install dagster
+which python
+ls
+cd ..
+ls
+cd demo_dagster
+rm -rf .venv
+cd ..
+mv demo_dagster demo
+conda activate
+ls -a
+cd demo
+ls
+ls -a
+python -m venv .venv
+ls
+source .venv/bin/activate
+pip install dagster
+pip install dagster-webserver
+pip freeze > requirements.txt
+touch hello_world.py
+dagster dev -f hello_world.py
+cd demo
+source .venv/bin/activate
+ls
+cat hello_world.py
+ps
+kill -9 97333
+dir
+ls
+cd
+ls
+cd Downloads
+ls
+less SignInInfo\ \(1\).csv

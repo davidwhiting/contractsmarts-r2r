@@ -1,0 +1,1130 @@
+ls excel-addin-fluent
+ls -a excel-addin-fluent
+ls -lR excel-addin-fluent/.vite
+ls
+vi .gitignore
+git add .gitignore
+cd excel-addin-fluent
+ls
+ls -a
+rm -rf .vite
+ls
+cd ..
+rmdir excel-addin-fluent
+ls
+mv excel-addin-commit_1  excel-addin-fluent
+git status
+ls
+cd excel-addin-fluent
+ls
+make clear
+make clearn
+make clear
+make start
+ls
+cd ..
+ls
+git status
+mv excel-addin-fluent excel-addin-commit_1
+git mv excel-addin-commit_1 excel-addin-commit_1_broken
+git status
+ls
+mv excel-addin-commit_3 excel-addin-fluent
+cd excel-addin-fluent
+ls
+make start
+make stop
+git status
+ls
+make start
+ls
+ls src
+ls src/assets
+ls
+ls
+ls -l
+make stop
+ls
+ls
+cd ..
+ls
+cd excel-addin-fluent
+touch "COMMIT_3.txt"
+ls
+ls
+cd ..
+ls
+mv excel-addin-fluent excel-addin-commit_3
+git mv excel-addin-commit_3 excel-addin-commit_3_works
+ls
+cd ../contractsmarts-frontend-main
+git pull
+git checkout commit_0
+ls
+ls excel-addin-fluent
+cd ..
+ls
+cd contractsmarts-frontend
+ls
+mkdir excel-addin-commit_0
+rsync -avP ../contractsmarts-frontend-main/excel-addin-fluent/ excel-addin-commit_0/
+ls
+git status
+ls
+git add excel-addin-commit_3_works/COMMIT_3.txt
+git add excel-addin-commit_0/
+ls
+mv excel-addin-commit_0 excel-addin-fluent
+cd excel-addin-fluent
+ls
+cp ../excel-addin-commit_3_works/Makefile .
+less Makefile
+less Makefile
+ls
+make clear
+make start
+cd ..
+ls
+mv excel-addin-fluent excel-addin-commit_0
+git mv excel-addin-commit_0 excel-addin-commit_0_works
+ls -l
+git status
+git add excel-addin-commit_0_works/Makefile
+cd ../contractsmarts-frontend-main
+git pull
+git checkout earlier
+ls
+ls excel-addin-fluent
+cd ..
+ls
+cd contractsmarts-frontend
+ls
+mkdir excel-addin-earlier
+rsync -avP ../contractsmarts-frontend-main/excel-addin-fluent/ excel-addin-earlier/
+ls
+git status
+git add excel-addin-earlier/
+git status
+ls excel-addin-earlier
+ls
+ls
+cp excel-addin-commit_0_works/Makefile excel-addin-earlier
+git add excel-addin-earlier/Makefile
+mv excel-addin-earlier excel-addin-fluent
+ls
+cd excel-addin-fluent
+ls
+make clear
+make start
+make stop
+make stop
+make stop
+ls
+make clear
+make start
+cd ..
+ls
+cd ../contractsmarts-frontend-main
+ls
+ls
+cd ..
+ls
+cd contractsmarts-frontend
+ls
+ls
+ls
+ls excel-addin-fluent
+mv excel-addin-fluent excel-addin-earliest
+git add excel-addin-earliest
+ls -l
+git status
+mv excel-addin-earliest excel-addin-earlier
+ls
+mkdir excel-addin-earliest
+cd ../contractsmarts-frontend-main
+ls
+git pull
+git checkout earliest
+cd ..
+cd contractsmarts-frontend
+ls
+rsync -avP ../contractsmarts-frontend-main/excel-addin-fluent/ excel-addin-earliest/
+ls
+cd excel-addin-earlie
+cd excel-addin-earliest
+ls
+cp ../excel-addin-earlier/Makefile .
+less Makefile
+make stop
+ls
+make dev
+make start
+make stop
+cd ..
+cd excel-addin-fluent
+ls
+ls
+make start
+make stop
+make start
+make stop
+make start
+make stop
+ls
+make clear
+ls
+ls
+cd ..
+cd ..
+ls
+cd contractsmarts-backend
+ls
+less set_oracle_env_variables.sh
+ls secrets
+less all_vars.sh
+which oci
+ls
+export COMPARTMENT_ID=$(oci iam compartment list \\
+    --all \\
+    --query "data[?name=='ContractSmarts'].id | [0]" \\
+    --raw-output)\
+export NAMESPACE=$(oci os ns get |\\
+    jq -r ".data")\
+export BUCKET_NAME="addin-hosting"\
+export BUCKET_ID=$(oci os bucket get \\
+  --namespace-name "${NAMESPACE}" \\
+  --name "${BUCKET_NAME}" \\
+  --query 'data.id' \\
+  --raw-output)\
+export VAULT_NAME="contractsmarts-vault"\
+export VAULT_ID=$(oci kms management vault list \\
+    --compartment-id "${COMPARTMENT_ID}" \\
+    --all \\
+    --query "data[?\"display-name\"=='${VAULT_NAME}'].id | [0]" \\
+    --raw-output)\
+export VAULT_ENDPOINT=$(oci kms management vault get \\
+    --vault-id ${VAULT_ID} | \\
+    jq -r '.data."management-endpoint"')
+echo VAULT_ENDPOINT
+echo $VAULT_ENDPOINT
+export KEY_NAME="certificate-key"\
+export VCN_NAME="contractsmarts-vcn"\
+export VCN_ID=$(oci network vcn list \\
+    --compartment-id "${COMPARTMENT_ID}" \\
+    --display-name "${VCN_NAME}" \\
+    --query "data[0].id" \\
+    --raw-output)\
+export SUBNET_NAME="api-gateway-subnet"\
+export SUBNET_ID=$(oci network subnet list \\
+    --compartment-id "${COMPARTMENT_ID}" \\
+    --vcn-id "${VCN_ID}" \\
+    --display-name "${SUBNET_NAME}" \\
+    --query "data[0].id" \\
+    --raw-output)\
+export SECURITY_LIST_ID=$(oci network security-list list \\
+  --compartment-id "${COMPARTMENT_ID}" \\
+  --vcn-id "${VCN_ID}" \\
+  --query "data[?\"display-name\"=='Default Security List for ${VCN_NAME}'].id | [0]" \\
+  --raw-output)\
+export IGW_NAME="contractsmarts-igw"\
+export IGW_ID=$(oci network internet-gateway list \\
+    --compartment-id "${COMPARTMENT_ID}" \\
+    --vcn-id "${VCN_ID}" \\
+    --display-name "${IGW_NAME}" \\
+    --query "data[0].id" \\
+    --raw-output)
+echo $IGW_ID
+export ROUTE_TABLE_ID=$(oci network route-table list \\
+  --compartment-id "${COMPARTMENT_ID}" \\
+  --vcn-id "${VCN_ID}" \\
+  --query "data[?\"display-name\"=='Default Route Table for ${VCN_NAME}'].id | [0]" \\
+  --raw-output)\
+export GATEWAY_NAME="contractsmarts-gateway"\
+export GATEWAY_ID=$(oci api-gateway gateway list \\
+    --compartment-id "${COMPARTMENT_ID}" \\
+    --display-name "${GATEWAY_NAME}" \\
+    --all \\
+    --query "data.items[0].id" \\
+    --raw-output)\
+export DB_NAME=$(oci db autonomous-database list \\
+    --compartment-id "${COMPARTMENT_ID}" \\
+    --all \\
+    --query 'data[0]."display-name"' \\
+    --raw-output)\
+export DB_ID=$(oci db autonomous-database list \\
+    --compartment-id "${COMPARTMENT_ID}" \\
+    --all \\
+    --query "data[?\"display-name\"=='${DB_NAME}'].id | [0]" \\
+    --raw-output)
+export WALLET_PASSWORD=$(jq -r '.password' ~/.oracle/wallet.json)\
+export ADMIN_PASSWORD=$(jq -r '.password' secrets/admin.json)
+ls
+mv ../contractsmarts-ai/code/chat-function-configuration.yaml .
+less chat-function-configuration.yaml
+oci fn application create --display-name excel-chat-app --compartment-id "${COMPARTMENT_ID}"
+oci fn application create --display-name excel-chat-app --compartment-id "${COMPARTMENT_ID}" --subnet-ids "[\"${SUBNET_ID}\"]"
+ls
+mkdir chat-functions
+cd chat-functions
+ls
+cp ../../contractsmarts-ai/code/direct_api_session_client.py .
+mv direct_api_session_client.py direct_api_client.py
+ls
+vi func.yaml
+git add func.yaml
+ls
+git add direct_api_client.py
+vi requirements.txt
+vi requirements.txt
+cat direct_api_client.py
+cat requirements.txt
+ls
+vi func.py
+ls
+git add func.py
+git status
+ls
+ls
+which fn
+cd ..
+ls
+mkdir fn
+cd fn
+ls
+curl -LSs https://raw.githubusercontent.com/fnproject/cli/master/install | sh\
+
+ls
+ls -al
+which fn
+ls
+cd ..
+rmdir fn
+ls
+cd chat-functions
+ls
+fn deploy --app excel-chat-app
+echo $REGION
+echo $NAMESPACE
+oci artifacts container repository create \\
+   --compartment-id ${COMPARTMENT_ID} \\
+   --display-name functions \\
+   --is-public false
+export REGION=$(awk -F "=" '/region/ {gsub(/ /,"",$2); print $2}' ~/.oci/config)\
+
+echo $REGION
+export REGION="us-chicago-1"
+echo $REGION
+fn update context registry ${REGION}.ocir.io/${NAMESPACE}/functions
+fn deploy --app excel-chat-app
+export USER_OCID="ocid1.user.oc1..aaaaaaaar3ys2fhjf76hjf5o7uokihsdbcjyfuppggqr73tkjrc7u23lzg6q"\
+
+git status
+ls
+oci setup config
+less ~/.oci/functions-config
+oci iam user get --user-id "${USER_OCID}" --config-file ~/.oci/functions-config
+awk -F "=" '/key_file/ {print $2}' ~/.oci/functions-config
+ls -l ~/.oci
+rm -rf ~/.oci/oldkeys
+openssl rsa -in ~/.oci/oci_function_key.pem -noout -text
+oci iam auth-token create --description "functions-auth" --user-id "${USER_OCID}" --config-file ~/.oci/functions-config
+oci iam auth-token create --description "functions-auth" --user-id "${USER_OCID}" --config-file ~/.oci/functions-config --debug
+\
+\
+\
+\
+
+cat ~/.oci/functions-config
+ls
+pushd ~/.oci
+ls
+less functions-config
+oci iam user api-key upload --user-id "${USER_OCID}" --key-file ~/.oci/oci_function_key_public.pem
+oci iam user api-key upload --user-id "${USER_OCID}" --key-file ~/.oci/oci_function_key_public.pem --region us-phoenix-1\
+
+oci iam auth-token create --description "functions-auth" --user-id "${USER_OCID}" --config-file ~/.oci/functions-config
+# Generate new key pair in Phoenix\
+openssl genrsa -out ~/.oci/oci_function_key_phx.pem 2048\
+openssl rsa -pubout -in ~/.oci/oci_function_key_phx.pem -out ~/.oci/oci_function_key_phx_public.pem\
+
+ls
+oci iam user api-key upload --user-id "${USER_OCID}" --key-file ~/.oci/oci_function_key_phx_public.pem --region us-phoenix-1\
+
+sed -i '' 's/key_file=.*/key_file=\/Users\/david\/.oci\/oci_function_key_phx.pem/' ~/.oci/functions-config\
+
+cat functions-config
+sed -i '' 's/region=.*/region=us-phoenix-1/' ~/.oci/functions-config
+cat functions-config
+oci iam auth-token create --description "functions-auth" --user-id "${USER_OCID}" --config-file ~/.oci/functions-config
+oci iam user api-key list --user-id "${USER_OCID}" --region us-phoenix-1
+cat functions-config
+sed -i '' 's/fingerprint=.*/fingerprint=0a:00:77:a1:ce:18:cd:06:ad:cd:af:d9:da:52:15:32/' ~/.oci/functions-config\
+
+oci iam auth-token create --description "functions-auth" --user-id "${USER_OCID}" --config-file ~/.oci/functions-config
+docker login ${REGION}.ocir.io -u ${NAMESPACE}/oracleidentitycloudservice/"david.g.whiting@gmail.com"
+which docker
+ls -l /usr/local/bin
+ls -l /usr/local/bin/d*
+docker ps
+docker images
+docker login ${REGION}.ocir.io -u ${NAMESPACE}/oracleidentitycloudservice/"david.g.whiting@gmail.com"
+echo $REGION
+export HOME_REGION=us-phoenix-1
+docker login ${HOME_REGION}.ocir.io -u ${NAMESPACE}/oracleidentitycloudservice/"david.g.whiting@gmail.com"
+echo $NAMESPACE
+ls
+less functions-config
+less oci_function_key_phx.pem
+oci iam auth-token create --description "functions-auth" --user-id "${USER_OCID}" --config-file ~/.oci/functions-config
+docker login ${HOME_REGION}.ocir.io -u ${NAMESPACE}/oracleidentitycloudservice/"david.g.whiting@gmail.com"
+ls
+cat functions-config
+docker login ${HOME_REGION}.ocir.io -u ${NAMESPACE}/oracleidentitycloudservice/"david.g.whiting@gmail.com"
+echo "J:K<Zr.YM{TO79nY71yU" | docker login us-phoenix-1.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/"david.g.whiting@gmail.com" --password-stdin
+echo "J:K<Zr.YM{TO79nY71yU" | docker login us-phoenix-1.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/"david.g.whiting@gmail.com" --password-stdin --debug
+docker login us-phoenix-1.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/"david.g.whiting@gmail.com"  --debug
+echo "J:K<Zr.YM{TO79nY71yU" | docker login us-phoenix-1.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com --password-stdin
+echo "J:K<Zr.YM{TO79nY71yU" | docker login us-phoenix-1.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com --password-stdin
+echo "J:K<Zr.YM{TO79nY71yU" | docker login phx.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com --password-stdin
+echo "J:K<Zr.YM{TO79nY71yU" | docker login -u 'axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com' phx.ocir.io --password-stdin
+echo "J:K<Zr.YM{TO79nY71yU" | docker login -u 'axeo1uqf8mdx/david.g.whiting@gmail.com' phx.ocir.io --password-stdin
+echo "J:K<Zr.YM{TO79nY71yU" | docker login -u 'axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com' phx.ocir.io --password-stdin
+fn version
+oci iam user get --user-id "$USER_OCID" --query "data.name"
+docker login phx.ocir.io -u ${NAMESPACE}/oracleidentitycloudservice/david.g.whiting@gmail.com
+oci iam auth-token list --user-id "$USER_OCID" \\
+    --query "data[].{description:description,created:\"time-created\"}"
+# Create auth token\
+oci iam auth-token create \\
+    --description "docker-registry-auth" \\
+    --user-id "$USER_OCID"
+oci iam auth-token list --user-id "$USER_OCID" --all
+oci iam auth-token delete --user-id "$USER_OCID" --auth-token-id "ocid1.credential.oc1..aaaaaaaanaivpfvwxcbm253jcjeeynobsh5qbx5mzmspz5l3wradstfg42yq" --force
+oci iam auth-token delete --user-id "$USER_OCID" --auth-token-id "ocid1.credential.oc1..aaaaaaaanaivpfvwxcbm253jcjeeynobsh5qbx5mzmspz5l3wradstfg42yq" --region us-phoenix-1 --force 
+oci iam auth-token delete --user-id "$USER_OCID" --auth-token-id "ocid1.credential.oc1..aaaaaaaaqu2mzcnbfs3dm5xymhl34aoa6kzrgmlstkj4is6qg524qx6a73ca" --region us-phoenix-1 --force 
+# Create new token in home region\
+oci iam auth-token create \\
+    --description "docker-registry-auth" \\
+    --user-id "$USER_OCID" \\
+    --region us-phoenix-1
+ls
+cd ..
+ls
+cd .oracle
+ls
+mkdir secrets
+cd secrets
+vi docker-registry-auth
+cd ..
+ls
+cd ../.oci
+ls
+echo "A-FO_#T>foU{6+)5YBZA" > ~/.oci/docker_token 
+chmod go-rwx docker_token
+export OCI_DOCKER_TOKEN=$(cat ~/.oci/docker_token)
+echo $OCI_DOCKER_TOKEN
+docker login phx.ocir.io -u ${NAMESPACE}/oracleidentitycloudservice/david.g.whiting@gmail.com < <(echo "$OCI_DOCKER_TOKEN")
+docker login phx.ocir.io -u ${NAMESPACE}/oracleidentitycloudservice/david.g.whiting@gmail.com
+echo "$OCI_DOCKER_TOKEN" | docker login phx.ocir.io -u ${NAMESPACE}/oracleidentitycloudservice/david.g.whiting@gmail.com --password-stdin
+oci iam auth-token list --user-id "$USER_OCID" --all
+oci os ns get --query 'data'
+docker login phx.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com --password-stdin
+docker login phx.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com
+docker login phx.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com
+# Delete current token\
+oci iam auth-token delete \\
+    --user-id "$USER_OCID" \\
+    --auth-token-id "ocid1.credential.oc1..aaaaaaaav37pmguc433d3wm2zoeduigrt4cch5v2x6snknt2jil3pqpblmta" \\
+    --force \\
+    --region us-phoenix-1
+oci iam auth-token create \\
+    --description "docker-registry" \\
+    --user-id "$USER_OCID" \\
+    --region us-phoenix-1
+vi docker_token
+cat docker_token
+docker login phx.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com
+docker login chi.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com
+docker login ord.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com
+oci iam group list --query 'data[*].name'
+awk -F "=" '/tenancy/ {gsub(/ /,"",$2); print $2}' ~/.oci/config
+export TENANCY_OCID="ocid1.tenancy.oc1..aaaaaaaa24rixlk7tttxxo6ikgxyabpuuek66ofgfzeh5hw2fnjhdkx4uhmq"
+echo $TENANCY_OCID
+oci iam policy list --compartment-id "$TENANCY_OCID" --query 'data[*].{name:name,statements:statements}'
+oci iam policy create \\
+    --compartment-id "$TENANCY_OCID" \\
+    --name "container-registry-policy" \\
+    --description "Allows container registry access" \\
+    --statements '["Allow group Administrators to manage repos in tenancy"]' \\
+    --region us-phoenix-1
+oci iam auth-token create \\
+    --description "docker-registry-2" \\
+    --user-id "$USER_OCID" \\
+    --region us-phoenix-1
+vi docker_token
+ls -l
+cat docker_token
+docker login ord.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com
+docker login phx.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com
+# List tokens with IDs\
+oci iam auth-token list --user-id "$USER_OCID" --all\
+
+oci iam auth-token delete --user-id "$USER_OCID" --auth-token-id "ocid1.credential.oc1..aaaaaaaafayodqd5hnonrstqa3bexjesmj2d5aa5citw6afzj7kfmbrysfdq" --force
+oci iam auth-token delete --user-id "$USER_OCID" --auth-token-id "ocid1.credential.oc1..aaaaaaaafayodqd5hnonrstqa3bexjesmj2d5aa5citw6afzj7kfmbrysfdq" --region us-phoenix-1 --force
+oci iam auth-token list --user-id "$USER_OCID" --all\
+
+docker logout ord.ocir.io
+docker logout phx.ocir.io
+cat ~/.docker/config.json
+pushd ~/.docker
+mv config.json config.json.bak
+echo '{"auths":{}}' > ~/.docker/config.json
+cat config.json
+docker login ord.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com
+docker login phx.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com
+echo -n "$OCI_DOCKER_TOKEN" | wc -c
+oci iam auth-token create \\
+    --description "docker-test" \\
+    --user-id "$USER_OCID" \\
+    --region us-phoenix-1
+docker login ord.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com
+export OCI_DOCKER_TOKEN="U1UizPFEVY<B67V)Xm[F"
+echo $OCI_DOCKER_TOKEN
+echo "$OCI_DOCKER_TOKEN" | hexdump -C
+echo -n "U1UizPFEVY<B67V)Xm[F" > ~/.oci/docker_token
+export OCI_DOCKER_TOKEN=$(cat ~/.oci/docker_token)
+docker login ord.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com --password-stdin < <(echo -n "$OCI_DOCKER_TOKEN")
+docker login ord.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com --debug
+echo '{"debug": true}' > ~/.docker/daemon.json
+killall Docker && open -a Docker
+sudo killall Docker && open -a Docker
+ls
+which docker
+docker system info
+docker system events
+pwd
+popd
+pwd
+ls
+popd
+ls
+cd ..
+ls
+pushd ~/.oci
+ls
+less docker_token
+echo $OCI_DOCKER_TOKEN
+DOCKER_TLS_DEBUG=1 docker login ord.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com
+curl -v https://ord.ocir.io/v2/
+curl -v -H "Authorization: Basic $(echo -n "axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com:$OCI_DOCKER_TOKEN" | base64)" https://ord.ocir.io/v2/
+echo $TOKEN
+export TOKEN=$(curl -s \\
+  -u "axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com:$OCI_DOCKER_TOKEN" \\
+  "https://ord.ocir.io/20180419/docker/token?service=ord.ocir.io&scope=repository:*:*")\
+
+echo $TOKEN
+export TOKEN=$(curl -s \\
+ -u "axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com:$OCI_DOCKER_TOKEN" \\
+ "https://ord.ocir.io/20180419/docker/token?service=ord.ocir.io&scope=repository:library:pull")
+echo $TOKEN
+export TOKEN=$(curl -s \\
+  -u "axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com:$OCI_DOCKER_TOKEN" \\
+  "https://ord.ocir.io/20180419/docker/token?service=ord.ocir.io")
+echo $TOKEN
+popd
+vi registry_links_for_download
+ls
+bash registry_links_for_download
+ls
+cd Registry
+ls
+mv edit-repository.htm edit-repository.htm.txt
+mv get-repository.htm get-repository.htm.txt
+mv home.htm home.htm.txt
+mv list-repository.htm list-repository.htm.txt
+ls *htm
+mv registryprerequisites.htm registryprerequisites.htm.txt
+mv registrypolicyrepoaccess.htm registrypolicyrepoaccess.htm.txt
+mv registryoverview.htm registryoverview.htm.txt
+mv registrymovingrepos.htm registrymovingrepos.htm.txt
+mv registrymanagingrepositories.htm registrymanagingrepositories.htm.txt
+mv registrygettingauthtoken.htm registrygettingauthtoken.htm.txt
+mv registrydeletingrepos.htm registrydeletingrepos.htm.txt
+mv registrycreatingarepository.htm registrycreatingarepository.htm.txt
+ls
+mv registryconcepts.htm registryconcepts.htm.txt
+popd
+ls
+which python
+pwd
+cd ..
+ls
+docker login ocir.us-chicago-1.oci.oraclecloud.com \\
+  -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com \\
+  -p $OCI_DOCKER_TOKEN
+docker login ord.ocir.io \\
+  -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com \\
+  -p $OCI_DOCKER_TOKEN
+vi docker_registry_access_token
+ls
+export OCI_DOCKER_TOKEN=$(cat ~/.oci/docker_token)
+echo $OCI_DOCKER_TOKEN
+docker login ord.ocir.io \\
+  -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com \\
+  -p $OCI_DOCKER_TOKEN
+oci os bucket get \\
+    --namespace-name axeo1uqf8mdx \\
+    --name contractsmarts-demo-bucket-2024-10 \\
+    --region us-chicago-1
+cd ~/.oci
+ls
+vi docker_token
+docker system events
+docker images
+pwd
+/usr/bin/python3 /Users/david/.cursor/extensions/ms-python.python-2024.12.3-darwin-arm64/python_files/printEnvVariablesToFile.py /Users/david/.cursor/extensions/ms-python.python-2024.12.3-darwin-arm64/python_files/deactivate/zsh/envVars.txt
+source .venv/bin/activate
+ls
+ls -al
+ls src
+cd ..
+ls
+cd javascript
+ls
+npm install r2r-js
+ls
+ls -l
+ls
+cd ..
+ls
+cd python
+ls
+ls -a
+pip install jupyter
+pip install --upgrade pip
+ls
+ls ..
+ls -a ..
+ls
+ls
+ls src
+cd src
+cat api_key
+cd ..
+ls
+jupyter-lab
+bg
+pip install r2r
+pip freeze > requirements.txt
+ls
+rm Untitled.ipynb
+cd src
+ls
+chmod -x api_key
+mkdir vault
+mv api_key vault
+ls -lr
+cd vault/
+ls
+ls -l
+cat api_key
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+git clone git@github.com:davidwhiting/R2R.git
+cd R2R
+ls
+cd py
+ls
+ls core
+cd core/examples
+ls
+less hello_r2r.py
+ls supported_file_types
+ls data
+ls
+less __init__.py
+cd ..
+ls
+ls main
+ls base
+ls
+cd ..
+ls
+grep -R R2RClient *
+grep -R R2R_API_KEY *
+cd cli
+less command_group.py
+ls ~/.r2r
+less ~/.r2r/config.json
+ls
+cat ~/.r2r/config.json
+ls
+ls
+pwd
+which python
+popd
+cd /Users/david/ContractSmarts/code/contractsmarts-rag/python
+ls
+conda create -n r2r python=3.12
+pwd
+cd ..
+cd ..
+ls
+cd ..
+cd marketing
+ls
+cd png
+ls
+mv ~/Downloads/Slide4.PNG .
+cd ..
+ls
+vi makepdf.py
+ls
+cd ..
+ls
+cd ..
+ls
+cd ContractSmarts
+ls
+ls
+ls
+pwd
+cd code
+ls -l
+cd contractsmarts-frontend
+ls
+git status
+ls
+ls
+cd ..
+ls
+cd documents
+ls
+ls -l Partnership\ Agreements
+ls -1 Partnership\ Agreements
+ls -1 Partnership\ Agreements/Corporate\ Docs
+ls -1 PECO\ -\ Winery\ Square
+ls -1 PECO\ -\ Winery\ Square/00.\ Corporate\ Documents
+ls -1 Partnership\ Agreements/Corporate\ Docs/
+cd ..
+ls -l
+cd documents
+ls -lR PECO\ -\ Winery\ Square
+ls -1R PECO\ -\ Winery\ Square
+ls -1R PECO\ -\ Winery\ Square > peco_file_list
+grep BSU peco_file_list
+grep REF peco_file_list
+vi peco_file_list
+ls -1R "PSCO - Hanford Mall/" > psco_file_list
+cat psco_file_list
+ls -l
+ls -1R "Partnership Agreements" > partnership_file_list
+cat partnership_file_list
+vi partnership_file_list
+ls -l ls
+ls
+cat psco_file_list
+vi psco_file_list
+vi peco_file_list
+ls -l ~/.r2r
+chmod 600 ~/.r2r/config.json
+ls
+cd src
+ls
+cat vault
+cat vault/api_key
+cd
+ls
+cd ContractSmarts/code
+ls
+cd R2R
+ls
+grep -r R2RAsyncClient *
+cd py
+cd sdk
+less async_client.py
+cd base
+ls
+less base_client.py
+ls
+ls
+pwd
+cat base_client.py
+less base_client.py
+pwd
+less base_client.py
+ls
+pwd
+ls
+ls
+cd ContractSmarts
+ls
+cd co
+cd code
+git clone git@github.com:davidwhiting/r2r-webdev-template.git
+ls -l
+ls cs-frontent
+rmdir cs-frontent
+ls
+ls
+ls
+cd r2r-webdev-template
+ls
+ls -l
+cd ..
+ls
+cd contractsmarts-frontend-main
+ls
+cd excel-addin-fluent
+ls
+ls src
+cd src
+ls taskpane
+pwd
+less taskpane/DocumentChat.tsx
+cat taskpane/DocumentChat.tsx
+ls
+pwd
+ls
+ls
+ls
+pwd
+cd ..
+cd ..
+ls
+cd ..
+ls
+cd contractsmarts-r2r
+ls
+ls -l
+cd javascript
+ls
+touch README.md
+ls
+ls ..
+less ../set_key.sh
+ls
+node
+ls
+node install r2r-js
+npm install r2r-js
+node
+cd ContractSmarts
+ls
+mkdir marketing
+cd marketing
+ls ~/Downloads
+rm ~/Downloads/Slide*
+ls ~/david.g.whiting@gmail.com\ -\ Google\ Drive/My\ Drive/ContractSmarts/Slide*
+cp ~/david.g.whiting@gmail.com\ -\ Google\ Drive/My\ Drive/ContractSmarts/Slide* .
+ls
+ls -l
+conda activate
+python -m venv .venv
+source .venv/bin/activate
+pip install pillow reportlab
+pip install --upgrade pip
+ls
+mkdir png
+mv *PNG png
+ls png
+ls
+vi makepdf.py
+cat makepdf.py
+python makepdf.py
+ls
+ls -l
+ls -lh
+mv output_presentation.pdf ContractSmarts_frozen.pdf
+ls
+ls -l
+rm Slide4.PNG
+ls
+cd png
+ls
+cd ..
+ls
+ls -l
+mv makepdf.py oldmakepdf.py
+vi makepdf.py
+ls
+mv ContractSmarts_frozen.pdf ContractSmarts_frozen_old.pdf
+python makepdf.py
+ls
+mv output_presentation.pdf ContractSmarts_update.pdf
+cd ..
+ls
+cd contractsmarts-backend
+ls
+git status
+ls
+ls secrets
+ls transcripts
+ls gateway-config.json
+less gateway-config.json
+less all_vars.sh
+ls -l
+ls bin
+ls doc
+ls
+cd ..
+ls
+cd contractsmarts-ai
+ls -l
+git status
+cd code
+ls -l
+ls -a
+cd ..
+ls
+ls -a
+source .venv/bin/activate
+ls
+jupyter-lab
+ls
+cd utils
+ls
+cat __init__.py
+pwd
+cd ..
+cd ..
+ls
+cd ../contractsmarts-backend
+ls
+touch .gitignore
+cd ..
+ls
+ls
+vi contractsmarts.code-workspace
+rm contractsmarts.code-workspace
+cd contractsmarts-frontend
+git pull
+ls -al
+cd ../contractsmarts-ai
+ls
+git status
+git status
+git add .gitignore
+git add code/API_test.ipynb
+git status
+git add code/utils/uploader.py
+git status
+git status
+ls
+ls code
+ls
+git status
+cd code/utils
+git add uploader.py
+git add __init__.py
+ls
+git status
+cd ..
+git add API_test.ipynb
+git status
+ls
+cd utils
+ls
+git status
+git add uploader.py
+git status
+cd ..
+ls
+ls
+mkdir test_docs
+pushd ~/
+cd ContractSmarts
+ls
+ls contractsmarts
+cd contractsmarts/src
+ls
+ls 02.\ Blue\ Sky\ Utility\ Portfolio\ I\ 2017\ LLC\ \(PDA,344\)
+pwd
+popd
+cd test_docs
+rsync -avP ~/ContractSmarts/contractsmarts/src/02.\ Blue\ Sky\ Utility\ Portfolio\ I\ 2017\ LLC\ \(PDA,344\)/ .
+ls
+cd ..
+ls
+cd ..
+ls
+ls -a
+source .venv/bin/activate
+pip install fnmatch
+git status
+ls
+git add code/utils/uploader.py
+git status
+ls
+cd code
+ls
+mv test_docs ..
+ls
+cd ..
+ls
+ls test_docs
+cd test_docs
+ls -l
+ls Partnership\ Agreements
+ls Partnership\ Agreements/Corporate\ Docs
+cp Partnership\ Agreements/Corporate\ Docs/Certificate\ of\ Formation.pdf ..
+cd ..
+ls
+cp Certificate\ of\ Formation.pdf code
+ls
+ls
+mv Certificate\ of\ Formation.pdf Certificate.pdf
+pwd
+ls
+cd code
+ls
+mv ~/Downloads/README-uploader.md .
+git add README-uploader.md
+git status
+git add API_test.ipynb
+ls
+ls ..
+cd ..
+ls test_docs
+ls test_docs/Partnership\ Agreements
+ls test_docs/Partnership\ Agreements/Corporate\ Docs
+ls
+rsync -avP test_docs/Partnership\ Agreements code
+ls
+cd code
+ls
+git status
+git commit -m "Updated uploader to add exclude files syntax"
+git push
+ls
+git status
+git add utils/uploader.py
+git status
+git status
+ls
+cd utils
+ls
+touch create_and_upload.py
+cd ..
+ls
+touch README-create_and_upload.md
+git add README-create_and_upload.md
+git status
+git add utils/create_and_upload.py
+git status
+cd utils
+ls
+rm -rf __pycache__
+ls
+git add __init__.py
+ls
+git status
+ls
+cd ..
+ls
+ls
+cat ~/Downloads/readme-create-upload.md > README-create_and_upload.md
+git add README-create_and_upload.md
+git status
+cd utils
+ls
+cat ~/Downloads/bucket-upload-script.py > create_and_upload.py
+git add create_and_upload.py
+git status
+git status
+git status
+ls
+cd ..
+ls
+less cli.md
+ls
+cd utils
+ls
+touch generate_token.py
+git status
+git add __init__.py
+git add create_and_upload.py
+git add generate_token.py
+ls
+cd ..
+ls
+cd ..
+ls
+git status
+git add code/API_test.ipynb
+jupyter-lab
+pip install jupyter-lab
+which python
+pip install jupyterlab
+jupyter-lab
+jupyter-lab
+ls
+pwd
+cd ..
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd contractsmarts-r2r
+ls
+ls python
+source python/.venv/bin/activate
+which docker
+pip install r2r
+r2r serve --docker --full
+ls
+docker ps
+ls
+ls
+docker ps
+docker stop 6075a879d016
+docker stop 4c61554c545c
+docker stop e29924fa2646
+docker stop c6462a20f7ed
+docker sotp 927e19dcc0f0
+docker stop 927e19dcc0f0
+docker stop c0ddd67cb64f
+docker stop 6b90973aaca2
+ls
+ls -l
+docker ps
+docker stop 27644307b537
+docker stop 93a4d569b46c
+docker ps
+printenv
+echo $R2R_API_KEY
+ls
+cd ..
+ls
+cd R2R
+ls
+cd js
+ls
+cd sdk
+ls
+ls __tests__
+ls src
+cd src
+less r2rClient.ts
+less baseClient.ts
+ls
+pwd
+cd ..
+ls
+ls
+pwd
+which python
+ls
+pwd
+ls -a
+source .venv/bin/activate
+jupyter-lab

@@ -1,0 +1,1108 @@
+cat ~/Downloads/complete-proxy-test.ts > __tests__/proxy.test.ts
+git status
+git add __tests__/proxy.test.ts
+npm test -- --runInBand --detectOpenHandles
+cat ~/Downloads/server-update.ts > src/server.ts
+cat ~/Downloads/complete-proxy-test.ts > __tests__/proxy.test.ts
+cat ~/Downloads/proxy-test-update.ts > __tests__/proxy.test.ts
+git status
+git add __tests__/proxy.test.ts
+git add src/server.ts
+npm test -- --runInBand --detectOpenHandles
+cat ~/Downloads/proxy-test-update.ts > __tests__/proxy.test.ts
+git status
+git add __tests__/proxy.test.ts
+npm test -- --runInBand --detectOpenHandles
+cat ~/Downloads/proxy-test-update.ts > __tests__/proxy.test.ts
+git add __tests__/proxy.test.ts
+npm test -- --runInBand --detectOpenHandles
+ls
+ls
+cd docs
+ls
+mv ~/Downloads/testing-readme.md .
+mv testing-readme.md README-testing.md
+git status
+git add README-testing.md
+git status
+ls
+cd ..
+ls
+mv node_modules ..
+tree
+tree > directory_tree_listing.txt
+git status
+git add directory_tree_listing.txt
+mv ../node_modules .
+ls
+ls
+git status
+git commit -m "proxy passes tests"
+git push
+ls
+cd docs
+ls
+cat ~/Downloads/server-readme-updates.md > README-server.md
+git status
+git add README-server.md
+cat ~/Downloads/proxy-readme-updates.md > README-proxy.md
+git status
+git add README-docker.md README-proxy.md
+git status
+git commit -m "Updated README files"
+git push
+ls
+mkdir postman
+cd postman
+mv ~/Downloads/postman-collection.json .
+mv postman-collection.json r2r-proxy-tests.postman_collection.json
+git add r2r-proxy-tests.postman_collection.json
+ls
+git status
+ls
+mv ~/Downloads/postman-readme.md README-postman.md
+git add README-postman.md
+git status
+ls
+cat ~/Downloads/postman-readme.md > README-postman.md
+ls
+cd ..
+ls
+cd ..
+ls
+cd __tests__
+ls
+mv ~/Downloads/mock-server.ts .
+git add mock-server.ts
+git status
+cd ..
+ls
+git add Makefile
+ls
+ls __tests__
+cat ~/Downloads/postman-readme.md > docs/postman/README-postman.md
+cd docs
+cat ~/Downloads/testing-readme.md > README-testing.md
+cat ~/Downloads/proxy-readme.md > README-proxy.md
+cat ~/Downloads/server-readme.md > README-server.md
+git status
+git add README-* postman/README-postman.md
+ls
+ls
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+ls simple
+cd simple
+less proxy.js
+less excel-example.json
+ls
+rm -rf node_modules
+ls
+ls
+cd ..
+ls
+ls -a v1
+mv v1/node_modules .
+git status
+ls
+git mv v1/docs/ .
+ls
+mv simple ignore
+ls
+mv ignore _ignore
+ls
+ls v1
+git mv v1/__tests__/ .
+git mv v1/src/ .
+git mv v1/[d-p]* .
+git status
+ls
+ls v1
+git mv v1/Dockerfile .
+fit mv v1/Makefile .
+git mv v1/Makefile .
+ls
+git mv v1/.dockerignore .
+git mv v1/tsconfig.json .
+git mv v1/README.md .
+ls
+ls -a v1
+mv v1/secrets .
+ls
+vi .dockerignore
+vi .gitignore
+git status
+git add .dockerignore .gitignore
+ls -l
+rmdir v1
+rm v1/.DS_Store
+rmdir v1
+ls
+ls -l
+ls doc/
+ls
+ls docs
+ls
+git status
+git commit -m "fit for phase 1"
+git push
+git pull
+git checkout phase2
+ls
+ls
+ls
+mv ~/Downloads/readme-phase2.md README-phase2.md
+mv ~/Downloads/changelog.md CHANGELOG.md
+git add CHANGELOG.md
+git status
+git add README-phase2.md
+ls
+ls src/config
+cd src/config
+mv ~/Downloads/proxy-config.ts proxy-routes.ts
+git add proxy-routes.ts
+ls -l
+cd ..
+cat ~/Downloads/proxy-middleware.ts > middleware/proxy.ts
+git status
+git add middleware/proxy.ts
+ls
+cat ~/Downloads/server-update.ts > server.ts
+git status
+git add server.ts
+git status
+ls
+cd config
+ls
+mv ~/Downloads/auth-config.ts auth.ts
+git add auth.ts
+ls
+cat ~/Downloads/proxy-config.ts > proxy-routes.ts
+git status
+less proxy-routes.ts
+ls
+ls
+git status
+git commit -m "added auth and proxy-routes"
+git push
+ls
+ls
+mv ~/Downloads/env-config.ts env.ts
+git add env.ts
+git status
+ls
+cat env.ts
+cd ..
+ls
+mkdir services
+cd services
+touch token.ts
+cat ~/Downloads/token-service.ts > token.ts
+git add token.ts
+git status
+cat ~/Downloads/proxy-config.ts > ../config/proxy-routes.ts
+git status
+cd ..
+git add config/proxy-routes.ts
+ls
+cd ..
+ls
+mv ~/Downloads/env-template.md .env.template
+git add .env.template
+vi .gitignore
+git add .gitignore
+ls
+vi .dockerignore
+git add .dockerignore 
+git status
+ls
+cat ~/Downloads/changelog.md > CHANGELOG.md
+cat ~/Downloads/docker-readme.md > docs/README-docker.md
+git status
+git add CHANGELOG.md docs/README-docker.md
+ls
+git status
+git status
+git commit -m "updated routes for translating to r2r"
+git push
+ls
+ls
+cd docs
+ls
+touch README-api.md
+ls
+cd ..
+ls
+cd ..
+ls
+ls tmp
+cd tmp
+git clone git@github.com:ContractSmarts/proxy-server.git
+ls
+mv proxy-server proxy-server-main
+cd ..
+ls
+ls
+cd ..
+ls
+cd code/proxy-server
+ls
+ls ..
+mv node_modules ..
+tree . > directory_tree_listing.txt
+mv ../node_modules .
+ls
+man tree
+ls node_modules
+mv node_modules ..
+tree -a .
+tree -a . > directory_tree_listing.txt
+mv ../node_modules .
+ls
+cp .env.template .env
+ls
+git add directory_tree_listing.txt
+cp Dockerfile Dockerfile.txt
+cp Makefile Makefile.txt
+git status
+ls
+pwd
+ls
+ln -s ~/Downloads dn
+mv dn/simplified-proxy.ts .
+cat simplified-proxy.ts > src/middleware/proxy.ts
+rm simplified-proxy.ts
+rm dn/proxy.ts
+git status
+git add src/middleware/proxy.ts
+ls
+mv dn/simplified-server.ts .
+cat simplified-server.ts > src/server.ts
+rm simplified-server.ts
+git add src/server.ts
+git status
+rm Dockerfile.txt Makefile.txt
+git add docs/README-api.md
+git status
+git rm src/config/proxy-routes.ts
+git rm src/config/auth.ts
+git rm src/services/token.ts 
+cat dn/changelog-update.md > CHANGELOG.md
+rm dn/changelog-update.md
+git add CHANGELOG.md
+cat dn/proxy-readme.md > docs/README-proxy.md
+git add docs/README-proxy.md
+git status
+cat dn/phase2-readme.md > README-phase2.md
+git add README-phase2.md
+rm dn/phase2-readme.md
+git status
+cat dn/server-readme.md > docs/README-server.md
+git add docs/README-server.md
+rm dn/server-readme.md
+cat dn/environment-readme.md > docs/README-environment.md
+git add docs/README-environment.md
+cat dn/docker-readme.md > docs/README-docker.md
+git add docs/README-docker.md
+rm dn/docker-readme.md
+ls src
+ls src/config
+rm dn/environment-readme.md
+cat dn/environment-ts.ts > src/config/environment.ts
+git add src/config/environment.ts
+rm dn/environment-ts.ts
+cat dn/proxy-ts.ts > src/middleware/proxy.ts
+rm dn/proxy-ts.ts
+cat dn/server-ts.ts > src/server.ts
+rm dn/server-ts.ts
+git add src/server.ts
+git status
+git add src/middleware/proxy.ts
+git status
+ls dn
+ls dn/
+diff dn/proxy-readme.md docs/README-proxy.md
+rm dn/proxy-readme.md
+git status
+git commit -m "change to simple reroute api -> v3"
+git push
+mv dn/phase3-readme.md README-phase3-strategy.md
+git add README-phase3-strategy.md
+git status
+cat dn/phase2-readme-update.md > README-phase2.md
+git add README-phase2.md
+rm dn/phase2-readme-update.md
+ls
+git status
+git status
+vi .gitignore
+ls
+git add .gitignore
+ls
+ls -l
+ls _ignore
+which tree
+man tree
+git status
+git add __tests__/proxy.test.ts
+git status
+ls docs/postman
+head docs/postman/r2r-proxy-tests.postman_collection.json
+cat ~/Downloads/updated-postman-collection.json >  docs/postman/r2r-proxy-tests.postman_collection.json
+rm dn/updated-postman-collection.json
+rm dn/updated-postman-collection\ \(1\).json
+git add docs/postman/r2r-proxy-tests.postman_collection.json 
+git status
+git add CHANGELOG.md
+rm dn/changelog-update.md
+ls dn
+ls dn/ 
+cat dn/updated-postman-readme.md > docs/postman/README-postman.md
+rm dn/updated-postman-readme.md
+git add docs/postman/README-postman.md
+git status
+cat dn/updated-testing-readme.md > docs/README-testing.md
+git add docs/README-testing.md
+rm dn/updated-testing-readme.md
+ls
+git status
+git commit -m "preparation for running tests"
+git push
+git status
+git add docs/README-api.md
+git add docs/README-environment.md
+git add docs/README-phase1.md
+git add docs/README-server.md
+git status
+ls
+cd docs
+ls
+grep v-0.3.0 *
+git add README-docker.md
+git status
+ls postman
+cd postman
+head README-postman.md
+cd ..
+ls
+cd ..
+ls
+cat dn/proxy-middleware.ts > src/middleware/proxy.ts
+git add src/middleware/proxy.ts
+git status
+cat dn/server-fix.ts > src/server.ts
+git add src/server.ts
+rm dn/server-fix.ts
+git status
+rm dn/proxy-middleware.ts
+cat dn/proxy-middleware\ \(1\).ts > src/middleware/proxy.ts
+rm dn/proxy-middleware\ \(1\).ts
+cat dn/server-fix.ts > src/server.ts
+rm dn/server-fix.ts
+git status
+git add src/middleware/proxy.ts
+git add src/server.ts
+git status
+cat dn/proxy-middleware.ts > src/middleware/proxy.ts
+git add src/middleware/proxy.ts
+git status
+ls dn
+ls dn/
+rm dn/mock-server.ts
+rm dn/proxy-middleware.ts
+cat dn/proxy-middleware.ts > src/middleware/proxy.ts
+rm dn/proxy-middleware.ts
+git add src/middleware/proxy.ts
+cat dn/mock-server.ts > __tests__/mock-server.ts
+rm dn/mock-server.ts
+ls
+git status
+git add __tests__/mock-server.ts
+git status
+ls
+cat dn/mock-server.ts > __tests__/mock-server.ts
+git add __tests__/mock-server.ts
+git status
+cat dn/proxy-test.ts > __tests__/proxy.test.ts
+ls dn
+ls dn/
+rm dn/mock-server.ts
+rm dn/proxy-test.ts
+cat dn/proxy-middleware.ts > src/middleware/proxy.ts
+git add src/middleware/proxy.ts
+git status
+git add __tests__/proxy.test.ts
+git status
+rm dn/proxy-middleware.ts
+cat dn/proxy-middleware\ \(1\).ts > src/middleware/proxy.ts
+git status
+git add src/middleware/proxy.ts
+ls dn
+ls dn/
+rm dn/proxy-middleware\ \(1\).ts
+cat dn/proxy-test.ts > __tests__/proxy.test.ts
+rm dn/proxy-test.ts
+cat dn/proxy-middleware.ts > src/middleware/proxy.ts
+rm dn/proxy-middleware.ts
+git add src/middleware/proxy.ts
+git add __tests__/proxy.test.ts
+git status
+ls dn
+cat dn/proxy-middleware.ts > src/middleware/proxy.ts
+rm dn/proxy-middleware.ts
+git add src/middleware/proxy.ts
+cat dn/server-fix.ts > src/server.ts
+git add src/server.ts
+rm dn/server-fix.ts
+diff dn/proxy-middleware.ts dn/proxy-middleware\ \(1\).ts
+ls
+rm dn/proxy-middleware*
+ls dn/
+git status
+git add CHANGELOG.md
+git commit -m "working files"
+git push
+rm dn/proxy-middleware*
+cat dn/proxy-middleware.ts > src/middleware/proxy.ts
+git status
+git restore src/middleware/proxy.ts
+git status
+make test
+git status
+git add docs/README-api.md
+ls
+ls
+git status
+cat script-transcript.ts
+git checkout main
+git status
+git add docs/README-package.md
+git add docs/README-proxy.md
+git status
+git add docs/README-server.md
+git status
+git add docs/README-api.md
+git status
+git status
+git add docs/README-docker.md
+git add docs/README-environment.md
+git add docs/README-testing.md
+git status
+git add docs/README-tsconfig.md
+git status
+git add docs/README-phase1.md
+git status
+git add docs/postman/README-postman.md
+git status
+git status
+git add README-phase2.md
+git add README-phase3-strategy.md
+touch README-phase4-strategy.md
+git status
+git status
+git add README-phase4-strategy.md
+git status
+git status
+git mv docs/README-phase1.md .
+ls
+mkdir docs/phases
+git mv README-phase* docs/phases
+ls
+git mv docs/phases docs/plan
+git status
+git add README.md
+git add README.md
+git status
+ls
+cd src
+ls
+cd middleware
+touch auth0.ts
+cd ..
+ls
+cd ..
+ls
+npm install express-oauth2-jwt-bearer
+git status
+git add package.json
+git add package-lock.json 
+git add src/middleware/auth0.ts
+cat ~/Downloads/environment-config.ts > src/config/environment.ts
+git status
+git add src/middleware/auth0.ts
+git add src/config/environment.ts
+git status
+rm ~/Downloads/environment-config.ts
+ln -s ~/Downloads dn
+git status
+cat dn/server-update.ts > src/server.ts
+git status
+rm dn/server-update.ts
+ls
+git add src/server.ts
+git status
+cat dn/env-template.sh > .env.template
+git status
+git add .env.template
+git add docker-compose.yml
+ls
+mv package.json package.json.2
+mv dn/package-update.json package.json
+diff package.json package.json.2
+ls
+mv package.json package.json.proposed
+mv package.json.2 package.json
+git status
+cat dn/complete-proxy-test.ts > __tests__/proxy.test.ts
+git status
+git add __tests__/proxy.test.ts
+git status
+ls dn
+ls dn/
+rm dn/proxy-*
+rm dn/env-template.sh
+rm dn/complete-proxy-test.ts
+ls dn/
+mv dn/postman-update.json .
+git status
+git status
+rm postman-update.json
+git add .dockerignore
+git status
+npm install express-oauth2-jwt-bearer\
+npm install --save-dev @types/express-oauth2-jwt-bearer
+nvm list
+nvm ls-remote --lts
+nvm install 20.2.0\
+nvm use 20.2.0
+npm install express-oauth2-jwt-bearer
+npm install --save-dev @types/express-oauth2-jwt-bearer
+npm install express-oauth2-jwt-bearer
+git status
+git add package-lock.json
+git status
+node --version
+nvm alias default 20
+nvm alias default 20.2.0
+node --version
+ls
+rm -rf node_modules
+rm package-lock.json
+npm install
+git status
+git add package-lock.json
+which jq
+git status
+git add CHANGELOG.md
+git status
+cd docs
+ls
+touch README-auth0.md
+git status
+ls
+cd auth
+ls
+rm README-auth0-2.md
+git add README-auth0.md
+git status
+cd ../certificates
+ls
+git add README.md letsencrypt.md
+git status
+cd ..
+ls
+git status
+/usr/bin/python3 /Users/david/.cursor/extensions/ms-python.python-2024.12.3-darwin-arm64/python_files/printEnvVariablesToFile.py /Users/david/.cursor/extensions/ms-python.python-2024.12.3-darwin-arm64/python_files/deactivate/zsh/envVars.txt
+git status
+git add .gitignore
+git add package-lock.json
+git add excel-addin/taskpane-app.tsx
+git status
+git add excel-addin/tailwind.config.js
+git add excel-addin/start-validation.tsx
+git add excel-addin/src/stories/
+git status
+git add excel-addin/.storybook/
+git status
+git add excel-addin/babel.config.json
+git add excel-addin/package-lock.json
+git add excel-addin/package.json
+git status
+git add excel-addin/webpack.config.js
+git status
+git commit -m "added stories"
+git push
+git push --set-upstream origin rel-0.1.2
+cd ..
+ls
+cd contractsmarts-backend
+ls
+source .venv/bin/activate
+which python
+export COMPARTMENT_ID=$(oci iam compartment list \\
+    --all \\
+    --query "data[?name=='ContractSmarts'].id | [0]" \\
+    --raw-output)
+echo $COMPARTMENT_ID
+export NAMESPACE=$(oci os ns get |\\
+    jq -r ".data")
+export BUCKET_NAME="addin-hosting"
+export BUCKET_ID=$(oci os bucket get \\
+  --namespace-name "${NAMESPACE}" \\
+  --name "${BUCKET_NAME}" \\
+  --query 'data.id' \\
+  --raw-output)
+# get compartment ocid\
+export COMPARTMENT_ID=$(oci iam compartment list \\
+    --all \\
+    --query "data[?name=='ContractSmarts'].id | [0]" \\
+    --raw-output)\
+\
+# namespace\
+export NAMESPACE=$(oci os ns get |\\
+    jq -r ".data")\
+\
+# bucket name\
+export BUCKET_NAME="addin-hosting"\
+
+export BUCKET_ID=$(oci os bucket get \\
+  --namespace-name "${NAMESPACE}" \\
+  --name "${BUCKET_NAME}" \\
+  --query 'data.id' \\
+  --raw-output)\
+
+export BUCKET_URL="https://axeo1uqf8mdx.objectstorage.us-chicago-1.oci.customer-oci.com/n/axeo1uqf8mdx/b/addin-hosting/o"\
+
+export VAULT_NAME="contractsmarts-vault"\
+
+export VAULT_ID=$(oci kms management vault list \\
+    --compartment-id "${COMPARTMENT_ID}" \\
+    --all \\
+    --query "data[?\"display-name\"=='${VAULT_NAME}'].id | [0]" \\
+    --raw-output)
+export VAULT_ENDPOINT=$(oci kms management vault get \\
+    --vault-id ${VAULT_ID} | \\
+    jq -r '.data."management-endpoint"')
+export KEY_NAME="certificate-key"
+export VCN_NAME="contractsmarts-vcn"
+export VCN_ID=$(oci network vcn list \\
+    --compartment-id "${COMPARTMENT_ID}" \\
+    --display-name "${VCN_NAME}" \\
+    --query "data[0].id" \\
+    --raw-output)
+# subnet name\
+export SUBNET_NAME="api-gateway-subnet"\
+\
+# subnet ocid\
+export SUBNET_ID=$(oci network subnet list \\
+    --compartment-id "${COMPARTMENT_ID}" \\
+    --vcn-id "${VCN_ID}" \\
+    --display-name "${SUBNET_NAME}" \\
+    --query "data[0].id" \\
+    --raw-output)
+export SECURITY_LIST_ID=$(oci network security-list list \\
+  --compartment-id "${COMPARTMENT_ID}" \\
+  --vcn-id "${VCN_ID}" \\
+  --query "data[?\"display-name\"=='Default Security List for ${VCN_NAME}'].id | [0]" \\
+  --raw-output)
+export IGW_NAME="contractsmarts-igw"\
+\
+# internet gateway ocid\
+export IGW_ID=$(oci network internet-gateway list \\
+    --compartment-id "${COMPARTMENT_ID}" \\
+    --vcn-id "${VCN_ID}" \\
+    --display-name "${IGW_NAME}" \\
+    --query "data[0].id" \\
+    --raw-output)
+export ROUTE_TABLE_ID=$(oci network route-table list \\
+  --compartment-id "${COMPARTMENT_ID}" \\
+  --vcn-id "${VCN_ID}" \\
+  --query "data[?\"display-name\"=='Default Route Table for ${VCN_NAME}'].id | [0]" \\
+  --raw-output)\
+\
+# api gateway name\
+export GATEWAY_NAME="contractsmarts-gateway"
+export GATEWAY_ID=$(oci api-gateway gateway list \\
+    --compartment-id "${COMPARTMENT_ID}" \\
+    --display-name "${GATEWAY_NAME}" \\
+    --all \\
+    --query "data.items[0].id" \\
+    --raw-output)
+echo $GATEWAY_ID
+oci api-gateway deployment list --gateway-id $GATEWAY_ID
+oci api-gateway deployment list \\
+    --compartment-id "${COMPARTMENT_ID}" \\
+    --gateway-id "${GATEWAY_ID}" \\
+    --all
+export DEPLOYMENT_NAME="addin-deployment"
+oci api-gateway deployment list \\
+    --compartment-id "${COMPARTMENT_ID}" \\
+    --gateway-id "${GATEWAY_ID}" \\
+    --all\
+    --query "data.items[0].id" \\
+    --raw-output
+oci api-gateway deployment list \\
+    --compartment-id "${COMPARTMENT_ID}" \\
+    --gateway-id "${GATEWAY_ID}" \\
+    --all \\
+    --query "data.items[0].id" \\
+    --raw-output
+export DEPLOYMENT_ID=$(oci api-gateway deployment list \\
+    --compartment-id "${COMPARTMENT_ID}" \\
+    --gateway-id "${GATEWAY_ID}" \\
+    --all \\
+    --query "data.items[0].id" \\
+    --raw-output)
+oci api-gateway deployment get --deployment-id "${DEPLOYMENT_ID}"
+oci api-gateway deployment get \\
+    --deployment-id "${DEPLOYMENT_ID}" \\
+    --all \\
+    --query "data.specification" \\
+    --raw-output
+oci api-gateway deployment get \\
+    --deployment-id "${DEPLOYMENT_ID}" \\
+    --query "data.specification" \\
+    --raw-output
+pwd
+ls
+cd ..
+ls
+cd contractsmarts
+ls
+less update_cors.json
+cat update_cors.json
+oci api-gateway deployment update \\
+    --deployment-id "${DEPLOYMENT_ID}" \ \
+    --specification file://update_cors.json
+oci api-gateway deployment update \\
+    --deployment-id "${DEPLOYMENT_ID}" \ \
+    --from-json file://update_cors.json
+oci api-gateway deployment update \\
+    --deployment-id "${DEPLOYMENT_ID}" \ \
+    --generate-param-json-input
+echo $DEPLOYMENT_ID
+oci api-gateway deployment update \\
+    --deployment-id "${DEPLOYMENT_ID}" \ \
+    --from-json file://update_cors.json
+oci api-gateway deployment update \\
+    --deployment-id "${DEPLOYMENT_ID}" \ \
+    --specification file://update_cors.json
+oci api-gateway deployment update --deployment-id "${DEPLOYMENT_ID}" --specification file://update_cors.json
+oci api-gateway deployment update --deployment-id "${DEPLOYMENT_ID}" --specification file://update_cors.json
+curl -H "Origin: https://www.office.com" \\
+  -i https://api.contractsmarts.ai/static/a/scripts/commands.js
+cd ../contractsmarts-frontend
+which python
+source .venv/bin/activate
+which python
+ls
+ls
+cd excel-addin-fluent/
+ls
+cd src/taskpane
+ls
+touch DocumentChat.tsx
+pwd
+touch PopupChat.tsx
+cd ..
+ls
+cd ..
+ls
+git status
+ls
+cd ..
+ls
+cd bin
+ls
+chmod +x oci_upload
+ls -l
+cat oci_upload
+git status
+git commit oci_upload
+git add oci_upload
+git status
+ls
+git status
+pwd
+cd ..
+ls
+git status
+cd excel-addin-fluent/src/taskpane
+git add MainMenu.tsx
+git status
+git add Taskpane.tsx
+git status
+git status
+git add ../services/excel/registration.ts
+git status
+git status
+git status
+git add DeveloperPanel.tsx
+rm DeveloperPanel_top.tsx
+ls
+less DocumentChat.tsx
+pwd
+pwd
+cd
+cd ContractSmarts/code/contractsmarts-r2r
+ls
+cd javascript
+ls
+ls -a
+ls -a
+ls -a
+ls .r2r
+cat .r2r/config.
+cat .r2r/config.json
+ls .oci
+ls .oracle
+ls
+ls .oracle
+ls .oci
+ls
+ls
+cd ContractSmarts
+ls
+cd co
+cd code
+ls
+cd proxy-server
+ls
+cd _ignore
+ls
+less curl-tests.sh
+less excel-example.json
+less package-lock.json
+rm package-lock.json
+less proxy.js
+less script-transcript.ts
+rm script-transcript.ts
+git status
+rm ../package.json.proposed
+git status
+cd ..
+ls
+pwd
+cat Makefile
+ls
+make mock
+cd __tests__
+ls
+ls
+cd ..
+ls
+mv Makefile Makefile.old
+touch Makefile
+rm ~/Downloads/postman-readme*
+cat ~/Downloads/postman-readme.md > docs/postman/README-postman.md
+git add docs/postman/README-postman.md
+git status
+cat Makefile.old
+git add Makefile
+rm Makefile.old
+ls
+git status
+make proxy
+ls
+cat Makefile
+make proxy
+lsof -i :4000
+curl http://localhost:4000/echo/test
+make proxy
+cd ..
+ls
+make proxy
+lsof :3000
+lsof -i :3000
+kill -9 9560
+ps
+kill -9 9557
+ps
+make proxy
+make proxy
+make proxy
+ls
+R2R_TARGET=https://api.cloud.sciphi.ai make proxy
+ls
+git status
+git add docs/README-auth0.md
+git add docs/postman/r2r-proxy-tests.postman_collection.json
+git commit -m "added first cloud commit changes"
+git push
+ls
+ls
+pushd ~/Downloads
+ls -l postman-readme
+ls -l postman-readme*
+cp postman-readme\ \(1\).md postman-readme.md
+ls -l postman-readme*
+rm postman-readme\ \(1\).md
+rm proxy-*
+cd
+ls
+cd ContractSmarts
+ls
+cd code
+ls
+cd R2R
+ls
+ls services
+less README.md
+ls
+ls js
+ls js/sdk
+ls js/sdk/src
+ls js/sdk/src/v3
+ls js/sdk/src/v3/clients
+ls js/sdk/src/v3/clients/users.ts
+less js/sdk/src/v3/clients/users.ts
+cd ..
+ls
+cd proxy-server
+ls
+git status
+tree -a -I "_ignore/" -I "node_modules/" .
+tree -a -I "_ignore/" -I "node_modules/" -I ".git/" -I ".DS_Store" .
+tree -a -I "_ignore/" -I "node_modules/" -I ".git/" -I ".DS_Store" -I "dn/" ..
+tree -a -I "_ignore/" -I "node_modules/" -I ".git/" -I ".DS_Store" -I "dn" .
+tree -a -I "_ignore/" -I "node_modules/" -I ".git/" -I ".DS_Store" -I "dn" . > directory_tree_listing.txt
+vi Makefile
+git add Makefile
+ls -l
+make tree
+less directory_tree_listing.txt
+vi directory_tree_listing.txt
+git add directory_tree_listing.txt
+git status
+ls
+git status
+ls dn
+rm dn
+ls
+git status
+ls
+mkdir bin
+touch prep_for_claude.sh
+mv prep_for_claude.sh bin
+rm bin/prep_for_claude.sh
+rmdir bin
+vi Makefile
+ls
+git add Makefile
+git status
+cat Makefile
+vi Makefile
+git add Makefile
+git status
+cat Makefile
+make claude
+ls
+less directory_tree_listing.txt
+ls
+git status
+vi .gitignore
+git add .gitignore
+git status
+git add directory_tree_listing.txt
+ls
+git status
+ls
+ln -s ~/Downloads dn
+cat dn/mock-server.ts > __tests__/mock-server.ts
+git add __tests__/mock-server.ts
+git status
+git add README.md
+cd docs
+git add README-proxy.md
+git add README-tsconfig.md
+ls -l
+head README-api.md
+head README-docker.md
+head README-environment.md
+head README-package.md
+head README-phase1.md
+git status
+ls
+head README-proxy.md
+ls
+head README-server.md
+head README-testing.md
+less README-tsconfig.md
+ls
+cd postman
+ls
+cd ..
+ls
+git status
+git add README-api.md
+git status
+git commit -m "updated version numbers"
+git push
+ls
+cd ..
+ls
+ps
+kill -9 9406
+kill -9 9407
+kill -9 9408
+kill -9 9409
+ps
+kill -9 9536
+kill -9 9537
+ls
+ls
+less Makefile
+make test
+cat Makefile
+make claude
+make test
+make test
+make test
+make test
+make test
+make test
+make test
+make test
+make test
+ls
+ls dn
+cat dn/proxy-middleware.ts > src/middleware/proxy.ts
+cat dn/server-fix.ts > src/server.ts
+rm dn/server-fix.ts
+rm dn/proxy-middleware.ts
+ls
+ls
+make test
+cat dn/proxy-middleware.ts > src/middleware/proxy.ts
+git add src/middleware/proxy.ts
+make test
+git status
+make test
+make test
+ls
+git status
+rm dn
+git add docs/README-*
+git status
+git commit -m "updated readme files"
+git push
+docker ps
+cd ..
+ls
+cd R2R
+ls
+grep -rn -e "by-filter" *
+ls
+less llms.txt
+cp llms.txt ../proxy-server/docs
+ls ..
+ls ../contractsmarts-frontend
+cd ../contractsmarts-frontend
+ls
+cd excel-addin_2
+ls
+less manifest.xml

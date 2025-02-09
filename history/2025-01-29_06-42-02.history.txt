@@ -1,0 +1,1000 @@
+ls
+git status
+ls
+cd ..
+ls
+ls
+cat ~/Downloads/readme-create-upload.md > README-create_and_upload.md
+git add README-create_and_upload.md
+git status
+cd utils
+ls
+cat ~/Downloads/bucket-upload-script.py > create_and_upload.py
+git add create_and_upload.py
+git status
+git status
+git status
+ls
+cd ..
+ls
+less cli.md
+ls
+cd utils
+ls
+touch generate_token.py
+git status
+git add __init__.py
+git add create_and_upload.py
+git add generate_token.py
+ls
+cd ..
+ls
+cd ..
+ls
+git status
+git add code/API_test.ipynb
+jupyter-lab
+pip install jupyter-lab
+which python
+pip install jupyterlab
+jupyter-lab
+jupyter-lab
+ls
+pwd
+cd ..
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd contractsmarts-r2r
+ls
+ls python
+source python/.venv/bin/activate
+which docker
+pip install r2r
+r2r serve --docker --full
+ls
+docker ps
+ls
+ls
+docker ps
+docker stop 6075a879d016
+docker stop 4c61554c545c
+docker stop e29924fa2646
+docker stop c6462a20f7ed
+docker sotp 927e19dcc0f0
+docker stop 927e19dcc0f0
+docker stop c0ddd67cb64f
+docker stop 6b90973aaca2
+ls
+ls -l
+docker ps
+docker stop 27644307b537
+docker stop 93a4d569b46c
+docker ps
+printenv
+echo $R2R_API_KEY
+ls
+cd ..
+ls
+cd R2R
+ls
+cd js
+ls
+cd sdk
+ls
+ls __tests__
+ls src
+cd src
+less r2rClient.ts
+less baseClient.ts
+ls
+pwd
+cd ..
+ls
+ls
+pwd
+which python
+ls
+pwd
+ls -a
+source .venv/bin/activate
+jupyter-lab
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd contractsmarts-rag
+ls ../r2r-webdev-template
+mv ../r2r-webdev-template .
+ls
+ls -l
+cd ..
+ls
+git clone git@github.com:davidwhiting/contractsmarts-r2r.git
+cd contractsmarts-r2r
+ls
+mv ../contractsmarts-rag .
+ls
+mv contractsmarts-rag
+ls contractsmarts-rag
+mv contractsmarts-rag/r2r-webdev-template .
+cd r2r-webdev-template
+ls -al
+rm -rf .DS_Store .git
+ls
+ls r2r-webdev-template
+cd r2r-webdev-template
+ls -al
+rm .DS_Store
+less .gitignore
+ls
+cd ..
+ls
+git add r2r-webdev-template/
+git status
+ls
+ls assets
+git add LICENSE README.md assets/*
+git status
+cd ..
+ls
+git commit -m "added r2r-webdev-template materials"
+git push
+ls
+ls contractsmarts-rag
+mv contractsmarts-rag/documents .
+cd documents
+ls -l
+cd Partnership\ Agreements
+ls -l
+ls -lh
+git add *pdf
+git status
+cd ..
+cd ..
+vi .gitignore
+git add .gitignore
+ls -l
+cd documents
+ls -l
+git status
+cd Partnership\ Agreements
+git add 0_Closing\ Binder\ TOC.docx
+git status
+ls -l
+cd Corporate\ Docs
+ls -l
+git add CA\ Articles\ of\ Incorporation\ \(BSU2017*
+git add SS-4\ *
+git add DE\ Certificate\ of\ Formation\ \(BSUPI2017\).pdf
+git status
+ls -l
+git add Certificate\ of\ Formation.pdf
+git status
+cd ..
+git status
+cd ..
+ls
+git add Certificate*
+git status
+git commit -m "Added partnership agreement docs"
+git push
+ls
+git status
+cd PECO\ -\ Winery\ Square
+ls -l
+cd 00.\ Corporate\ Documents
+ls
+ls -lh
+git add *
+cd ..
+cd 01.\ Site\ Secure\ and\ Property
+ls -lh
+git add *
+cd ..
+ls
+cd 02.\ Resource\ Performance\ Study
+ls -l
+less Sungrow_SG60KU.OND
+git add Sungrow_SG60KU.OND
+cd ..
+ls
+cd 03.\ Construction
+ls
+ls -l
+ls Roof
+cd Roof
+touch blank
+git add blank
+ls
+cd ..
+ls
+git add Insurance\ Winery\ Square.pdf
+ls Equipment
+git add Equipment/
+git status
+ls
+ls EPC\ Payments
+git add EPC\ Payments/*
+ls Daily\ Reports
+cd Daily\ Reports
+touch blank
+git add blank
+ls
+cd ..
+ls
+git status
+cd ..
+ls
+cd 04.\ Permitting
+ls -l
+ls -lh
+git add *
+cd ../05.\ Interconnection\ \&\ Transmission
+ls -l
+git add *
+cd ..
+cd 06.\ SSPA
+ls -l
+ls -lh
+git add *
+cd ../07.\ Model
+git status
+ls -l
+git add BSU\ 2017\ -\ IER\ signed\ -\ 2-10-17.pdf
+cd ../08.\ Project\ Information\ \&\ Maps
+ls
+git add Winery\ Square.kmz
+cd winery\ pics\ drone
+ls
+ls -lh
+git add *JPG
+git status
+ls -lh
+cd ..
+ls
+cd ..
+ls
+cd 09.\ Financing
+ls -lh
+git add Loan\ Pckage\ -\ Executed.pdf
+cd ../10.\ DSA
+ls
+touch blank
+git add blank
+git status
+cd ../08.\ Project\ Information\ \&\ Maps/winery\ pics\ drone
+ls -al
+rm ._DJI_0*
+git status
+cd ..
+ls
+cd  winery\ pics\ drone
+ls
+bzip2 DJI_0012.MP4
+bg
+ls -lh
+ls -lh
+man split
+ls
+cd ..
+git status
+cd ..
+ls
+cd 11.\ Operational\ Reports
+ls
+git add *
+git status
+cd ..
+ls
+git commit -m "added PECO files"
+git push
+ls -lh
+cd ..
+ls
+cd PSCO\ -\ Hanford\ Mall
+ls -l
+ls 00.\ Corporate\ Documents
+ls -lh 00.\ Corporate\ Documents
+git add 00.\ Corporate\ Documents/*
+git status
+ls -lh 01.\ Site\ Secure\ and\ Property
+git add 01.\ Site\ Secure\ and\ Property/*
+ls -lh
+ls 02.\ Resource\ Performance\ Study
+touch 02.\ Resource\ Performance\ Study/blank
+git add 02.\ Resource\ Performance\ Study/blank
+git status
+ls 03.\ Construction
+cd 03.\ Construction
+ls -lh
+ls 03.01.\ Roof\ Specs
+ls -lh 03.01.\ Roof\ Specs
+git add 03.01.\ Roof\ Specs/*
+ls
+cd 03.02.\ Equipment
+ls -lh
+git add *
+cd ..
+ls -lh
+cd ..
+ls -lh
+git status
+cd 10.\ DSA
+ls
+touch blank
+cd ..
+ls -l
+cd 03.\ Construction
+ls -lh
+git add *
+git status
+cd ../04.\ Permitting
+ls -lh
+git add *
+cd ../05.\ Interconnection\ \&\ Transimission
+cd ..
+mv 05.\ Interconnection\ \&\ Transimission 05.\ Interconnection\ \&\ Transmission
+cd 05.\ Interconnection\ \&\ Transmission
+ls
+touch blank
+git add blank
+ls -lh
+cd ..
+ls -lh
+git status
+ls -lh 06.\ SSPA
+git add 06.\ SSPA/*
+ls 07.\ Model
+ls -lh 07.\ Model
+git add 07.\ Model/*
+git status
+ls -lh
+ls 07.\ Model
+ls -lh 07.\ Model
+ls -lh 08.\ Project\ Information\ \&\ Maps
+git add 08.\ Project\ Information\ \&\ Maps/*
+git status
+ls -lh
+ls 09.\ Financing
+git add 09.\ Financing/Summary.pdf
+ls
+ls -lh
+git status
+ls 10.\ DSA
+git add 10.\ DSA/blank
+git status
+ls 11.\ Operational\ Reports
+ls -lh 11.\ Operational\ Reports
+git add 11.\ Operational\ Reports/
+git status
+git commit -m "added PSCO documents"
+git push
+ls
+cd ..
+ls
+cd ..
+ls
+ls contractsmarts-rag
+ls -a contractsmarts-rag
+mv contractsmarts-rag/javascript .
+cd javascript
+ls
+ls -lh
+git add package*
+git status
+cd ..
+ls
+mv contractsmarts-rag/python .
+cd python
+ls
+ls -al
+vi ../.gitignore
+ls
+conda activate
+rm -rf .venv
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+pip install --upgrade pip
+ls
+git add requirements.txt
+ls src
+cd src
+vi ../../.gitignore
+git status
+ls
+git add firsttrial.ipynb testrun.py
+git status
+git add ../../.gitignore
+ls
+git status
+ls
+ls vault
+cat vault/api_key
+cd ..
+ls
+cd ..
+ls
+ls contractsmarts-rag
+ls -a contractsmarts-rag
+rm -rf contractsmarts-rag
+ls -lh
+cd javascript
+ls
+npm install
+git status
+git commit -m "added python"
+git push
+ls
+printenv
+ls
+cd ..
+ls
+cd python
+ls -lh
+cd src
+ls
+less testrun.py
+less firsttrial.ipynb
+export R2R_API_KEY='1'
+ls
+cat vault/api_key
+export R2R_API_KEY='pk_a8AYAiPNenekD8ZT.sk_LiWcouomkdqToRJnB4ttmLs9yzERuj93'
+ls
+echo "export R2R_API_KEY='pk_a8AYAiPNenekD8ZT.sk_LiWcouomkdqToRJnB4ttmLs9yzERuj93'" > set_key.sh
+cat set_key.sh
+git add set_key.sh
+ls
+mv set_key.sh ..
+ls
+mv ../set_key.sh .
+git mv set_key.sh ..
+cd ..
+ls
+git mv set_key.sh ..
+cd ..
+ls
+cd javascript
+ls
+node
+ls
+npm i r2r-js
+npm i r2r-js
+git status
+ls
+printenv
+pwd
+ls
+ls -l
+uuidgen
+git status
+ls
+git commit -m "made recommended adjustments by claude"
+git push
+ls
+cd ..
+ls
+ls
+ls
+git status
+cd excel-addin-fluent
+cd src/taskpane
+git add NavigationBar.tsx Taskpane.tsx
+git add ModelAlign.tsx
+ls
+cd ..
+ls -l
+git status
+mkdir options
+ls
+mv DocumentChat* options
+git status
+ls
+mv options debug
+mv ../index.d.ts debug
+mv ../unstable.d.ts debug
+ls
+git add debug/
+git commit -m "debugging document chat, added debug section"
+git push
+ls
+git status
+cd ..
+ls
+ls
+cd ..
+ls
+ls excel-addin
+git mv excel-addin excel-addin-old
+git mv excel-addin-fluent excel-addin
+git status
+git commit -m "renamed excel-addin-fluent to excel-addin"
+git push
+ls
+ls excel-addin-fluent
+ls -a excel-addin-fluent
+ls -s excel-addin
+ls -a excel-addin
+ls
+ls excel-addin-fluent/.vite
+ls excel-addin-fluent/.vite/deps
+less excel-addin-fluent/.vite/deps/package.json
+less excel-addin-fluent/.vite/deps/_metadata.json
+mv excel-addin-fluent/.vite excel-addin
+cd excel-addin
+git add .vite/
+git status
+cd ..
+ls
+ls -a excel-addin-fluent
+rmdir excel-addin-fluent
+ls
+less README.md
+less README-oci_upload.md
+ls bin
+less oci_upload.py
+less Makefile
+ls
+ls
+ls excel-addin
+cd excel-addin
+ls node_modules
+ls
+ls
+cd ..
+ls
+git mv excel-addin excel-addin-fluent
+ls
+git status
+ls
+less requirements.txt
+less Makefile
+git status
+git add Makefile
+ls
+git add Makefile
+git status
+ls -a
+ls .venv
+source .venv/bin/activate
+ls
+which python
+ls
+less oci_upload.py
+ls
+vi oci_upload.py
+ls
+ls bin
+git mv oci_upload.py bin
+git status
+ls
+less deploy_to_oci_fixed.sh
+git mv deploy_to_oci_fixed.sh bin
+ls
+git status
+ls -l
+ls
+pwd
+ls
+less bin/oci_upload.py
+ls
+which oci_upload
+ls bin
+cd bin
+vi oci_upload
+pwd
+ls
+cd ..
+ls
+git status
+git commit -m "added oci_upload wrapper for oci_upload.py"
+git push
+ls
+make tree
+vi Makefile
+ls excel-addin-fluent
+make tree
+less tree.txt
+vi tree.txt
+git status
+git add Makefile tree.txt
+ls
+cd excel-addin-fluent
+npm install uuid
+npm install --save-dev @types/uuid
+git status
+git add package.json
+ls -l
+git add package-lock.json
+git status
+ls ~/Downloads
+cd ..
+ls
+cat tree.txt
+ls
+cd excel-addin-fluent
+ls
+ls
+cd src
+ls
+mkdir api
+cd api
+ls
+vi types.ts
+vi client.ts
+git add types.ts
+vi index.ts
+ls
+mkdir tmp
+cd tmp
+ls ~/Downloads
+mv ~/Downloads/api-docs.md .
+mv ~/Downloads/api-gateway-impl.ts .
+mv ~/Downloads/api-readme.md .
+mv ~/Downloads/excel-registration.ts .
+mv ~/Downloads/registration-readme.md .
+ls ~/Downloads
+rm ~/Downloads/SignInInfo\ \(1\).csv
+ls
+mv ~/Downloads/excel-registration.ts excel-registration2.ts
+diff excel-registration2.ts excel-registration.ts
+rm excel-registration2.ts
+ls
+cd ..
+ls
+cd ..
+ls
+mkdir services
+mkdir services/excel
+cd services/excel
+ls
+mv ../../api/tmp/excel-registration.ts registration.ts
+ls
+less registration.ts
+mv ../../api/tmp/registration-readme.md .
+ls
+vi index.ts
+ls
+git add registration* index.ts
+git status
+cd ..
+ls
+vi index.ts
+cat index.ts
+ls
+cd ..
+ls
+cd ..
+ls
+ls
+mkdir docs
+cd docs
+mkdir api
+mkdir services
+mkdir setup
+touch setup/installation.md
+touch setup/configuration.md
+touch services/excel-registration.md
+ls api
+touch api/endpoints.md
+touch api/client-usage.md
+git status
+ls
+ls services
+cat ../src/services/excel/registration-readme.md > services/excel-registration.md
+git add services/excel-registration.md
+less services/excel-registration.md
+ls
+ls
+ls -l
+ls services
+git status
+git rm -f ../src/services/excel/registration-readme.md
+git status
+ls
+ls ..
+cd ..
+ls src
+ls -l
+ls public
+ls -l
+ls
+ls src
+ls src/services/excel/registration.ts
+ls
+cd src/api
+ls
+less client.ts
+less client.ts
+ls
+mv ~/Downloads/api-client.ts .
+git status
+ls
+less client.ts
+git add client.ts
+git status
+rm api-client.ts
+git add index.ts
+ls
+ls
+ls tmp
+ls
+ls -l
+cat index.ts
+ls
+ls tmp
+less tmp/api-gateway-impl.ts
+ls
+less tmp/api-readme.md
+less client.ts
+cd ..
+ls
+mkdir unknown_api
+mv api/tmp/* unknown_api
+ls
+git status
+ls ../docs/api
+less ../docs/api/client-usage.md
+ls
+ls
+ls unknown_api
+less unknown_api/api-docs.md
+diff unknown_api/api-docs.md ~/Downloads/api-docs.md
+cd ..
+ls docs
+cd docs/api
+ls
+cat 
+cat ~/Downloads/api-docs.md > client-usage.md
+less client-usage.md
+ls
+ls endpoints.md
+git add client-usage.md
+git status
+git add endpoints.md
+git status
+ls
+git mv client-usage.md client-usage-original.md
+mv ~/Downloads/endpoints.md .
+git add endpoints.md
+git status
+git add ../../src/services/index.ts
+git status
+ls
+git status
+ls
+mv ~/Downloads/client-usage.md .
+git add client-usage.md
+ls
+git status
+ls ../../src/unknown_api
+ls
+ls
+ls
+cd ..
+ls
+cd se
+cd setup
+ls
+git add installation.md
+git add configuration.md
+ls
+git status
+ls
+cat configuration.md
+cat installation.md
+ls
+pwd
+ls
+mv ~/Downloads/configuration-docs.md configuration.md
+mv ~/Downloads/installation-docs.md installation.md
+git add configuration.md installation.md
+git status
+ls
+cd ..
+ls
+mv ~/Downloads/docs-readme.md README.md
+git add README.md
+git status
+cd ..
+ls
+cd ..
+ls
+git add README.md
+git status
+cd excel-addin-fluent
+ls
+cd src
+ls
+ls
+cd taskpane
+ls
+vi DeveloperPanel.tsx
+git status
+git commit -m "added api and services code"
+git push
+ls
+git status
+cd ../
+ls
+mv unknown_api _delete_me
+ls
+git add _delete_me/*
+git status
+git commit -m "added _delete_me files that I will eventually remove after testing"
+git push
+git add taskpane/DeveloperPanel.tsx
+ls
+ps
+kill -9 89855
+ps
+kill -9 89876
+kill -9 89877
+ps
+cd ..
+ls
+cd ..
+ls
+cat Makefile
+ls
+cd excel-addin-fluent
+ls
+cp ../Makefile .
+vi Makefile
+git add Makefile
+ls
+cd src/api
+ls
+ls tmp
+rmdir tmp
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+make tree
+vi tree.txt
+git status
+git add tree.txt
+git commit -m "added developer pane for testing"
+git push
+ls
+ls
+cd excel-addin-fluent
+ls
+cat Makefile
+make run start
+make start
+ls
+git status
+cd src/taskpane
+grep AlreadyRegisteredError *
+git status
+git add DeveloperPanel.tsx
+git add ../services/excel/registration.ts
+git status
+ls
+grep export *
+pwd
+cd ..
+ls
+cd api
+ls
+ls
+git status
+git add client.ts
+git add types.ts
+git status
+git status
+git add ../services/excel/index.ts
+git status
+git status
+git add index.ts
+git status
+git status
+git add ../services/index.ts
+git status
+ls
+git status
+git add ../taskpane/DeveloperPanel.tsx
+ls
+git status
+cd ..
+cd taskpane
+git add MainMenu.tsx
+ls
+git status
+git status
+git status
+git add MainMenu.tsx Model* NavigationBar.tsx Support.tsx
+git status
+cd ..
+git status
+git add taskpane/ModelValidate.tsx
+git status
+cd ..
+ls
+cat Makefile
+make stop
+make start
+make stop
+make start
+make stop
+make start
+git status
+git commit -m "adding automatic file registration with dialog"
+git push
+ls
+cd src/taskpane
+ls
+cp Taskpane.tsx Taskpane_relative.tsx
+git status
+git add Taskpane.tsx
+git status
+ps
+ls
+kill 58284
+ps
+ps
+ls
+rm Taskpane_relative.tsx
+git status
+ls
+git status
+git add ../../manifest.xml
+git status
+git status
+cd ..
+ls
+ls assets
+ls ../public
+ls ../public/assets
+git mv ../public/assets/contractsmarts assets/
+cd assets
+git mv ../../public/assets/support/ .
+git mv ../../public/assets/document-chat/ .
+git mv ../../public/assets/model-align/ .
+git mv ../../public/assets/model-validate/ .
+git mv ../../public/assets/model-manager/ .
+git status
+ls
+cd ..
+ls
+cd taskpane
+ls
+ls
+grep Send24Regular *
+less NavigationBar.tsx
+pwd
+pwd
+which python
+cd ..
+ls -l
+git status
+ls
+pwd
+ls
+cd tmp
+ls
+mkdir process_logo
+cd process_logo
+conda activate
+pip install PIL
+pip install pillow
+vi convert.py
+ls
+cp ~/Downloads/logo.png .
+python convert.py
+ls
+ls -l
+mkdir ~/ContractSmarts/assets
+ls
+mv convert.py logo-white.png logo.png ~/ContractSmarts/assets

@@ -1,0 +1,1017 @@
+ls
+less manifest.xml
+cd ..
+ls
+ls
+cd ..
+ls
+cd contractsmarts
+ls
+less README.md
+ls
+ls transcripts
+ls transcripts/frontend
+ls transcripts/backend
+ls
+ls
+ls
+cd ..
+ls
+cd contractsmarts-frontend
+ls
+cd upload
+ls
+cd a
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cat deploy_to_oci.sh
+curl -I https://axeo1uqf8mdx.objectstorage.us-chicago-1.oci.customer-oci.com/n/axeo1uqf8mdx/b/addin-hosting/o/test.html
+curl -I https://axeo1uqf8mdx.objectstorage.us-chicago-1.oci.customer-oci.com/n/axeo1uqf8mdx/b/addin-hosting/o/addin/a/taskpane.html
+ls
+cd ..
+ls
+cd contractsmarts-frontend-old
+ls
+cd upload
+ls
+cd a
+ls
+ls src
+ls src/taskpane
+ls
+oci os object bulk-delete \\
+    --bucket-name "addin-hosting" \\
+    --prefix "addin/a/node_modules/" \\
+    --force
+source ../../../contractsmarts-backend/.venv/bin/activate
+oci os object bulk-delete \\
+    --bucket-name "addin-hosting" \\
+    --prefix "addin/a/node_modules/" \\
+    --force
+ls\
+
+oci os object put --bucket-name addin-hosting \\
+    --file taskpane.html \\
+    --name "addin/a/taskpane.html" \\
+    --content-type "text/html"
+ls
+ls images
+ls
+ls ..
+cd ..
+cd ..
+ls
+less deploy_to_oci.sh
+cp deploy_to_oci.sh upload
+cd upload
+ls
+cat deploy_to_oci.sh
+vi deploy_to_oci.sh
+chmod +x deploy_to_oci.sh
+mv deploy_to_oci.sh deploy_to_oci_html.sh
+ls
+./deploy_to_oci_html.sh
+vi deploy_to_oci_html.sh
+./deploy_to_oci_html.sh
+ls
+ls a
+ls a/images
+ls
+ls a
+ls a/scripts
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cd contractsmarts-frontend-old
+ls
+git status
+cat deploy_to_oci.sh
+git add deploy_to_oci.sh
+git stash
+ls
+cd upload
+ls
+cd ..
+ls
+git branch -l
+git pull
+git checkout raw_upload
+ls
+cd upload
+ls
+cd a
+ls
+ls -l
+less align.html
+grep images
+grep images *html
+ls
+pwd
+git status
+git add align.html chat.html scripts/commands.js startval.html support.html taskpane.html
+ls
+git status
+cd ..
+ls
+ls
+ls a
+git status
+ls -al
+ls a
+cd ..
+ls
+cat deploy_to_oci.sh
+ls upload/a
+./deploy_to_oci.sh
+ls
+cd ..
+ls
+cd contractsmarts-frontend
+ls .venv
+ls
+cd ..
+cd contractsmarts-frontend-old
+ls
+ls ../contractsmarts-backend/.venv
+source ../contractsmarts-backend/.venv/bin/activate
+ls
+./deploy_to_oci.sh
+ls
+cd ..
+ls
+cd ..
+ls
+ls
+cd code
+ls
+cd contractsmarts-frontend
+ls
+cd excel-addin-fluent
+ls
+ci manifest.xml
+vi manifest.xml
+git add manifest.xml
+cat vite.config.ts
+vi vite.config.ts
+ls
+ls
+ls code
+ls ContractSmarts
+cd ContractSmarts
+ls code
+cd code
+ls
+cd contractsmarts
+git status
+ls
+mkdir transcripts
+cd transcripts
+ls
+mkdir oci_credentials_in_vault
+cd oci_credentials_in_vault
+ls
+touch README.md
+git status
+ls
+git add README.md
+git status
+cd ..
+ls
+ls
+cd ..
+ls
+ls transcripts
+cd transcripts
+ls
+git mv oci_credentials_in_vault/README.md README-oci_credentials_in_vault.md
+git status
+ls
+ls oci_credentials_in_vault
+rmdir oci_credentials_in_vault
+git status
+git commit -m "Added one transcript"
+git push
+ls
+git status
+ls
+less README-oci_credentials_in_vault.md
+ls
+ls
+mkdir oci_credentials_in_vault
+ls
+git mv README-oci_credentials_in_vault.md oci_credentials_in_vault
+cd oci_credentials_in_vault
+ls
+git mv README-oci_credentials_in_vault.md README-full.md
+cp README-full.md README.md
+touch code-1.js
+git status
+git add README-full.md
+git add README.md
+git add code-1.js
+ls
+pwd
+ls
+git add code-1.js
+git add README.md
+git status
+git commit -m "Updated README for oci_credential instructions"
+git push
+ls
+cd ..
+ls
+mkdir automating_certificate_renewal
+ls
+history
+man history
+history --help
+history -h
+history | grep certbot
+history
+pushd ~/
+ls -al
+less .zsh_history
+grep "cert" .zsh_history
+less .zsh_history
+ls
+sudo su -
+sudo su -
+sudo
+su -
+sudo su -
+popd
+ls
+pwd
+cd ..
+cd ..
+cd contractsmarts-backend
+git status
+source .venv/bin/activate
+echo $COMPARTMENT_ID
+touch set_all_vars.sh
+cat set_oracle_env_variables.sh
+mv set_all_vars.sh all_vars.sh
+vi all_vars.sh
+vi all_vars.sh
+chmod +x all_vars.sh
+which python
+git add all_vars.sh
+ls
+./all_vars.sh
+which oci
+brew list oci-cli
+which python
+pip install oci-cli
+pip freeze > requirements.txt
+less requirements.txt
+ls
+cat all_vars.sh
+export COMPARTMENT_ID=$(oci iam compartment list \\
+    --all \\
+    --query "data[?name=='ContractSmarts'].id | [0]" \\
+    --raw-output)
+./all_vars.sh
+cd ../contractsmarts-frontend
+ls
+ls v0.1.0
+ls -a v0.1.0
+git mv v0.1.0/.vscode/ .
+git mv v0.1.0/.eslintrc.json .
+ls
+git mv v0.1.0/node_modules/ .
+ls
+git status
+ls
+vi VERSION
+vi deploy_to_oci.sh
+ls
+vi deploy_to_oci.sh
+ls
+chmod +x deploy_to_oci.sh
+ls v0.1.0
+./deploy_to_oci.sh
+vi deploy_to_oci.sh
+./deploy_to_oci.sh
+ls
+git status
+mv VERSION VERSION.md
+git add deploy_to_oci.sh
+git commit -m "first deployment"
+git push
+ls
+ls -l
+cd excel-addin
+ls
+ls assets/images
+ls assets
+ls
+vi webpack.config.js
+git add webpack.config.js
+git status
+vi webpack.config.js
+git add webpack.config.js
+git status
+ls
+npm run build
+ls
+cd dist
+ls
+ls styles
+ls assets
+ls assets/images
+ls assets/images
+ls assets/images
+cd assets/images
+ls
+pwd
+ls support
+mv support/* .
+rmdir support
+ls
+cd ..
+ls
+cd ..
+ls
+rm -rf *
+ls
+ls
+cd ..
+ls
+vi webpack.config.js
+ls dist
+npm run build
+ls
+cd dist
+ls
+ls assets
+ls assets/assets
+ls assets/images
+rm -rf *
+cd ..
+vi webpack.config.js
+npm run build
+ls
+cd dist
+ls
+cd assets
+ls
+ls images
+cd ..
+ls
+ls assets2
+rm -rf *
+cd ..
+vi webpack.config.js
+vi webpack.config.js
+ls
+git status
+git add webpack.config.js
+ls
+rm -rf dist2
+ls
+ls dist
+cd ..
+ls
+ls
+make tree
+less tree.txt
+ls
+cat tree.txt
+ls
+cd excel-addin
+ls
+less manifest.xml
+cat manifest.xml
+q
+ls
+mv ~/Downloads/webpack-config.js webpack.config.js
+ls
+git status
+git add ../tree.txt
+ls
+ls dist
+npm run build
+mv ~/Downloads/webpack-config.js webpack.config.js
+ls
+rm -rf dist/*
+npm run build
+ls dist/assets
+ls dist/assets/images
+git status
+git checkout 0882855
+ls
+cd ..
+ls
+ls Excel\ Add-In
+ls Excel\ TaskPane
+cd
+cd tmp
+ls
+mkdir tmp
+wget https://api.contractsmarts.ai/static/v1.0/manifest.xml
+cd ~/ContractSmarts/code/contractsmarts-frontend/
+ls
+git checkout main
+ls
+cd excel-addin
+ls
+cd dist
+ls -l
+git pull
+git checkout original
+ls
+cd ..
+cd ..
+ls
+cd Excel\ Add-In
+ls -l
+ls
+ls assets
+cd ..
+ls
+git status
+mkdir upload
+ls
+mkdir upload/a/
+ls
+ls Excel\ Add-In
+rsync -avP Excel\ Add-In/ upload/a/
+ls
+ls Excel\ TaskPane/
+ls upload/a
+ls upload/a/src
+ls upload/a/src/taskpane
+ls upload/a/src/commands
+ls upload/a/src/
+ls upload/a/
+ls
+ls
+ls upload
+cd upload/a
+ls
+rsync -avP ../../Excel\ TaskPane .
+ls
+mv Excel\ TaskPane/images .
+ls Excel\ TaskPane
+ls src
+ls
+mv Excel\ TaskPane/scripts src
+ls src
+mv Excel\ TaskPane/* src
+ls
+mv images src
+ls
+ls Excel\ TaskPane
+ls -a Excel\ TaskPane
+rmdir Excel\ TaskPane
+ls
+less Makefile
+npm install
+ls
+ls
+pwd
+ls
+rm -rf .vscode
+ls -a
+ls assets
+rm .eslintrc.json
+ls
+ls src
+ls
+ls src
+mv src/images .
+ls images
+ls
+ls src
+mv src/scripts .
+ls
+ls scripts
+ls src
+mv src/taskpane.html .
+mv src/startval.html .
+ls src
+ls ../../Excel\ Add-In
+ls ../../Excel\ Add-In/src
+mv src/align.html .
+mv src/chat.html .
+mv src/style.css .
+ls src
+mv src/support.html .
+mv src/chat.css .
+ls
+ls src/commands
+ls ../../Excel\ Add-In/src/commands
+ls src
+ls ../../Excel\ Add-In/src/taskpane
+ls src/taskpane
+ls
+grep lulu *
+grep lulu *
+grep -R lulu *
+ls
+ls
+cd ..
+du -sk a
+ls
+ls a
+mkdir b
+rsync -avP a/ b/
+ls
+ls a
+cd a
+ls
+pwd
+ls
+pwd
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+ls excel-addin
+ls excel-addin/src
+rmdir excel-addin/src
+ls -a excel-addin/src
+rm excel-addin/src/.DS_Store
+rmdir excel-addin/src
+ls excel-addin/tmp
+rm excel-addin/tmp/manifest.xml
+rmdir excel-addin/tmp
+git status
+ls excel-addin
+ls excel-addin/node_modules
+rm -rf excel-addin/node_modules
+cd excel-addin
+ls -l
+cd node_modules
+ls -l
+ls -a
+rm .DS_Store
+cd ..
+rmdir node_modules
+ls
+ls dist
+cd dist
+ls
+rm *
+ls
+rm -rf assets styles
+ls
+ls -a
+rm .DS_Store
+cd ..
+rmdir dist
+ls
+ls -a
+rm .DS_Store
+cd ..
+rmdir excel-addin
+git status
+vi .gitignore
+git status
+git add .gitignore
+ls upload
+ls upload
+cd upload
+ls
+ls a
+ls
+ls a
+ls b
+ls
+ls
+cd
+ls
+cd ContractSmarts
+ls
+cd code
+ls
+cd contractsmarts-frontend
+ls
+cd ../contractsmarts-frontend-old
+ls
+cp deploy_to_oci.sh ../contractsmarts-frontend
+cd ..
+ls
+cd contractsmarts-frontend
+ls
+vi deploy_to_oci.sh
+ls
+ls upload/a
+ls
+git add deploy_to_oci.sh
+ls
+git status
+ls
+cd upload
+ls
+ls
+cd a
+ls
+git add Makefile align.html assets/*
+git add babel.config.json chat.* images/* manifest.xml package.json
+git add src/*
+git status
+git add scripts/*
+git add style.css
+git add startval.html
+git add support.html
+git add webpack.config.js taskpane.html
+ls
+git status
+git add package-lock.json
+git status
+ls
+ls
+ls -lh
+git status
+ls
+cd ..
+ls
+cd a
+ls
+ls node_modules
+ls
+less webpack.config.js
+ls
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cat deploy_to_oci.sh
+ls upload/a
+./deploy_to_oci.sh
+ls
+ls -l
+ls
+cd ..
+ls
+cd tmp
+ls
+mkdir tmp
+cd tmp
+wget https://api.contractsmarts.ai/static/a/manifest.xml
+less manifest.xml
+ls
+rm manifest.xml
+ls
+cd
+cd ContractSmarts
+ls
+cd co
+cd code
+ls
+cd contractsmarts-frontend
+git status
+git checkout -b raw_upload
+git status
+git commit -m "added upload/a directory"
+git push
+git push --set-upstream origin raw_upload
+ls
+ls
+ls upload
+cd upload
+ls
+cd b
+ls
+grep assets *
+ls assets
+grep icon-32 *
+ls
+ls scripts
+cd ..
+ls
+cd a
+ls
+npm run
+npm run start
+npm run top
+ls
+ls
+git status
+ls
+git checkout main
+ls
+git status
+cd ..
+cd ..
+ls
+git status
+ls upload
+ls
+git status
+ls -a
+cd ..
+ls
+mv contractsmarts-frontend contractsmarts-frontend-a
+mv contractsmarts-frontend-a contractsmarts-frontend-
+mv contractsmarts-frontend- contractsmarts-frontend
+cd contractsmarts-frontend
+ls
+git pull
+git checkout fluent
+git checkout fluent_ui
+ls
+ls -l
+ls upload/a
+git status
+ls -l
+cd ..
+rm -rf contractsmarts-frontend
+ls
+cd contractsmarts-frontend
+ls
+cd upload
+ls
+cd a
+ls
+cd node_modules
+ls
+cd rxjs
+ls
+ls -a
+rm .DS_Store
+cd ..
+rmdir rxjs
+rm .DS_Store
+cd ..
+rmdir node_modules
+rm .DS_Store
+cd ..
+rmdir a
+ls -a
+rm .DS_Store
+ls a
+ls -a a
+rm a/.DS_Store
+rmdir a
+ls
+cd ..
+ls
+rmdir upload
+ls -a upload
+rm upload/.DS_Store
+rmdir upload
+ls -a
+rm .DS_Store
+cd ..
+mv contractsmarts-frontend cs-frontent
+git clone git@github.com:davidwhiting/contractsmarts-frontend.git
+ls
+cd contractsmarts
+cd ../contractsmarts-frontend
+ls
+mv ../cs-frontent/.venv .
+ls
+git checkout fluent_ui
+ls
+ls -l
+ls excel-addin
+ls -a excel-addin
+rm excel-addin/.DS_Store
+ls -a
+ls -l
+ls excel-addin
+rmdir excel-addin
+ls
+ls -l
+mkdir addin
+cd addin
+ls
+cd ..
+rmdir addin
+npm create vite@latest excel-addin-fluent -- --template react-ts
+cd excel-addin-fluent
+npm install
+npm install @fluentui/react-components\
+npm install @fluentui/react-icons
+npm install --save-dev @types/office-js
+ls
+cat vite.config.ts
+ls
+vi vite.config.ts
+git add vite.config.ts
+git status
+git add tsconfig.*
+ls src
+cd src
+git add *
+ls
+cd ..
+git status
+git add eslint.config.js
+git add index.html
+git add package*
+ls public
+git add public/vite.svg 
+git status
+less .gitignore
+git add .gitignore
+less README.md
+ls
+ls
+ls public
+ls src
+ls
+cd src
+ls
+mkdir taskpane
+cd taskpane
+ls -l
+mv ~/Downloads/taskpane-component.ts Taskpane.tsx
+git status
+ls
+vi taskpane.html
+vi main.tsx
+ls
+cd ..
+ls
+cd ..
+ls
+vi manifest.xml
+git add manifest.xml
+git status
+git add src/taskpane/*
+git status
+ls
+vi package.json
+vi package.json
+git status
+git add package.json
+git add README.md
+git status
+npm install --save-dev office-addin-dev-certs
+npx office-addin-dev-certs install
+git status
+git add package.json
+git add package-lock.json
+git status
+git commit -m "added suggested components"
+git push
+npm run dev
+# Install Office Add-in development tools\
+npm install --save-dev office-addin-debugging\
+npm install --save-dev office-addin-dev-certs\
+npm install --save-dev office-addin-manifest
+ps
+npm run dev
+npm run stop
+npm run dev
+ls
+ls
+cd
+cd -
+ls
+git status
+ls -l
+mv node_modules ..
+cd ..
+tree excel-addin-fluent > tree.txt
+less tree.txt
+ls
+cd excel-addin-fluent
+ls
+cat manifest.xml
+ls
+mv ../node_modules .
+git status
+cd src
+ls
+git rm main.tsx
+git rm App.tsx
+ls
+ls assets
+cd ..
+ls
+cd public
+ls
+cd ..
+ls
+less manifest.xml
+ls
+ls public
+cd public
+mkdir assets
+cd ..
+cd ..
+ls
+cd Excel\ Add-In
+ls
+cd assets
+ls
+cp icon-* ../../excel-addin-fluent/public/assets
+cd ../../excel-addin-fluent/public
+ls
+git status
+git add assets/*
+git status
+cd ..
+ls
+git add ../tree.txt
+git status
+ls
+ls ~/.office-addin-dev-certs
+vi vite.config.ts
+git add vite.config.ts
+vi tsconfig.app.json
+ls
+vi package.json
+git status
+git add package.json tsconfig.app.json
+git status
+vi manifest.xml
+cd ..
+ls
+pwd
+mkdir contractsmarts-rag
+cd contractsmarts-rag
+which python
+conda activate
+python -m venv .venv
+source .venv/bin/activate
+cd ..
+cd ..
+ls
+cd ..
+ls
+cd contractsmarts-rag
+ls
+cd javascript
+ls
+cd ..
+ls
+ls -a
+mkdir python
+mv requirements.txt python
+rm -rf .venv
+cd python
+mv ../src .
+conda activate
+python -m venv .venv
+ls .venv
+ls
+source .venv/bin/activate
+(awk -F "=" '/user/ {gsub(/ /,"",$2); print $2}' ~/.oci/config)
+cd .oci
+cat config
+awk -F "=" '/^\[phoenix\]/ {in_section=1} /^\[/{if ($0 != "[phoenix]") in_section=0} in_section && $1 == "user" {gsub(/ /, "", $2); print $2}' ~/.oci/config
+popd
+cd
+ls
+cd Demo
+ls
+cd
+cat id_rsa.pub > .ssh/authorized_keys
+cd .ssh
+ls -l
+chmod go-r authorized_keys
+ls -l
+cd
+ls .oci
+cd .oci
+less config
+ls
+mkdir oldkeys
+cp *pem oldkeys
+ls
+cat docker_token
+cp docker_token docker_token_old
+vi docker_token
+cat docker_token
+cd
+popd
+cd ContractSmarts/code/contractsmarts-backend
+ls
+less set_oracle_env_variables.sh
+ls
+ls
+cat ~/.oci/docker_token
+which oci
+source .venv/bin/activate
+which oci
+oci artifacts container repository list --compartment-id ocid1.compartment.oc1..aaaaaaaajjib7outhe3l5ucwcohp5fp5sffzhjb2lvillj56uitcsvfydotq --region us-chicago-1
+vi ~/.oci/docker_token
+echo $OCI_NAMESPACE
+cat ~/.oci/docker_token
+vi ~/.oci/docker_token
+cat ~/.oci/docker_token
+curl -u 'axeo1uqf8mdx/david.g.whiting@gmail.com:uY0o;u2jaz0QsSM:9Y+J' -v https://ord.ocir.io/v2/
+ls
+less set_oracle_env_variables.sh
+pushd ../contractsmarts-frontend
+ls
+ls bin
+popd
+ls
+less all_vars.sh

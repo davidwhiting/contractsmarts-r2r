@@ -1,0 +1,1019 @@
+docker login ord.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com
+docker login phx.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com
+echo -n "$OCI_DOCKER_TOKEN" | wc -c
+oci iam auth-token create \\
+    --description "docker-test" \\
+    --user-id "$USER_OCID" \\
+    --region us-phoenix-1
+docker login ord.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com
+export OCI_DOCKER_TOKEN="U1UizPFEVY<B67V)Xm[F"
+echo $OCI_DOCKER_TOKEN
+echo "$OCI_DOCKER_TOKEN" | hexdump -C
+echo -n "U1UizPFEVY<B67V)Xm[F" > ~/.oci/docker_token
+export OCI_DOCKER_TOKEN=$(cat ~/.oci/docker_token)
+docker login ord.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com --password-stdin < <(echo -n "$OCI_DOCKER_TOKEN")
+docker login ord.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com --debug
+echo '{"debug": true}' > ~/.docker/daemon.json
+killall Docker && open -a Docker
+sudo killall Docker && open -a Docker
+ls
+which docker
+docker system info
+docker system events
+pwd
+popd
+pwd
+ls
+popd
+ls
+cd ..
+ls
+pushd ~/.oci
+ls
+less docker_token
+echo $OCI_DOCKER_TOKEN
+DOCKER_TLS_DEBUG=1 docker login ord.ocir.io -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com
+curl -v https://ord.ocir.io/v2/
+curl -v -H "Authorization: Basic $(echo -n "axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com:$OCI_DOCKER_TOKEN" | base64)" https://ord.ocir.io/v2/
+echo $TOKEN
+export TOKEN=$(curl -s \\
+  -u "axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com:$OCI_DOCKER_TOKEN" \\
+  "https://ord.ocir.io/20180419/docker/token?service=ord.ocir.io&scope=repository:*:*")\
+
+echo $TOKEN
+export TOKEN=$(curl -s \\
+ -u "axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com:$OCI_DOCKER_TOKEN" \\
+ "https://ord.ocir.io/20180419/docker/token?service=ord.ocir.io&scope=repository:library:pull")
+echo $TOKEN
+export TOKEN=$(curl -s \\
+  -u "axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com:$OCI_DOCKER_TOKEN" \\
+  "https://ord.ocir.io/20180419/docker/token?service=ord.ocir.io")
+echo $TOKEN
+popd
+vi registry_links_for_download
+ls
+bash registry_links_for_download
+ls
+cd Registry
+ls
+mv edit-repository.htm edit-repository.htm.txt
+mv get-repository.htm get-repository.htm.txt
+mv home.htm home.htm.txt
+mv list-repository.htm list-repository.htm.txt
+ls *htm
+mv registryprerequisites.htm registryprerequisites.htm.txt
+mv registrypolicyrepoaccess.htm registrypolicyrepoaccess.htm.txt
+mv registryoverview.htm registryoverview.htm.txt
+mv registrymovingrepos.htm registrymovingrepos.htm.txt
+mv registrymanagingrepositories.htm registrymanagingrepositories.htm.txt
+mv registrygettingauthtoken.htm registrygettingauthtoken.htm.txt
+mv registrydeletingrepos.htm registrydeletingrepos.htm.txt
+mv registrycreatingarepository.htm registrycreatingarepository.htm.txt
+ls
+mv registryconcepts.htm registryconcepts.htm.txt
+popd
+ls
+which python
+pwd
+cd ..
+ls
+docker login ocir.us-chicago-1.oci.oraclecloud.com \\
+  -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com \\
+  -p $OCI_DOCKER_TOKEN
+docker login ord.ocir.io \\
+  -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com \\
+  -p $OCI_DOCKER_TOKEN
+vi docker_registry_access_token
+ls
+export OCI_DOCKER_TOKEN=$(cat ~/.oci/docker_token)
+echo $OCI_DOCKER_TOKEN
+docker login ord.ocir.io \\
+  -u axeo1uqf8mdx/oracleidentitycloudservice/david.g.whiting@gmail.com \\
+  -p $OCI_DOCKER_TOKEN
+oci os bucket get \\
+    --namespace-name axeo1uqf8mdx \\
+    --name contractsmarts-demo-bucket-2024-10 \\
+    --region us-chicago-1
+cd ~/.oci
+ls
+vi docker_token
+docker system events
+docker images
+pwd
+/usr/bin/python3 /Users/david/.cursor/extensions/ms-python.python-2024.12.3-darwin-arm64/python_files/printEnvVariablesToFile.py /Users/david/.cursor/extensions/ms-python.python-2024.12.3-darwin-arm64/python_files/deactivate/zsh/envVars.txt
+source .venv/bin/activate
+ls
+ls -al
+ls src
+cd ..
+ls
+cd javascript
+ls
+npm install r2r-js
+ls
+ls -l
+ls
+cd ..
+ls
+cd python
+ls
+ls -a
+pip install jupyter
+pip install --upgrade pip
+ls
+ls ..
+ls -a ..
+ls
+ls
+ls src
+cd src
+cat api_key
+cd ..
+ls
+jupyter-lab
+bg
+pip install r2r
+pip freeze > requirements.txt
+ls
+rm Untitled.ipynb
+cd src
+ls
+chmod -x api_key
+mkdir vault
+mv api_key vault
+ls -lr
+cd vault/
+ls
+ls -l
+cat api_key
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+git clone git@github.com:davidwhiting/R2R.git
+cd R2R
+ls
+cd py
+ls
+ls core
+cd core/examples
+ls
+less hello_r2r.py
+ls supported_file_types
+ls data
+ls
+less __init__.py
+cd ..
+ls
+ls main
+ls base
+ls
+cd ..
+ls
+grep -R R2RClient *
+grep -R R2R_API_KEY *
+cd cli
+less command_group.py
+ls ~/.r2r
+less ~/.r2r/config.json
+ls
+cat ~/.r2r/config.json
+ls
+ls
+pwd
+which python
+popd
+cd /Users/david/ContractSmarts/code/contractsmarts-rag/python
+ls
+conda create -n r2r python=3.12
+pwd
+cd ..
+cd ..
+ls
+cd ..
+cd marketing
+ls
+cd png
+ls
+mv ~/Downloads/Slide4.PNG .
+cd ..
+ls
+vi makepdf.py
+ls
+cd ..
+ls
+cd ..
+ls
+cd ContractSmarts
+ls
+ls
+ls
+pwd
+cd code
+ls -l
+cd contractsmarts-frontend
+ls
+git status
+ls
+ls
+cd ..
+ls
+cd documents
+ls
+ls -l Partnership\ Agreements
+ls -1 Partnership\ Agreements
+ls -1 Partnership\ Agreements/Corporate\ Docs
+ls -1 PECO\ -\ Winery\ Square
+ls -1 PECO\ -\ Winery\ Square/00.\ Corporate\ Documents
+ls -1 Partnership\ Agreements/Corporate\ Docs/
+cd ..
+ls -l
+cd documents
+ls -lR PECO\ -\ Winery\ Square
+ls -1R PECO\ -\ Winery\ Square
+ls -1R PECO\ -\ Winery\ Square > peco_file_list
+grep BSU peco_file_list
+grep REF peco_file_list
+vi peco_file_list
+ls -1R "PSCO - Hanford Mall/" > psco_file_list
+cat psco_file_list
+ls -l
+ls -1R "Partnership Agreements" > partnership_file_list
+cat partnership_file_list
+vi partnership_file_list
+ls -l ls
+ls
+cat psco_file_list
+vi psco_file_list
+vi peco_file_list
+ls -l ~/.r2r
+chmod 600 ~/.r2r/config.json
+ls
+cd src
+ls
+cat vault
+cat vault/api_key
+cd
+ls
+cd ContractSmarts/code
+ls
+cd R2R
+ls
+grep -r R2RAsyncClient *
+cd py
+cd sdk
+less async_client.py
+cd base
+ls
+less base_client.py
+ls
+ls
+pwd
+cat base_client.py
+less base_client.py
+pwd
+less base_client.py
+ls
+pwd
+ls
+ls
+cd ContractSmarts
+ls
+cd co
+cd code
+git clone git@github.com:davidwhiting/r2r-webdev-template.git
+ls -l
+ls cs-frontent
+rmdir cs-frontent
+ls
+ls
+ls
+cd r2r-webdev-template
+ls
+ls -l
+cd ..
+ls
+cd contractsmarts-frontend-main
+ls
+cd excel-addin-fluent
+ls
+ls src
+cd src
+ls taskpane
+pwd
+less taskpane/DocumentChat.tsx
+cat taskpane/DocumentChat.tsx
+ls
+pwd
+ls
+ls
+ls
+pwd
+cd ..
+cd ..
+ls
+cd ..
+ls
+cd contractsmarts-r2r
+ls
+ls -l
+cd javascript
+ls
+touch README.md
+ls
+ls ..
+less ../set_key.sh
+ls
+node
+ls
+node install r2r-js
+npm install r2r-js
+node
+cd ContractSmarts
+ls
+mkdir marketing
+cd marketing
+ls ~/Downloads
+rm ~/Downloads/Slide*
+ls ~/david.g.whiting@gmail.com\ -\ Google\ Drive/My\ Drive/ContractSmarts/Slide*
+cp ~/david.g.whiting@gmail.com\ -\ Google\ Drive/My\ Drive/ContractSmarts/Slide* .
+ls
+ls -l
+conda activate
+python -m venv .venv
+source .venv/bin/activate
+pip install pillow reportlab
+pip install --upgrade pip
+ls
+mkdir png
+mv *PNG png
+ls png
+ls
+vi makepdf.py
+cat makepdf.py
+python makepdf.py
+ls
+ls -l
+ls -lh
+mv output_presentation.pdf ContractSmarts_frozen.pdf
+ls
+ls -l
+rm Slide4.PNG
+ls
+cd png
+ls
+cd ..
+ls
+ls -l
+mv makepdf.py oldmakepdf.py
+vi makepdf.py
+ls
+mv ContractSmarts_frozen.pdf ContractSmarts_frozen_old.pdf
+python makepdf.py
+ls
+mv output_presentation.pdf ContractSmarts_update.pdf
+cd ..
+ls
+cd contractsmarts-backend
+ls
+git status
+ls
+ls secrets
+ls transcripts
+ls gateway-config.json
+less gateway-config.json
+less all_vars.sh
+ls -l
+ls bin
+ls doc
+ls
+cd ..
+ls
+cd contractsmarts-ai
+ls -l
+git status
+cd code
+ls -l
+ls -a
+cd ..
+ls
+ls -a
+source .venv/bin/activate
+ls
+jupyter-lab
+ls
+cd utils
+ls
+cat __init__.py
+pwd
+cd ..
+cd ..
+ls
+cd ../contractsmarts-backend
+ls
+touch .gitignore
+cd ..
+ls
+ls
+vi contractsmarts.code-workspace
+rm contractsmarts.code-workspace
+cd contractsmarts-frontend
+git pull
+ls -al
+cd ../contractsmarts-ai
+ls
+git status
+git status
+git add .gitignore
+git add code/API_test.ipynb
+git status
+git add code/utils/uploader.py
+git status
+git status
+ls
+ls code
+ls
+git status
+cd code/utils
+git add uploader.py
+git add __init__.py
+ls
+git status
+cd ..
+git add API_test.ipynb
+git status
+ls
+cd utils
+ls
+git status
+git add uploader.py
+git status
+cd ..
+ls
+ls
+mkdir test_docs
+pushd ~/
+cd ContractSmarts
+ls
+ls contractsmarts
+cd contractsmarts/src
+ls
+ls 02.\ Blue\ Sky\ Utility\ Portfolio\ I\ 2017\ LLC\ \(PDA,344\)
+pwd
+popd
+cd test_docs
+rsync -avP ~/ContractSmarts/contractsmarts/src/02.\ Blue\ Sky\ Utility\ Portfolio\ I\ 2017\ LLC\ \(PDA,344\)/ .
+ls
+cd ..
+ls
+cd ..
+ls
+ls -a
+source .venv/bin/activate
+pip install fnmatch
+git status
+ls
+git add code/utils/uploader.py
+git status
+ls
+cd code
+ls
+mv test_docs ..
+ls
+cd ..
+ls
+ls test_docs
+cd test_docs
+ls -l
+ls Partnership\ Agreements
+ls Partnership\ Agreements/Corporate\ Docs
+cp Partnership\ Agreements/Corporate\ Docs/Certificate\ of\ Formation.pdf ..
+cd ..
+ls
+cp Certificate\ of\ Formation.pdf code
+ls
+ls
+mv Certificate\ of\ Formation.pdf Certificate.pdf
+pwd
+ls
+cd code
+ls
+mv ~/Downloads/README-uploader.md .
+git add README-uploader.md
+git status
+git add API_test.ipynb
+ls
+ls ..
+cd ..
+ls test_docs
+ls test_docs/Partnership\ Agreements
+ls test_docs/Partnership\ Agreements/Corporate\ Docs
+ls
+rsync -avP test_docs/Partnership\ Agreements code
+ls
+cd code
+ls
+git status
+git commit -m "Updated uploader to add exclude files syntax"
+git push
+ls
+git status
+git add utils/uploader.py
+git status
+git status
+ls
+cd utils
+ls
+touch create_and_upload.py
+cd ..
+ls
+touch README-create_and_upload.md
+git add README-create_and_upload.md
+git status
+git add utils/create_and_upload.py
+git status
+cd utils
+ls
+rm -rf __pycache__
+ls
+git add __init__.py
+ls
+git status
+ls
+cd ..
+ls
+ls
+cat ~/Downloads/readme-create-upload.md > README-create_and_upload.md
+git add README-create_and_upload.md
+git status
+cd utils
+ls
+cat ~/Downloads/bucket-upload-script.py > create_and_upload.py
+git add create_and_upload.py
+git status
+git status
+git status
+ls
+cd ..
+ls
+less cli.md
+ls
+cd utils
+ls
+touch generate_token.py
+git status
+git add __init__.py
+git add create_and_upload.py
+git add generate_token.py
+ls
+cd ..
+ls
+cd ..
+ls
+git status
+git add code/API_test.ipynb
+jupyter-lab
+pip install jupyter-lab
+which python
+pip install jupyterlab
+jupyter-lab
+jupyter-lab
+ls
+pwd
+cd ..
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd contractsmarts-r2r
+ls
+ls python
+source python/.venv/bin/activate
+which docker
+pip install r2r
+r2r serve --docker --full
+ls
+docker ps
+ls
+ls
+docker ps
+docker stop 6075a879d016
+docker stop 4c61554c545c
+docker stop e29924fa2646
+docker stop c6462a20f7ed
+docker sotp 927e19dcc0f0
+docker stop 927e19dcc0f0
+docker stop c0ddd67cb64f
+docker stop 6b90973aaca2
+ls
+ls -l
+docker ps
+docker stop 27644307b537
+docker stop 93a4d569b46c
+docker ps
+printenv
+echo $R2R_API_KEY
+ls
+cd ..
+ls
+cd R2R
+ls
+cd js
+ls
+cd sdk
+ls
+ls __tests__
+ls src
+cd src
+less r2rClient.ts
+less baseClient.ts
+ls
+pwd
+cd ..
+ls
+ls
+pwd
+which python
+ls
+pwd
+ls -a
+source .venv/bin/activate
+jupyter-lab
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd contractsmarts-rag
+ls ../r2r-webdev-template
+mv ../r2r-webdev-template .
+ls
+ls -l
+cd ..
+ls
+git clone git@github.com:davidwhiting/contractsmarts-r2r.git
+cd contractsmarts-r2r
+ls
+mv ../contractsmarts-rag .
+ls
+mv contractsmarts-rag
+ls contractsmarts-rag
+mv contractsmarts-rag/r2r-webdev-template .
+cd r2r-webdev-template
+ls -al
+rm -rf .DS_Store .git
+ls
+ls r2r-webdev-template
+cd r2r-webdev-template
+ls -al
+rm .DS_Store
+less .gitignore
+ls
+cd ..
+ls
+git add r2r-webdev-template/
+git status
+ls
+ls assets
+git add LICENSE README.md assets/*
+git status
+cd ..
+ls
+git commit -m "added r2r-webdev-template materials"
+git push
+ls
+ls contractsmarts-rag
+mv contractsmarts-rag/documents .
+cd documents
+ls -l
+cd Partnership\ Agreements
+ls -l
+ls -lh
+git add *pdf
+git status
+cd ..
+cd ..
+vi .gitignore
+git add .gitignore
+ls -l
+cd documents
+ls -l
+git status
+cd Partnership\ Agreements
+git add 0_Closing\ Binder\ TOC.docx
+git status
+ls -l
+cd Corporate\ Docs
+ls -l
+git add CA\ Articles\ of\ Incorporation\ \(BSU2017*
+git add SS-4\ *
+git add DE\ Certificate\ of\ Formation\ \(BSUPI2017\).pdf
+git status
+ls -l
+git add Certificate\ of\ Formation.pdf
+git status
+cd ..
+git status
+cd ..
+ls
+git add Certificate*
+git status
+git commit -m "Added partnership agreement docs"
+git push
+ls
+git status
+cd PECO\ -\ Winery\ Square
+ls -l
+cd 00.\ Corporate\ Documents
+ls
+ls -lh
+git add *
+cd ..
+cd 01.\ Site\ Secure\ and\ Property
+ls -lh
+git add *
+cd ..
+ls
+cd 02.\ Resource\ Performance\ Study
+ls -l
+less Sungrow_SG60KU.OND
+git add Sungrow_SG60KU.OND
+cd ..
+ls
+cd 03.\ Construction
+ls
+ls -l
+ls Roof
+cd Roof
+touch blank
+git add blank
+ls
+cd ..
+ls
+git add Insurance\ Winery\ Square.pdf
+ls Equipment
+git add Equipment/
+git status
+ls
+ls EPC\ Payments
+git add EPC\ Payments/*
+ls Daily\ Reports
+cd Daily\ Reports
+touch blank
+git add blank
+ls
+cd ..
+ls
+git status
+cd ..
+ls
+cd 04.\ Permitting
+ls -l
+ls -lh
+git add *
+cd ../05.\ Interconnection\ \&\ Transmission
+ls -l
+git add *
+cd ..
+cd 06.\ SSPA
+ls -l
+ls -lh
+git add *
+cd ../07.\ Model
+git status
+ls -l
+git add BSU\ 2017\ -\ IER\ signed\ -\ 2-10-17.pdf
+cd ../08.\ Project\ Information\ \&\ Maps
+ls
+git add Winery\ Square.kmz
+cd winery\ pics\ drone
+ls
+ls -lh
+git add *JPG
+git status
+ls -lh
+cd ..
+ls
+cd ..
+ls
+cd 09.\ Financing
+ls -lh
+git add Loan\ Pckage\ -\ Executed.pdf
+cd ../10.\ DSA
+ls
+touch blank
+git add blank
+git status
+cd ../08.\ Project\ Information\ \&\ Maps/winery\ pics\ drone
+ls -al
+rm ._DJI_0*
+git status
+cd ..
+ls
+cd  winery\ pics\ drone
+ls
+bzip2 DJI_0012.MP4
+bg
+ls -lh
+ls -lh
+man split
+ls
+cd ..
+git status
+cd ..
+ls
+cd 11.\ Operational\ Reports
+ls
+git add *
+git status
+cd ..
+ls
+git commit -m "added PECO files"
+git push
+ls -lh
+cd ..
+ls
+cd PSCO\ -\ Hanford\ Mall
+ls -l
+ls 00.\ Corporate\ Documents
+ls -lh 00.\ Corporate\ Documents
+git add 00.\ Corporate\ Documents/*
+git status
+ls -lh 01.\ Site\ Secure\ and\ Property
+git add 01.\ Site\ Secure\ and\ Property/*
+ls -lh
+ls 02.\ Resource\ Performance\ Study
+touch 02.\ Resource\ Performance\ Study/blank
+git add 02.\ Resource\ Performance\ Study/blank
+git status
+ls 03.\ Construction
+cd 03.\ Construction
+ls -lh
+ls 03.01.\ Roof\ Specs
+ls -lh 03.01.\ Roof\ Specs
+git add 03.01.\ Roof\ Specs/*
+ls
+cd 03.02.\ Equipment
+ls -lh
+git add *
+cd ..
+ls -lh
+cd ..
+ls -lh
+git status
+cd 10.\ DSA
+ls
+touch blank
+cd ..
+ls -l
+cd 03.\ Construction
+ls -lh
+git add *
+git status
+cd ../04.\ Permitting
+ls -lh
+git add *
+cd ../05.\ Interconnection\ \&\ Transimission
+cd ..
+mv 05.\ Interconnection\ \&\ Transimission 05.\ Interconnection\ \&\ Transmission
+cd 05.\ Interconnection\ \&\ Transmission
+ls
+touch blank
+git add blank
+ls -lh
+cd ..
+ls -lh
+git status
+ls -lh 06.\ SSPA
+git add 06.\ SSPA/*
+ls 07.\ Model
+ls -lh 07.\ Model
+git add 07.\ Model/*
+git status
+ls -lh
+ls 07.\ Model
+ls -lh 07.\ Model
+ls -lh 08.\ Project\ Information\ \&\ Maps
+git add 08.\ Project\ Information\ \&\ Maps/*
+git status
+ls -lh
+ls 09.\ Financing
+git add 09.\ Financing/Summary.pdf
+ls
+ls -lh
+git status
+ls 10.\ DSA
+git add 10.\ DSA/blank
+git status
+ls 11.\ Operational\ Reports
+ls -lh 11.\ Operational\ Reports
+git add 11.\ Operational\ Reports/
+git status
+git commit -m "added PSCO documents"
+git push
+ls
+cd ..
+ls
+cd ..
+ls
+ls contractsmarts-rag
+ls -a contractsmarts-rag
+mv contractsmarts-rag/javascript .
+cd javascript
+ls
+ls -lh
+git add package*
+git status
+cd ..
+ls
+mv contractsmarts-rag/python .
+cd python
+ls
+ls -al
+vi ../.gitignore
+ls
+conda activate
+rm -rf .venv
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+pip install --upgrade pip
+ls
+git add requirements.txt
+ls src
+cd src
+vi ../../.gitignore
+git status
+ls
+git add firsttrial.ipynb testrun.py
+git status
+git add ../../.gitignore
+ls
+git status
+ls
+ls vault
+cat vault/api_key
+cd ..
+ls
+cd ..
+ls
+ls contractsmarts-rag
+ls -a contractsmarts-rag
+rm -rf contractsmarts-rag
+ls -lh
+cd javascript
+ls
+npm install
+git status
+git commit -m "added python"
+git push
+ls
+printenv
+ls
+cd ..
+ls
+cd python
+ls -lh
+cd src
+ls
+less testrun.py
+less firsttrial.ipynb
+export R2R_API_KEY='1'
+ls
+cat vault/api_key
+export R2R_API_KEY='pk_a8AYAiPNenekD8ZT.sk_LiWcouomkdqToRJnB4ttmLs9yzERuj93'
+ls
+echo "export R2R_API_KEY='pk_a8AYAiPNenekD8ZT.sk_LiWcouomkdqToRJnB4ttmLs9yzERuj93'" > set_key.sh
+cat set_key.sh
+git add set_key.sh
+ls
+mv set_key.sh ..
+ls
+mv ../set_key.sh .
+git mv set_key.sh ..
+cd ..
+ls
+git mv set_key.sh ..
+cd ..
+ls
+cd javascript
+ls
+node
+ls
+npm i r2r-js
+npm i r2r-js
+git status
+ls
+printenv
+pwd
+ls
+ls -l
